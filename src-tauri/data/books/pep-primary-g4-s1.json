@@ -1,0 +1,446 @@
+{
+  "id": "pep-primary-g4-s1",
+  "title": "人教版小学英语 · 四年级上",
+  "stage": "primary",
+  "edition": "PEP",
+  "source": "lilinji/English 人教版 xlsx",
+  "units": [
+    {
+      "id": "u1",
+      "title": "Unit 1",
+      "words": [
+        {
+          "en": "classroom",
+          "zh": "n. 教室",
+          "phonetic": "/ˈklæsruːm; ˈklæsrʊm/"
+        },
+        {
+          "en": "window",
+          "zh": "n. 窗；窗口；窗户",
+          "phonetic": "/ˈwɪndoʊ/"
+        },
+        {
+          "en": "blackboard",
+          "zh": "n. 黑板",
+          "phonetic": "/ˈblækbɔːrd/"
+        },
+        {
+          "en": "light",
+          "zh": "n. 光；光线；灯；打火机；领悟；浅色；天窗；adj. 轻的；浅色的；明亮的；轻松的；容易的；清淡的；vi. 点着；变亮；着火；vt. 照亮；点燃；着火；adv. 轻地；清楚地；轻便地",
+          "phonetic": "/laɪt/"
+        },
+        {
+          "en": "picture",
+          "zh": "n. 照片，图画；影片；景色；化身；vt. 画；想像；描写",
+          "phonetic": "/ˈpɪktʃər/"
+        },
+        {
+          "en": "door",
+          "zh": "n. 门；家，户；门口；通道",
+          "phonetic": "/dɔːr/"
+        },
+        {
+          "en": "teacher's desk",
+          "zh": "讲台；讲桌；讲台桌"
+        },
+        {
+          "en": "computer",
+          "zh": "n. 计算机；电脑；电子计算机",
+          "phonetic": "/kəmˈpjuːtər/"
+        },
+        {
+          "en": "fan",
+          "zh": "n. 迷；风扇；爱好者；vt. 煽动；刺激；吹拂；vi. 成扇形散开；飘动",
+          "phonetic": "/fæn/"
+        },
+        {
+          "en": "wall",
+          "zh": "n. 墙壁，围墙；似墙之物；adj. 墙壁的；vt. 用墙围住，围以墙",
+          "phonetic": "/wɔːl/"
+        },
+        {
+          "en": "floor",
+          "zh": "n. 地板，地面；楼层；基底；议员席；vt. 铺地板；打倒，击倒；（被困难）难倒",
+          "phonetic": "/flɔːr/"
+        },
+        {
+          "en": "really",
+          "zh": "adv. 实际上，事实上；真正地，真实地；真的吗？（表语气）",
+          "phonetic": "/ˈriːəli/"
+        },
+        {
+          "en": "near",
+          "zh": "adj. 近的；亲近的；近似的；adv. 近；接近；prep. 靠近；近似于",
+          "phonetic": "/nɪr/"
+        },
+        {
+          "en": "TV",
+          "zh": "abbr. 电视（television）",
+          "phonetic": "/ˌtiː ˈviː/"
+        },
+        {
+          "en": "clean",
+          "zh": "n. 打扫；adj. 清洁的，干净的；清白的；vt. 使干净；vi. 打扫，清扫；adv. 完全地",
+          "phonetic": "/kliːn/"
+        },
+        {
+          "en": "help",
+          "zh": "n. 帮助；补救办法；帮忙者；有益的东西；vt. 帮助；促进；治疗；补救；vi. 帮助；有用；招待",
+          "phonetic": "/help/"
+        },
+        {
+          "en": "schoolbag",
+          "zh": "n. 书包",
+          "phonetic": "/ˈskuːlˌbæɡ/"
+        },
+        {
+          "en": "maths book",
+          "zh": "无"
+        },
+        {
+          "en": "English book",
+          "zh": "英语书；英文书；数学书"
+        },
+        {
+          "en": "Chinese book",
+          "zh": "语文书；中文书；英语书"
+        },
+        {
+          "en": "storybook",
+          "zh": "n. 故事书；小说",
+          "phonetic": "/ˈstɔːribʊk/"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Unit 2",
+      "words": [
+        {
+          "en": "candy",
+          "zh": "n. 糖果（等于sweets）；冰糖（等于sugar candy，rock candy）；毒品；adj. 新潮的（服饰）；甜言蜜语的；vt. 用糖煮；使结晶为砂糖；美化；vi. 糖煮；成为结晶",
+          "phonetic": "/ˈkændi/"
+        },
+        {
+          "en": "notebook",
+          "zh": "n. 笔记本，笔记簿；手册",
+          "phonetic": "/ˈnoʊtbʊk/"
+        },
+        {
+          "en": "toy",
+          "zh": "n. 玩具；小装饰品；不值钱的东西；adj. 作为玩具的；玩物似的；vi. 玩弄；调情；随随便便地对待",
+          "phonetic": "/tɔɪ/"
+        },
+        {
+          "en": "key",
+          "zh": "n. （打字机等的）键；关键；钥匙；vt. 键入；锁上；调节…的音调；提供线索；vi. 使用钥匙；adj. 关键的",
+          "phonetic": "/kiː/"
+        },
+        {
+          "en": "wow",
+          "zh": "n. 极大的成功；一鸣惊人之举；魔兽世界(World of Warcraft)；失真；int. （表示极大的惊奇或钦佩）哇，呀",
+          "phonetic": "/waʊ/"
+        },
+        {
+          "en": "lost",
+          "zh": "adj. 失去的；丧失的；迷惑的；v. 遗失（lose的过去分词）；失败",
+          "phonetic": "/lɔːst/"
+        },
+        {
+          "en": "so much",
+          "zh": "na. 和…一样多；就只那么多；多少",
+          "phonetic": "/soʊ mʌtʃ/"
+        },
+        {
+          "en": "cute",
+          "zh": "adj. 可爱的；漂亮的；聪明的，伶俐的",
+          "phonetic": "/kjuːt/"
+        },
+        {
+          "en": "strong",
+          "zh": "adj. 坚强的；强壮的；牢固的；擅长的；adv. 强劲地；猛烈地",
+          "phonetic": "/strɔːŋ/"
+        },
+        {
+          "en": "friendly",
+          "zh": "adj. 友好的；亲切的；支持的；融洽的，和睦的；adv. 友善地；温和地",
+          "phonetic": "/ˈfrendli/"
+        },
+        {
+          "en": "quiet",
+          "zh": "n. 安静；和平；adj. 安静的；安定的；不动的；温顺的；vt. 使平息；安慰；vi. 平静下来",
+          "phonetic": "/ˈkwaɪət/"
+        },
+        {
+          "en": "hair",
+          "zh": "n. 头发；毛发；些微；adj. 毛发的；护理毛发的；用毛发制成的；vt. 除去…的毛发；vi. 生长毛发；形成毛状纤维",
+          "phonetic": "/her/"
+        },
+        {
+          "en": "shoe",
+          "zh": "n. 鞋；蹄铁；外胎；vt. 给……穿上鞋；穿……鞋",
+          "phonetic": "/ʃuː/"
+        },
+        {
+          "en": "glasses",
+          "zh": "n. [轻] 眼镜；玻璃（glass的复数形式）；双筒望远镜；v. 把…装入玻璃容器内；给…装上玻璃（glass的第三人称单数形式）",
+          "phonetic": "/ˈɡlæsɪz/"
+        },
+        {
+          "en": "his",
+          "zh": "pron. 他的",
+          "phonetic": "/hɪz; ɪz/"
+        },
+        {
+          "en": "or",
+          "zh": "conj. 或，或者；还是",
+          "phonetic": "/ɔːr/"
+        },
+        {
+          "en": "right",
+          "zh": "n. 正确；右边；正义；adj. 正确的；直接的；右方的；vt. 纠正；adv. 正确地；恰当地；彻底地；vi. 复正；恢复平稳",
+          "phonetic": "/raɪt/"
+        },
+        {
+          "en": "hat",
+          "zh": "n. 帽子；vt. 给……戴上帽子；vi. 供应帽子；制造帽子",
+          "phonetic": "/hæt/"
+        },
+        {
+          "en": "her",
+          "zh": "pron. 她（she的宾格）；她的（she的所有格）；她（指某个国家；一艘船）",
+          "phonetic": "/hər; ɜːr; ər; hɜːr/"
+        },
+        {
+          "en": "bedroom",
+          "zh": "n. 卧室；adj. 两性关系的；城郊住宅区的",
+          "phonetic": "/ˈbedruːm; ˈbedrʊm/"
+        },
+        {
+          "en": "living room",
+          "zh": "n. 客厅；起居室",
+          "phonetic": "/ˈlɪvɪŋ ruːm/"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Unit 3",
+      "words": [
+        {
+          "en": "study",
+          "zh": "n. 学习，研究；课题；书房；学问；vt. 学习；考虑；攻读；细察；vi. 研究；用功",
+          "phonetic": "/ˈstʌdi/"
+        },
+        {
+          "en": "kitchen",
+          "zh": "n. 厨房；炊具；炊事人员",
+          "phonetic": "/ˈkɪtʃɪn/"
+        },
+        {
+          "en": "bathroom",
+          "zh": "n. 浴室；厕所；盥洗室",
+          "phonetic": "/ˈbæθruːm/"
+        },
+        {
+          "en": "bed",
+          "zh": "n. 床；基础；河底， 海底；vt. 使睡觉；安置，嵌入；栽种；vi. 上床；分层",
+          "phonetic": "/bed/"
+        },
+        {
+          "en": "phone",
+          "zh": "n. 电话；耳机，听筒；vt. 打电话；vi. 打电话",
+          "phonetic": "/foʊn/"
+        },
+        {
+          "en": "table",
+          "zh": "n. 桌子；表格；平地层；vt. 制表；搁置；嵌合；adj. 桌子的",
+          "phonetic": "/ˈteɪbl/"
+        },
+        {
+          "en": "sofa",
+          "zh": "n. 沙发；长椅",
+          "phonetic": "/ˈsoʊfə/"
+        },
+        {
+          "en": "fridge",
+          "zh": "n. 电冰箱",
+          "phonetic": "/frɪdʒ/"
+        },
+        {
+          "en": "find",
+          "zh": "n. 发现；vi. 裁决；vt. 查找，找到；发现；认为；感到；获得",
+          "phonetic": "/faɪnd/"
+        },
+        {
+          "en": "them",
+          "zh": "pron. 他们；它们；她们",
+          "phonetic": "/ðəm; ðem/"
+        },
+        {
+          "en": "beef",
+          "zh": "n. 牛肉；肌肉；食用牛；牢骚；vt. 养；加强；vi. 抱怨，告发；发牢骚",
+          "phonetic": "/biːf/"
+        },
+        {
+          "en": "chicken",
+          "zh": "n. 鸡肉；小鸡；胆小鬼，懦夫；adj. 鸡肉的；胆怯的；幼小的",
+          "phonetic": "/ˈtʃɪkɪn/"
+        },
+        {
+          "en": "noodles",
+          "zh": "n. 面条，挂面（noodle的复数形式)",
+          "phonetic": "/ˈnuːd(ə)lz/"
+        },
+        {
+          "en": "soup",
+          "zh": "n. 汤，羹；马力；vt. 加速；增加马力",
+          "phonetic": "/suːp/"
+        },
+        {
+          "en": "vegetable",
+          "zh": "n. 蔬菜；植物；植物人；adj. 蔬菜的；植物的",
+          "phonetic": "/ˈvedʒtəbl/"
+        },
+        {
+          "en": "chopsticks",
+          "zh": "n. 筷子",
+          "phonetic": "/ˈtʃɑːpstɪks/"
+        },
+        {
+          "en": "bowl",
+          "zh": "n. 碗；木球；大酒杯；vt. 投球；旋转；平稳快速移动；vi. 玩保龄球；滑动；平稳快速移动",
+          "phonetic": "/boʊl/"
+        },
+        {
+          "en": "fork",
+          "zh": "n. 叉；餐叉；耙；vt. 叉起；使成叉状；vi. 分叉；分歧",
+          "phonetic": "/fɔːrk/"
+        },
+        {
+          "en": "knife",
+          "zh": "n. 刀；匕首；vt. 用刀切；（口）伤害；vi. 劈开；划过",
+          "phonetic": "/naɪf/"
+        },
+        {
+          "en": "spoon",
+          "zh": "n. 匙，勺子；一杓的量；vt. 用匙舀；使成匙状；vi. 轻轻向上击",
+          "phonetic": "/spuːn/"
+        },
+        {
+          "en": "dinner",
+          "zh": "n. 晚餐，晚宴；宴会；正餐",
+          "phonetic": "/ˈdɪnər/"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "Unit 4",
+      "words": [
+        {
+          "en": "ready",
+          "zh": "n. 现款；预备好的状态；adj. 准备好；现成的；迅速的；情愿的；快要…的；vt. 使准备好；adv. 迅速地；预先",
+          "phonetic": "/ˈredi/"
+        },
+        {
+          "en": "help yourself",
+          "zh": "别客气；请自便；随便吃"
+        },
+        {
+          "en": "pass",
+          "zh": "n. 及格；经过；护照；途径；传球；vt. 通过；经过；传递；vi. 经过；传递；变化；终止",
+          "phonetic": "/pæs/"
+        },
+        {
+          "en": "try",
+          "zh": "n. 尝试；努力；试验；vt. 试图，努力；试验；审判；考验；vi. 尝试；努力；试验",
+          "phonetic": "/traɪ/"
+        },
+        {
+          "en": "parents",
+          "zh": "n. 父母；双亲（parent的复数）；v. 教养；引起（parent的三单形式）",
+          "phonetic": "/'perənts/"
+        },
+        {
+          "en": "cousin",
+          "zh": "n. 堂兄弟姊妹；表兄弟姊妹",
+          "phonetic": "/ˈkʌzn/"
+        },
+        {
+          "en": "uncle",
+          "zh": "n. 叔叔；伯父；伯伯；舅父；姨丈；姑父",
+          "phonetic": "/ˈʌŋkl/"
+        },
+        {
+          "en": "aunt",
+          "zh": "n. 阿姨；姑妈；伯母；舅妈",
+          "phonetic": "/ænt/"
+        },
+        {
+          "en": "baby brother",
+          "zh": "小弟弟；我的弟弟啊；切入正题"
+        },
+        {
+          "en": "doctor",
+          "zh": "vt. 修理；篡改，伪造；为…治病；授以博士学位；n. 医生；博士；vi. 就医；行医",
+          "phonetic": "/ˈdɑːktər/"
+        },
+        {
+          "en": "cook",
+          "zh": "n. 厨师，厨子；vt. 烹调，煮；vi. 烹调，做菜",
+          "phonetic": "/kʊk/"
+        },
+        {
+          "en": "driver",
+          "zh": "n. 驾驶员；驱动程序；起子；传动器",
+          "phonetic": "/ˈdraɪvər/"
+        },
+        {
+          "en": "farmer",
+          "zh": "n. 农夫，农民",
+          "phonetic": "/ˈfɑːrmər/"
+        },
+        {
+          "en": "nurse",
+          "zh": "vt. 看护，护理；照顾；培养；给…喂奶；vi. 照料，护理；喂奶；当保姆；n. 护士；奶妈，保姆",
+          "phonetic": "/nɜːrs/"
+        },
+        {
+          "en": "people",
+          "zh": "n. 人；人类；民族；公民；vt. 居住于；使住满人",
+          "phonetic": "/ˈpiːpl/"
+        },
+        {
+          "en": "but",
+          "zh": "conj. 但是；而是；然而；adv. 仅仅，只；prep. 除…以外",
+          "phonetic": "/bət; bʌt/"
+        },
+        {
+          "en": "little",
+          "zh": "adj. 小的；很少的；短暂的；小巧可爱的；adv. 完全不；n. 少许；没有多少；短时间",
+          "phonetic": "/ˈlɪtl/"
+        },
+        {
+          "en": "puppy",
+          "zh": "n. 小狗，幼犬",
+          "phonetic": "/ˈpʌpi/"
+        },
+        {
+          "en": "football player",
+          "zh": "足球运动员；球员；足球队员"
+        },
+        {
+          "en": "job",
+          "zh": "n. 工作；职业；vt. 承包；代客买卖；vi. 做零工",
+          "phonetic": "/dʒɑːb/"
+        },
+        {
+          "en": "basketball",
+          "zh": "n. 篮球；篮球运动",
+          "phonetic": "/ˈbæskɪtbɔːl/"
+        }
+      ]
+    }
+  ]
+}

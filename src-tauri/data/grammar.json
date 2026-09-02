@@ -1,0 +1,69 @@
+{
+  "points": [
+    {
+      "id": "a_an",
+      "title": "a 和 an 的用法",
+      "explain": "表示「一个」时：后面单词的发音以辅音开头用 a（a book），以元音开头用 an（an apple, an egg）。注意看发音，不看字母。"
+    },
+    {
+      "id": "plural",
+      "title": "名词复数",
+      "explain": "一个以上要用复数：一般加 -s（cats）；以 s/x/ch/sh 结尾加 -es（boxes）；辅音字母加 y 结尾变 y 为 i 加 -es（babies）；特殊的要背：child→children, man→men, woman→women, foot→feet, tooth→teeth, mouse→mice。"
+    },
+    {
+      "id": "be_verb",
+      "title": "am / is / are",
+      "explain": "I 用 am；he/she/it/单数用 is；you/we/they/复数用 are。口诀：我用 am，你用 are，is 跟着他她它，复数全部都用 are。"
+    },
+    {
+      "id": "pronoun",
+      "title": "人称代词",
+      "explain": "指代人的词：男的他 he，女的她 she，它 it；一个人用单数，多个人用 they。句子里提到谁，就用对应的代词。"
+    },
+    {
+      "id": "there_be",
+      "title": "There is / There are",
+      "explain": "表示「某处有某物」：后面是单数或不可数名词用 There is，是复数用 There are。就近原则：看最靠近的第一个名词。"
+    },
+    {
+      "id": "can",
+      "title": "can + 动词原形",
+      "explain": "表示「会/能做某事」：can 后面永远跟动词原形，不加 s、不加 ing。I can swim. 他会游泳 He can swim（不是 swims）。"
+    },
+    {
+      "id": "third_s",
+      "title": "第三人称单数",
+      "explain": "he/she/it 做主语，一般现在时动词要加 -s：like→likes；以 s/x/ch/sh/o 结尾加 -es：go→goes, watch→watches；辅音加 y 变 i 加 -es：study→studies。"
+    },
+    {
+      "id": "present_continuous",
+      "title": "现在进行时 be + doing",
+      "explain": "表示正在做某事：be 动词 + 动词ing。run→running（重读闭音节双写），make→making（去 e），study→studying。I am reading. She is singing."
+    },
+    {
+      "id": "past_ed",
+      "title": "一般过去时",
+      "explain": "发生在过去的事，动词用过去式：一般加 -ed（played）；去 e 加 d（liked）；辅音加 y 变 i 加 ed（studied）；特殊要背：go→went, see→saw, eat→ate, have→had, do→did, is/am→was, are→were。"
+    },
+    {
+      "id": "comparative",
+      "title": "比较级 -er / more",
+      "explain": "两者比较「更…」：短词加 -er（tall→taller, big→bigger 双写），以 e 结尾加 r（nice→nicer），辅音加 y 变 i 加 er（happy→happier）；长词用 more（more beautiful）。后面常跟 than。"
+    },
+    {
+      "id": "superlative",
+      "title": "最高级 -est / most",
+      "explain": "三者以上「最…」：短词加 -est（tallest, biggest），辅音加 y 变 i 加 est（happiest）；长词用 most（most beautiful）。前面常加 the。"
+    },
+    {
+      "id": "some_any",
+      "title": "some 和 any",
+      "explain": "都表示「一些」：肯定句用 some（I have some books），否定句和疑问句用 any（Do you have any books?）。请求、邀请的疑问句例外，用 some。"
+    },
+    {
+      "id": "modal_must",
+      "title": "must / should + 动词原形",
+      "explain": "must 表示「必须」，should 表示「应该」，后面都跟动词原形。否定：mustn't（禁止），shouldn't（不应该）。"
+    }
+  ]
+}

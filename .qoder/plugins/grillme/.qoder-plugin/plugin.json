@@ -1,0 +1,14 @@
+{
+  "name": "grillme",
+  "displayName": "Grill Me",
+  "version": "0.1.0",
+  "description": "A relentless interview to sharpen a plan or design, resolved branch by branch as a design tree.",
+  "descriptionZh": "用连环追问的方式拷问你的方案，把设计树的每个分支都问清楚。",
+  "author": { "name": "Matt Pocock" },
+  "homepage": "https://github.com/mattpocock/skills",
+  "repository": "https://github.com/mattpocock/skills",
+  "keywords": ["qoder-plugin", "skill", "productivity", "planning"],
+  "category": "developer-tools",
+  "tags": ["skill"],
+  "skills": "./skills/"
+}

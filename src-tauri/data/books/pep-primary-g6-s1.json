@@ -1,0 +1,767 @@
+{
+  "id": "pep-primary-g6-s1",
+  "title": "人教版小学英语 · 六年级上",
+  "stage": "primary",
+  "edition": "PEP",
+  "source": "lilinji/English 人教版 xlsx",
+  "units": [
+    {
+      "id": "u1",
+      "title": "Unit 1",
+      "words": [
+        {
+          "en": "science",
+          "zh": "n. 科学；技术；学科；理科",
+          "phonetic": "/ˈsaɪəns/"
+        },
+        {
+          "en": "museum",
+          "zh": "n. 博物馆",
+          "phonetic": "/mjuˈziːəm/"
+        },
+        {
+          "en": "post office",
+          "zh": "n. 邮局；邮政部门；邮政系统；邮差敲门游戏（儿童用假托的信件换取亲吻）",
+          "phonetic": "/ˈpost ɔfɪs/"
+        },
+        {
+          "en": "bookstore",
+          "zh": "n. 书店（等于bookshop）",
+          "phonetic": "/ˈbʊkstɔːr/"
+        },
+        {
+          "en": "cinema",
+          "zh": "n. 电影；电影院；电影业，电影制作术",
+          "phonetic": "/ˈsɪnəmə/"
+        },
+        {
+          "en": "hospital",
+          "zh": "n. 医院",
+          "phonetic": "/ˈhɑːspɪtl/"
+        },
+        {
+          "en": "crossing",
+          "zh": "n. 十字路口；杂交；横渡；横道；v. 横越（cross的现在分词）",
+          "phonetic": "/ˈkrɔːsɪŋ/"
+        },
+        {
+          "en": "turn",
+          "zh": "n. 转弯；变化；(损害或有益于别人的)行为，举动，举止；vi. 转向；转变；转动；vt. 转动，使旋转；转弯；翻过来；兑换",
+          "phonetic": "/tɜːrn/"
+        },
+        {
+          "en": "left",
+          "zh": "adj. 左边的；左派的；剩下的；adv. 在左面；n. 左边；左派；激进分子；v. 离开（leave的过去式）",
+          "phonetic": "/left/"
+        },
+        {
+          "en": "straight",
+          "zh": "n. 直；直线；直男，直女，异性恋者；adj. 直的；连续的；笔直的；正直的；整齐的；异性恋的；adv. 直接地；不断地；立即；坦率地",
+          "phonetic": "/streɪt/"
+        },
+        {
+          "en": "right",
+          "zh": "n. 正确；右边；正义；adj. 正确的；直接的；右方的；vt. 纠正；adv. 正确地；恰当地；彻底地；vi. 复正；恢复平稳",
+          "phonetic": "/raɪt/"
+        },
+        {
+          "en": "ask",
+          "zh": "vt. 问，询问；要求；需要；邀请；讨价；vi. 问，询问；要求",
+          "phonetic": "/æsk/"
+        },
+        {
+          "en": "sir",
+          "zh": "n. 先生；（用于姓名前）爵士；阁下；（中小学生对男教师的称呼）先生；老师",
+          "phonetic": "/sɜːr; sər/"
+        },
+        {
+          "en": "interesting",
+          "zh": "adj. 有趣的；引起兴趣的，令人关注的",
+          "phonetic": "/ˈɪntrəstɪŋ; ˈɪntrestɪŋ/"
+        },
+        {
+          "en": "Italian",
+          "zh": "n. 意大利人；意大利语；adj. 意大利的；意大利文化的；意大利语的",
+          "phonetic": "/ɪˈtæliən/"
+        },
+        {
+          "en": "restaurant",
+          "zh": "n. 餐馆；[经] 饭店",
+          "phonetic": "/ˈrestrɑːnt; ˈrestərɑːnt/"
+        },
+        {
+          "en": "pizza",
+          "zh": "n. 比萨饼（一种涂有乳酪核番茄酱的意大利式有馅烘饼）",
+          "phonetic": "/ˈpiːtsə/"
+        },
+        {
+          "en": "street",
+          "zh": "n. 街道；adj. 街道的",
+          "phonetic": "/striːt/"
+        },
+        {
+          "en": "get",
+          "zh": "n. 生殖；幼兽；vi. 成为；变得；到达；vt. 使得；获得；受到；变成",
+          "phonetic": "/ɡet/"
+        },
+        {
+          "en": "GPS",
+          "zh": "abbr. 全球定位系统（Global Position System）；通用雷达（General Purpose Radar）；炮长主瞄准镜（Gunner's Primary Sight）",
+          "phonetic": "/ˌdʒiː piː ˈes/"
+        },
+        {
+          "en": "gave",
+          "zh": "v. 给予（give的过去式）",
+          "phonetic": "/ɡeɪv/"
+        },
+        {
+          "en": "feature",
+          "zh": "n. 特色，特征；容貌；特写或专题节目；vt. 特写；以…为特色；由…主演；vi. 起重要作用",
+          "phonetic": "/ˈfiːtʃər/"
+        },
+        {
+          "en": "follow",
+          "zh": "n. 跟随；追随；vi. 跟随；接着；vt. 跟随；遵循；追求；密切注意，注视；注意；倾听",
+          "phonetic": "/ˈfɑːloʊ/"
+        },
+        {
+          "en": "far",
+          "zh": "n. 远方；adj. 远的；久远的；adv. 很；遥远地；久远地；到很远的距离；到很深的程度",
+          "phonetic": "/fɑːr/"
+        },
+        {
+          "en": "tell",
+          "zh": "vt. 告诉，说；辨别；吩咐；断定；vi. 讲述；告发，泄密；识别",
+          "phonetic": "/tel/"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Unit 2",
+      "words": [
+        {
+          "en": "on foot",
+          "zh": "na. 步行；在进行中；徒步"
+        },
+        {
+          "en": "by",
+          "zh": "prep. 通过；被；依据；经由；在附近；在……之前；adv. 通过；经过；附近；[互联网] 白俄罗斯的国家代码顶级域名",
+          "phonetic": "/baɪ/"
+        },
+        {
+          "en": "bus",
+          "zh": "n. 公共汽车；乘公共汽车",
+          "phonetic": "/bʌs/"
+        },
+        {
+          "en": "plane",
+          "zh": "n. 飞机；平面；程度，水平；adj. 平的；平面的；vt. 刨平；用刨子刨；掠过水面；vi. 刨；乘飞机旅行；翱翔",
+          "phonetic": "/pleɪn/"
+        },
+        {
+          "en": "taxi",
+          "zh": "n. 出租汽车；vt. 使滑行；用出租车送；vi. 乘出租车；滑行",
+          "phonetic": "/ˈtæksi/"
+        },
+        {
+          "en": "ship",
+          "zh": "n. 船；舰；太空船；vt. 运送，乘船；以船运送；vi. 上船；乘船旅行；当船员",
+          "phonetic": "/ʃɪp/"
+        },
+        {
+          "en": "subway",
+          "zh": "n. 地铁；地道；vi. 乘地铁",
+          "phonetic": "/ˈsʌbweɪ/"
+        },
+        {
+          "en": "train",
+          "zh": "n. 火车；行列；长队；裙裾；v. 培养；训练；瞄准",
+          "phonetic": "/treɪn/"
+        },
+        {
+          "en": "slow",
+          "zh": "adj. 慢的；减速的；迟钝的；vt. 放慢；阻碍；vi. 变慢；变萧条；adv. 慢慢地；迟缓地",
+          "phonetic": "/sloʊ/"
+        },
+        {
+          "en": "down",
+          "zh": "prep. 沿着，往下；n. 软毛，绒毛；[地质] 开阔的高地；adj. 向下的；vt. 打倒，击败；adv. 向下，下去；在下面；vi. 下降；下去",
+          "phonetic": "/daʊn/"
+        },
+        {
+          "en": "slow down",
+          "zh": "na. 闲下来；减缓；放慢速度；减速"
+        },
+        {
+          "en": "stop",
+          "zh": "n. 停止；车站；障碍；逗留；vi. 停止；中止；逗留；被塞住；vt. 停止；堵塞；断绝",
+          "phonetic": "/stɑːp/"
+        },
+        {
+          "en": "Mrs",
+          "zh": "n. 太太；夫人（用于已婚妇女姓名前的尊称）",
+          "phonetic": "/ˈmɪsɪz/"
+        },
+        {
+          "en": "early",
+          "zh": "adj. 早期的；早熟的；adv. 提早；在初期",
+          "phonetic": "/ˈɜːrli/"
+        },
+        {
+          "en": "helmet",
+          "zh": "n. 钢盔，头盔",
+          "phonetic": "/ˈhelmɪt/"
+        },
+        {
+          "en": "must",
+          "zh": "aux. 必须，一定；可以，应当；很可能；n. 绝对必要的事物；未发酵葡萄汁",
+          "phonetic": "/məst; mʌst/"
+        },
+        {
+          "en": "wear",
+          "zh": "n. 衣物；磨损；耐久性；v. 穿着；用旧；耗损；面露",
+          "phonetic": "/wer/"
+        },
+        {
+          "en": "attention",
+          "zh": "n. 注意力；关心；立正！（口令）",
+          "phonetic": "/əˈtenʃn/"
+        },
+        {
+          "en": "pay attention to",
+          "zh": "na. 注意"
+        },
+        {
+          "en": "traffic",
+          "zh": "n. 交通；运输；贸易；[通信] 通信量；vt. 用…作交换；在…通行；vi. 交易，买卖",
+          "phonetic": "/ˈtræfɪk/"
+        },
+        {
+          "en": "traffic lights",
+          "zh": "n. 交通信号灯；红绿灯"
+        },
+        {
+          "en": "Munich",
+          "zh": "n. 慕尼黑（联邦德国城市）",
+          "phonetic": "/ˈmjuːnɪk/"
+        },
+        {
+          "en": "Germany",
+          "zh": "n. 德国",
+          "phonetic": "/ˈdʒɜːrməni/"
+        },
+        {
+          "en": "Alaska",
+          "zh": "n. 阿拉斯加州",
+          "phonetic": "/əˈlæskə/"
+        },
+        {
+          "en": "sled",
+          "zh": "n. 雪橇；vt. 用摘棉机摘；用雪橇运；vi. 乘雪橇；用雪橇运",
+          "phonetic": "/sled/"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Unit 3",
+      "words": [
+        {
+          "en": "fast",
+          "zh": "n. 斋戒；绝食；adj. 快速的，迅速的；紧的，稳固的；adv. 迅速地；紧紧地；彻底地；vi. 禁食，斋戒",
+          "phonetic": "/fæst/"
+        },
+        {
+          "en": "ferry",
+          "zh": "n. 渡船；摆渡；渡口；vt. （乘渡船）渡过；用渡船运送；空运；vi. 摆渡；来往行驶",
+          "phonetic": "/ˈferi/"
+        },
+        {
+          "en": "Papa Westray",
+          "zh": "帕帕威斯垂岛"
+        },
+        {
+          "en": "Scotland",
+          "zh": "n. 苏格兰",
+          "phonetic": "/ˈskɑːtlənd/"
+        },
+        {
+          "en": "visit",
+          "zh": "n. 访问；参观；逗留；vt. 访问；参观；视察；vi. 访问；暂住；闲谈",
+          "phonetic": "/ˈvɪzɪt/"
+        },
+        {
+          "en": "film",
+          "zh": "n. 电影；薄膜；胶卷；轻烟；vt. 在…上覆以薄膜；",
+          "phonetic": "/fɪlm/"
+        },
+        {
+          "en": "see a film",
+          "zh": "看电影；去看电影；去电影院看电影"
+        },
+        {
+          "en": "trip",
+          "zh": "n. 旅行；绊倒；差错；vt. 绊倒；使犯错；vi. 绊倒；远足；犯错误；轻快地走",
+          "phonetic": "/trɪp/"
+        },
+        {
+          "en": "take a trip",
+          "zh": "na. 旅行"
+        },
+        {
+          "en": "supermarket",
+          "zh": "n. 超级市场；自助售货商店",
+          "phonetic": "/ˈsuːpərmɑːrkɪt/"
+        },
+        {
+          "en": "evening",
+          "zh": "n. 晚上；傍晚；（联欢性的）晚会；后期；adj. 在晚上的；为晚上的；晚上用的；int. 晚上好（等于good evening）",
+          "phonetic": "/ˈiːvnɪŋ/"
+        },
+        {
+          "en": "tonight",
+          "zh": "n. 今晚；adv. 在今晚",
+          "phonetic": "/təˈnaɪt/"
+        },
+        {
+          "en": "tomorrow",
+          "zh": "n. 明天；未来；adv. 明天；未来地（等于to-morrow）",
+          "phonetic": "/təˈmɑːroʊ/"
+        },
+        {
+          "en": "next week",
+          "zh": "na. 下星期",
+          "phonetic": "/nekst wiːk/"
+        },
+        {
+          "en": "dictionary",
+          "zh": "n. 字典；词典",
+          "phonetic": "/ˈdɪkʃəneri/"
+        },
+        {
+          "en": "comic",
+          "zh": "n. 连环漫画；喜剧演员；滑稽人物；adj. 喜剧的；滑稽的；有趣的",
+          "phonetic": "/ˈkɑːmɪk/"
+        },
+        {
+          "en": "comic book",
+          "zh": "n. 漫画书"
+        },
+        {
+          "en": "word",
+          "zh": "n. [语] 单词；话语；消息；诺言；命令；vt. 用言辞表达",
+          "phonetic": "/wɜːrd/"
+        },
+        {
+          "en": "word book",
+          "zh": "n. 词典；字汇表；歌词集",
+          "phonetic": "/ˈwɜːrkˈbʊk/"
+        },
+        {
+          "en": "postcard",
+          "zh": "n. 明信片",
+          "phonetic": "/ˈpoʊstkɑːrd/"
+        },
+        {
+          "en": "lesson",
+          "zh": "n. 教训；课；vt. 教训；上课",
+          "phonetic": "/ˈlesn/"
+        },
+        {
+          "en": "space",
+          "zh": "n. 空间；太空；距离；vt. 隔开；vi. 留间隔",
+          "phonetic": "/speɪs/"
+        },
+        {
+          "en": "travel",
+          "zh": "n. 旅行；游历；漫游；vt. 经过；在…旅行；vi. 旅行；行进；步行；交往",
+          "phonetic": "/ˈtrævl/"
+        },
+        {
+          "en": "half",
+          "zh": "n. 一半；半场；半学年；adj. 一半的；不完全的；半途的；adv. 一半地；部分",
+          "phonetic": "/hæf/"
+        },
+        {
+          "en": "price",
+          "zh": "n. 价格；价值；代价；vt. 给……定价；问……的价格",
+          "phonetic": "/praɪs/"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "Unit 4",
+      "words": [
+        {
+          "en": "Mid-Autumn Festival",
+          "zh": "《英汉医学词典》mid autumn festival；中秋节"
+        },
+        {
+          "en": "together",
+          "zh": "adj. 新潮的；情绪稳定的，做事有效率的；adv. 一起；同时；相互；连续地；总共",
+          "phonetic": "/təˈɡeðər/"
+        },
+        {
+          "en": "get together",
+          "zh": "na. 聚集；集合；汇齐；积累"
+        },
+        {
+          "en": "mooncake",
+          "zh": "n. 月饼",
+          "phonetic": "/ˈmuːnkeɪk/"
+        },
+        {
+          "en": "poem",
+          "zh": "n. 诗",
+          "phonetic": "/ˈpoʊəm/"
+        },
+        {
+          "en": "moon",
+          "zh": "n. 月亮；月球；月光；卫星；vi. 闲荡；出神；vt. 虚度",
+          "phonetic": "/muːn/"
+        },
+        {
+          "en": "studies",
+          "zh": "n. 研究；学习；学业（study的复数）；v. 学习（study的第三人称单数形式）",
+          "phonetic": "/ˈstʌdiz/"
+        },
+        {
+          "en": "puzzle",
+          "zh": "n. 谜；难题；迷惑；vt. 使…困惑；使…为难；苦思而得出；vi. 迷惑；冥思苦想",
+          "phonetic": "/ˈpʌzl/"
+        },
+        {
+          "en": "hiking",
+          "zh": "n. 徒步旅行",
+          "phonetic": "/ˈhaɪkɪŋ/"
+        },
+        {
+          "en": "pen pal",
+          "zh": "abbr. (=pen-friend)；n. 笔友",
+          "phonetic": "/ˈpen pæl/"
+        },
+        {
+          "en": "hobby",
+          "zh": "n. 嗜好；业余爱好",
+          "phonetic": "/ˈhɑːbi/"
+        },
+        {
+          "en": "jasmine",
+          "zh": "n. 茉莉；淡黄色",
+          "phonetic": "/ˈdʒæzmɪn/"
+        },
+        {
+          "en": "idea",
+          "zh": "n. 想法；主意；概念",
+          "phonetic": "/aɪˈdiːə/"
+        },
+        {
+          "en": "Canberra",
+          "zh": "n. 堪培拉（澳大利亚的首都）",
+          "phonetic": "/ˈkænbərəˌˈkænberə/"
+        },
+        {
+          "en": "amazing",
+          "zh": "adj. 令人惊异的；v. 使吃惊（amaze的ing形式）",
+          "phonetic": "/əˈmeɪzɪŋ/"
+        },
+        {
+          "en": "shall",
+          "zh": "aux. 应；会；将；必须",
+          "phonetic": "/ʃəl; ʃæl/"
+        },
+        {
+          "en": "goal",
+          "zh": "n. 目标；球门，得分数；终点；vi. 攻门，射门得分",
+          "phonetic": "/ɡoʊl/"
+        },
+        {
+          "en": "join",
+          "zh": "vt. 参加；结合；连接；vi. 加入；参加；结合；n. 结合；连接；接合点",
+          "phonetic": "/dʒɔɪn/"
+        },
+        {
+          "en": "club",
+          "zh": "n. 俱乐部，社团；夜总会；棍棒；（扑克牌中的）梅花；adj. 俱乐部的；vt. 用棍棒打；募集；vi. 集资；组成俱乐部",
+          "phonetic": "/klʌb/"
+        },
+        {
+          "en": "share",
+          "zh": "n. 份额；股份；vt. 分享，分担；分配；vi. 共享；分担",
+          "phonetic": "/ʃer/"
+        },
+        {
+          "en": "factory",
+          "zh": "n. 工厂；制造厂；代理店",
+          "phonetic": "/ˈfæktri; ˈfæktəri/"
+        },
+        {
+          "en": "worker",
+          "zh": "n. 工人；劳动者；职蚁",
+          "phonetic": "/ˈwɜːrkər/"
+        },
+        {
+          "en": "postman",
+          "zh": "n. 邮递员；邮差",
+          "phonetic": "/ˈpoʊstmən/"
+        },
+        {
+          "en": "businessman",
+          "zh": "n. 商人",
+          "phonetic": "/ˈbɪznəsmæn/"
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "Unit 5",
+      "words": [
+        {
+          "en": "police officer",
+          "zh": "n. 警官；警察；警务人员",
+          "phonetic": "/pəˈlis ˈɔfɪsɚ/"
+        },
+        {
+          "en": "fisherman",
+          "zh": "n. 渔夫；渔人",
+          "phonetic": "/ˈfɪʃərmən/"
+        },
+        {
+          "en": "scientist",
+          "zh": "n. 科学家",
+          "phonetic": "/ˈsaɪəntɪst/"
+        },
+        {
+          "en": "pilot",
+          "zh": "n. 飞行员；领航员；adj. 试点的；v. 驾驶；领航；试用",
+          "phonetic": "/ˈpaɪlət/"
+        },
+        {
+          "en": "coach",
+          "zh": "n. 教练；旅客车厢；长途公车；四轮大马车；vt. 训练；指导；vi. 作指导；接受辅导；坐马车旅行；n.  蔻驰（皮革品牌）",
+          "phonetic": "/koʊtʃ/"
+        },
+        {
+          "en": "country",
+          "zh": "n. 国家，国土；国民；乡下，农村；乡村；故乡；adj. 祖国的，故乡的；地方的，乡村的；国家的；粗鲁的；乡村音乐的",
+          "phonetic": "/ˈkʌntri/"
+        },
+        {
+          "en": "head teacher",
+          "zh": "n. 校长"
+        },
+        {
+          "en": "sea",
+          "zh": "n. 海；海洋；许多；大量",
+          "phonetic": "/siː/"
+        },
+        {
+          "en": "stay",
+          "zh": "n. 逗留；停止；支柱；vi. 停留；坚持；暂住；停下；vt. 坚持；暂住；抑制",
+          "phonetic": "/steɪ/"
+        },
+        {
+          "en": "university",
+          "zh": "n. 大学；综合性大学；大学校舍",
+          "phonetic": "/ˌjuːnɪˈvɜːrsəti/"
+        },
+        {
+          "en": "gym",
+          "zh": "n. 健身房；体育；体育馆",
+          "phonetic": "/dʒɪm/"
+        },
+        {
+          "en": "if",
+          "zh": "conj. （表条件）如果；即使；是否；（表假设）假如；n. 条件；设想",
+          "phonetic": "/ɪf/"
+        },
+        {
+          "en": "reporter",
+          "zh": "n. 记者",
+          "phonetic": "/rɪˈpɔːrtər/"
+        },
+        {
+          "en": "use",
+          "zh": "n. 使用；用途；发挥；vt. 利用；耗费；vi. 使用，运用",
+          "phonetic": "/juːz/"
+        },
+        {
+          "en": "type",
+          "zh": "n. 类型，品种；模范；样式；vt. 打字；测定（血等）类型；vi. 打字",
+          "phonetic": "/taɪp/"
+        },
+        {
+          "en": "quickly",
+          "zh": "adv. 迅速地；很快地",
+          "phonetic": "/ˈkwɪkli/"
+        },
+        {
+          "en": "secretary",
+          "zh": "n. 秘书；书记；部长；大臣",
+          "phonetic": "/ˈsekrəteri/"
+        },
+        {
+          "en": "angry",
+          "zh": "adj. 生气的；愤怒的；狂暴的；（伤口等）发炎的",
+          "phonetic": "/ˈæŋɡri/"
+        },
+        {
+          "en": "afraid",
+          "zh": "adj. 害怕的；恐怕；担心的",
+          "phonetic": "/əˈfreɪd/"
+        },
+        {
+          "en": "sad",
+          "zh": "adj. 难过的；悲哀的，令人悲痛的；凄惨的，阴郁的（形容颜色）",
+          "phonetic": "/sæd/"
+        },
+        {
+          "en": "worried",
+          "zh": "adj. 担心的",
+          "phonetic": "/ˈwɜːrid/"
+        },
+        {
+          "en": "happy",
+          "zh": "adj. 幸福的；高兴的；巧妙的",
+          "phonetic": "/ˈhæpi/"
+        },
+        {
+          "en": "see a doctor",
+          "zh": "na. 去就医；去看医生"
+        },
+        {
+          "en": "wear",
+          "zh": "n. 衣物；磨损；耐久性；v. 穿着；用旧；耗损；面露",
+          "phonetic": "/wer/"
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Unit 6",
+      "words": [
+        {
+          "en": "more",
+          "zh": "adv. 更多；此外；更大程度地；adj. 更多的；附加的；pron. 更多的数量；n. 更多",
+          "phonetic": "/mɔːr/"
+        },
+        {
+          "en": "deep",
+          "zh": "n. 深处；深渊；adj. 深的；低沉的；深奥的；adv. 深入地；深深地；迟",
+          "phonetic": "/diːp/"
+        },
+        {
+          "en": "breath",
+          "zh": "n. 呼吸，气息；一口气，（呼吸的）一次；瞬间，瞬息；微风；迹象；无声音，气音",
+          "phonetic": "/breθ/"
+        },
+        {
+          "en": "take a deep breath",
+          "zh": "na. 行深呼吸"
+        },
+        {
+          "en": "count",
+          "zh": "n. 计数；计算；伯爵；vt. 计算；认为；vi. 计数；有价值",
+          "phonetic": "/kaʊnt/"
+        },
+        {
+          "en": "count to ten",
+          "zh": "数到十；十；沉静下来",
+          "phonetic": "/kaʊnt tu ten/"
+        },
+        {
+          "en": "chase",
+          "zh": "n. 追逐；追赶；追击；vt. 追逐；追捕；试图赢得；雕镂；vi. 追逐；追赶；奔跑",
+          "phonetic": "/tʃeɪs/"
+        },
+        {
+          "en": "mice",
+          "zh": "n. 老鼠（mouse的复数）",
+          "phonetic": "/maɪs/"
+        },
+        {
+          "en": "bad",
+          "zh": "n. 坏事；坏人；adj. 坏的；严重的；劣质的；adv. 很，非常；坏地；邪恶地",
+          "phonetic": "/bæd/"
+        },
+        {
+          "en": "hurt",
+          "zh": "n. 痛苦；危害；痛苦的原因；vt. 使受伤；损害；使疼痛；使痛心；adj. 受伤的；痛苦的；受损的；vi. 感到疼痛；有坏处；带来痛苦",
+          "phonetic": "/hɜːrt/"
+        },
+        {
+          "en": "ill",
+          "zh": "n. 疾病；不幸；adj. 生病的；坏的；邪恶的；不吉利的；adv. 不利地；恶劣地；几乎不",
+          "phonetic": "/ɪl/"
+        },
+        {
+          "en": "wrong",
+          "zh": "n. 坏事；不公正；adj. 错误的；失常的；不适当的；vt. 委屈；无理地对待；诽谤；adv. 错误地；邪恶地，不正当地",
+          "phonetic": "/rɔːŋ/"
+        },
+        {
+          "en": "should",
+          "zh": "aux. 应该；就；可能；将要",
+          "phonetic": "/ʃəd; ʃʊd/"
+        },
+        {
+          "en": "feel",
+          "zh": "n. 感觉；触摸；vi. 觉得；摸索；vt. 感觉；认为；触摸；试探",
+          "phonetic": "/fiːl/"
+        },
+        {
+          "en": "well",
+          "zh": "n. 井；源泉；adj. 良好的；健康的；适宜的；adv. 很好地；充分地；满意地；适当地；v. 涌出",
+          "phonetic": "/wel/"
+        },
+        {
+          "en": "sit",
+          "zh": "vi. 坐；位于；vt. 使就座",
+          "phonetic": "/sɪt/"
+        },
+        {
+          "en": "grass",
+          "zh": "n. 草；草地，草坪；vt. 放牧；使……长满草；使……吃草；vi. 长草",
+          "phonetic": "/ɡræs/"
+        },
+        {
+          "en": "hear",
+          "zh": "vi. 听；听见；vt. 听到，听；听说；审理",
+          "phonetic": "/hɪr/"
+        },
+        {
+          "en": "ant",
+          "zh": "n. 蚂蚁",
+          "phonetic": "/ænt/"
+        },
+        {
+          "en": "worry",
+          "zh": "n. 担心；烦恼；撕咬；vi. 担心；烦恼；撕咬；vt. 担心；发愁；折磨",
+          "phonetic": "/ˈwɜːri/"
+        },
+        {
+          "en": "stuck",
+          "zh": "v. 刺（stick的过去式）；adj. 被卡住的；不能动的",
+          "phonetic": "/stʌk/"
+        },
+        {
+          "en": "mud",
+          "zh": "vt. 弄脏；用泥涂；vi. 钻入泥中；n. 泥；诽谤的话；无价值的东西",
+          "phonetic": "/mʌd/"
+        },
+        {
+          "en": "pull",
+          "zh": "n. 拉，拉绳；拉力，牵引力；拖；vt. 拉；拔；拖；vi. 拉，拖；拔",
+          "phonetic": "/pʊl/"
+        },
+        {
+          "en": "everyone",
+          "zh": "n. 每个人；pron. 每个人；人人",
+          "phonetic": "/ˈevriwʌn/"
+        }
+      ]
+    }
+  ]
+}

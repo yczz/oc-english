@@ -1,0 +1,496 @@
+{
+  "id": "pep-primary-g6-s2",
+  "title": "人教版小学英语 · 六年级下",
+  "stage": "primary",
+  "edition": "PEP",
+  "source": "lilinji/English 人教版 xlsx",
+  "units": [
+    {
+      "id": "u1",
+      "title": "Unit 1",
+      "words": [
+        {
+          "en": "younger",
+          "zh": "n. 年纪较小者；幼辈；adj. 较年轻的",
+          "phonetic": "/ˈjʌŋɡər/"
+        },
+        {
+          "en": "older",
+          "zh": "adj. 年长的；较旧的",
+          "phonetic": "/ˈoʊldər/"
+        },
+        {
+          "en": "taller",
+          "zh": "adj. 更高的；高一点的",
+          "phonetic": "/ˈtɔːlər/"
+        },
+        {
+          "en": "shorter",
+          "zh": "adj. 较短的；更短的；更矮的（short的比较级）",
+          "phonetic": "/ˈʃɔːrtər/"
+        },
+        {
+          "en": "longer",
+          "zh": "长的（long的比较级）",
+          "phonetic": "/lɔːŋɡər/"
+        },
+        {
+          "en": "thinner",
+          "zh": "adj. 较薄的；较瘦的；较细的（thin的比较级）；n. （油漆的）稀释剂；冲淡剂；使变稀薄者，加稀料的制漆工",
+          "phonetic": "/ˈθɪnər/"
+        },
+        {
+          "en": "heavier",
+          "zh": "adj. 沉重的；巨大的",
+          "phonetic": "/ˈhevɪərðənˈer/"
+        },
+        {
+          "en": "bigger",
+          "zh": "adj. 更大的（big的比较级）",
+          "phonetic": "/bɪgə(r)/"
+        },
+        {
+          "en": "smaller",
+          "zh": "adj. 较小，更小的",
+          "phonetic": "/ˈsmɔːlər/"
+        },
+        {
+          "en": "stronger",
+          "zh": "adj. 更强壮的",
+          "phonetic": "/strɔːŋər/"
+        },
+        {
+          "en": "dinosaur",
+          "zh": "n. 恐龙；过时、落伍的人或事物",
+          "phonetic": "/ˈdaɪnəsɔːr/"
+        },
+        {
+          "en": "hall",
+          "zh": "n. 过道，门厅，走廊；会堂；食堂；学生宿舍；大厅，前厅；娱乐中心，会所",
+          "phonetic": "/hɔːl/"
+        },
+        {
+          "en": "metre",
+          "zh": "n. 米；公尺；韵律",
+          "phonetic": "/ˈmiːtər/"
+        },
+        {
+          "en": "meter",
+          "zh": "n. 米；仪表；[计量] 公尺；韵律；vt. 用仪表测量；vi. 用表计量",
+          "phonetic": "/ˈmiːtər/"
+        },
+        {
+          "en": "than",
+          "zh": "conj. 比（用于形容词、副词的比较级之后）；除…外（用于other等之后）；与其…（用于 rather等之后）；一…就（用于 no sooner等之后）；prep. 比；超过",
+          "phonetic": "/ðən; ðæn/"
+        },
+        {
+          "en": "both",
+          "zh": "conj. 既…且…；adj. 两个的；两者的；pron. 双方都；两者都；adv. 并；又；两者皆",
+          "phonetic": "/boʊθ/"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Unit 2",
+      "words": [
+        {
+          "en": "kilogram",
+          "zh": "n. 公斤；千克",
+          "phonetic": "/ˈkɪləɡræm/"
+        },
+        {
+          "en": "countryside",
+          "zh": "n. 农村，乡下；乡下的全体居民",
+          "phonetic": "/ˈkʌntrisaɪd/"
+        },
+        {
+          "en": "lower",
+          "zh": "vt. 减弱，减少；放下，降下；贬低；vi. 降低；减弱；跌落；adj. 下游的；下级的；下等的",
+          "phonetic": "/ˈloʊər/"
+        },
+        {
+          "en": "shadow",
+          "zh": "n. 阴影；影子；幽灵；庇护；隐蔽处；adj. 影子内阁的；vt. 遮蔽；使朦胧；尾随；预示；vi. 渐变；变阴暗",
+          "phonetic": "/ˈʃædoʊ/"
+        },
+        {
+          "en": "smarter",
+          "zh": "adj. 聪明的；精明的（smart的比较级）",
+          "phonetic": "/smɑːrtər/"
+        },
+        {
+          "en": "become",
+          "zh": "vt. 适合；相称；vi. 成为；变得；变成",
+          "phonetic": "/bɪˈkʌm/"
+        },
+        {
+          "en": "cleaned",
+          "zh": "v. 打扫（clean的过去式）；把…弄干净；adj. 净化的",
+          "phonetic": "/kliːnd/"
+        },
+        {
+          "en": "stayed",
+          "zh": "v. 停留，制止（stay的过去分词形式）",
+          "phonetic": "/steɪd/"
+        },
+        {
+          "en": "washed",
+          "zh": "v. 洗，洗涤（wash的过去分词）；adj. 洗过的",
+          "phonetic": "/wɑːʃt/"
+        },
+        {
+          "en": "watched",
+          "zh": "vt. 观察；注视；看守；警戒；n. 手表；监视；守护；值班人；vi. 观看，注视；守侯，看守"
+        },
+        {
+          "en": "had",
+          "zh": "v. 有；吃；得到（动词have的过去式和过去分词）；aux. 已经（用于过去完成时和过去完成进行时）",
+          "phonetic": "/həd; əd; hæd/"
+        },
+        {
+          "en": "had a cold",
+          "zh": "vbl.伤风,感冒"
+        },
+        {
+          "en": "slept",
+          "zh": "v. 睡觉（sleep的过去式和过去分词）",
+          "phonetic": "/slept/"
+        },
+        {
+          "en": "read",
+          "zh": "n. 阅读；读物；adj. 有学问的；vi. 读；读起来；vt. 阅读；读懂，理解",
+          "phonetic": "/riːd/"
+        },
+        {
+          "en": "saw",
+          "zh": "n. 锯子；谚语；v. see的过去式；vi. 锯；用锯；将某物锯成小块；vt. 看见；明白，了解；锯；锯成；锯开",
+          "phonetic": "/sɔː/"
+        },
+        {
+          "en": "last",
+          "zh": "n. 末尾，最后；上个；鞋楦（做鞋的模型）；adj. 最后的；最近的，最新的；仅剩的；最不可能…的；vi. 持续；维持，够用；持久；vt. 度过，拖过；使维持；adv. 最后地；上次，最近；最后一点",
+          "phonetic": "/læst/"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Unit 3",
+      "words": [
+        {
+          "en": "yesterday",
+          "zh": "n. 昨天；往昔；adv. 昨天",
+          "phonetic": "/ˈjestərdeɪ; ˈjestərdi/"
+        },
+        {
+          "en": "before",
+          "zh": "prep. 在…之前，先于；conj. 在…以前；在…之前；adv. 以前；在前",
+          "phonetic": "/bɪˈfɔːr/"
+        },
+        {
+          "en": "drank",
+          "zh": "v. 喝；喝酒（drink的过去式）",
+          "phonetic": "/dræŋk/"
+        },
+        {
+          "en": "show",
+          "zh": "n. 显示；表演；炫耀；vt. 显示；说明；演出；展出；vi. 显示；说明；指示",
+          "phonetic": "/ʃoʊ/"
+        },
+        {
+          "en": "magazine",
+          "zh": "n. 杂志；弹药库；胶卷盒",
+          "phonetic": "/ˈmæɡəziːn/"
+        },
+        {
+          "en": "better",
+          "zh": "n. 长辈；较好者；打赌的人（等于bettor）；adj. 较好的；vt. 改善；胜过；adv. 更好的；更多的；较大程度地；vi. 变得较好",
+          "phonetic": "/ˈbetər/"
+        },
+        {
+          "en": "faster",
+          "zh": "adj. 更快的；adv. 更快地",
+          "phonetic": "/'fastə/"
+        },
+        {
+          "en": "hotel",
+          "zh": "n. 旅馆，饭店；客栈；vt. 使…在饭店下榻；vi. 进行旅馆式办公",
+          "phonetic": "/hoʊˈtel/"
+        },
+        {
+          "en": "fixed",
+          "zh": "adj. 确定的；固执的；<美口>处境...的；准备好的；v. 修理（过去式）",
+          "phonetic": "/fɪkst/"
+        },
+        {
+          "en": "broken",
+          "zh": "v. 折断；打碎；损坏（break的过去分词）；adj. 破碎的；坏掉的",
+          "phonetic": "/ˈbroʊkən/"
+        },
+        {
+          "en": "lamp",
+          "zh": "n. 灯；照射器；vt. 照亮；vi. 发亮",
+          "phonetic": "/læmp/"
+        },
+        {
+          "en": "loud",
+          "zh": "adj. 大声的，高声的；不断的；喧吵的；adv. 大声地，高声地，响亮地",
+          "phonetic": "/laʊd/"
+        },
+        {
+          "en": "enjoy",
+          "zh": "vt. 欣赏，享受；喜爱；使过得快活",
+          "phonetic": "/ɪnˈdʒɔɪ/"
+        },
+        {
+          "en": "stay",
+          "zh": "n. 逗留；停止；支柱；vi. 停留；坚持；暂住；停下；vt. 坚持；暂住；抑制",
+          "phonetic": "/steɪ/"
+        },
+        {
+          "en": "went",
+          "zh": "v. 去，过去（go的过去式）",
+          "phonetic": "/went/"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "Unit 4",
+      "words": [
+        {
+          "en": "camp",
+          "zh": "n. 露营；vt. 扎营；使扎营；vi. 露营；扎营",
+          "phonetic": "/kæmp/"
+        },
+        {
+          "en": "went camping",
+          "zh": "无"
+        },
+        {
+          "en": "fish",
+          "zh": "n. 鱼，鱼类；vt. 钓鱼，捕鱼；搜寻；vi. 捕鱼，钓鱼；用钩捞取",
+          "phonetic": "/fɪʃ/"
+        },
+        {
+          "en": "went fishing",
+          "zh": "无"
+        },
+        {
+          "en": "rode",
+          "zh": "v. 骑（ride的过去式）",
+          "phonetic": "/roʊd/"
+        },
+        {
+          "en": "hurt",
+          "zh": "n. 痛苦；危害；痛苦的原因；vt. 使受伤；损害；使疼痛；使痛心；adj. 受伤的；痛苦的；受损的；vi. 感到疼痛；有坏处；带来痛苦",
+          "phonetic": "/hɜːrt/"
+        },
+        {
+          "en": "ate",
+          "zh": "v. 吃（eat的过去式）",
+          "phonetic": "/eɪt/"
+        },
+        {
+          "en": "took",
+          "zh": "v. 拿；取；接受（take的过去式）",
+          "phonetic": "/tʊk/"
+        },
+        {
+          "en": "took pictures",
+          "zh": "vbl.照像,摄影"
+        },
+        {
+          "en": "bought",
+          "zh": "v. 买（buy的过去式和过去分词）",
+          "phonetic": "/bɔːt/"
+        },
+        {
+          "en": "gift",
+          "zh": "n. 礼物；天赋；赠品；vt. 赋予；向…赠送",
+          "phonetic": "/ɡɪft/"
+        },
+        {
+          "en": "fell",
+          "zh": "n. [林] 一季所伐的木材；折缝；兽皮；v. 掉下；摔倒；下垂；变坏（fall的过去式）；adj. 凶猛的；毁灭性的；vt. 砍伐；打倒；击倒",
+          "phonetic": "/fel/"
+        },
+        {
+          "en": "off",
+          "zh": "prep. 离开；脱落；adv. 切断；走开；adj. 远离的；空闲的",
+          "phonetic": "/ɔːf/"
+        },
+        {
+          "en": "Labour Day",
+          "zh": "na. (五一国际)劳动节"
+        },
+        {
+          "en": "mule",
+          "zh": "n. 骡；倔强之人，顽固的人；杂交种动物",
+          "phonetic": "/mjuːl/"
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "Unit 5",
+      "words": [
+        {
+          "en": "Turpan",
+          "zh": "吐鲁番（新疆维吾尔自治区）（旧译Turfan）"
+        },
+        {
+          "en": "could",
+          "zh": "aux. 能够；v. 能（can的过去式）",
+          "phonetic": "/kəd; kʊd/"
+        },
+        {
+          "en": "till",
+          "zh": "prep. 直到；conj. 直到...为止；n. [地理][水文] 冰碛；放钱的抽屉；备用现金；vt. 耕种；犁；vi. 耕种；耕耘",
+          "phonetic": "/tɪl/"
+        },
+        {
+          "en": "beach",
+          "zh": "n. 海滩；湖滨；vt. 将…拖上岸；vi. 搁浅；定居",
+          "phonetic": "/biːtʃ/"
+        },
+        {
+          "en": "basket",
+          "zh": "n. 篮子；（篮球比赛的）得分；一篮之量；篮筐；vt. 装入篮",
+          "phonetic": "/ˈbæskɪt/"
+        },
+        {
+          "en": "part",
+          "zh": "n. 部分；角色；零件；一些；片段；adj. 部分的；vt. 分离；分配；分开；adv. 部分地；vi. 断裂；分手",
+          "phonetic": "/pɑːrt/"
+        },
+        {
+          "en": "licked",
+          "zh": "vt. 舔；卷过；鞭打；vt. （非正式）战胜；vi. 舔；轻轻拍打；n. 舔；打；少许",
+          "phonetic": "/lɪk/"
+        },
+        {
+          "en": "laughed",
+          "zh": "笑；为了开玩笑；有趣的事；嘲笑",
+          "phonetic": "/læft/"
+        },
+        {
+          "en": "dining hall",
+          "zh": "na. 大餐厅",
+          "phonetic": "/ˈdaɪnɪŋ hɔːl/"
+        },
+        {
+          "en": "grass",
+          "zh": "n. 草；草地，草坪；vt. 放牧；使……长满草；使……吃草；vi. 长草",
+          "phonetic": "/ɡræs/"
+        },
+        {
+          "en": "gym",
+          "zh": "n. 健身房；体育；体育馆",
+          "phonetic": "/dʒɪm/"
+        },
+        {
+          "en": "ago",
+          "zh": "adj. 以前的；过去的；adv. 以前，以往",
+          "phonetic": "/əˈɡoʊ/"
+        },
+        {
+          "en": "cycling",
+          "zh": "n. 骑脚踏车消遣；骑脚踏车兜风",
+          "phonetic": "/ˈsaɪklɪŋ/"
+        },
+        {
+          "en": "go cycling",
+          "zh": "去骑自行车；去骑车；去骑单车"
+        },
+        {
+          "en": "ice-skate",
+          "zh": "v. 溜冰，滑冰",
+          "phonetic": "/ˈaɪs skeɪt/"
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Unit 6",
+      "words": [
+        {
+          "en": "badminton",
+          "zh": "n. 羽毛球",
+          "phonetic": "/ˈbædmɪntən/"
+        },
+        {
+          "en": "star",
+          "zh": "n. 星，恒星；明星；星形物；adj. 明星的，主角的；星形的；vt. 用星号标于；由…主演，由…担任主角；vi. 担任主角",
+          "phonetic": "/stɑːr/"
+        },
+        {
+          "en": "easy",
+          "zh": "adj. 容易的；舒适的；vt. 发出停划命令；adv. 不费力地，从容地；vi. 停止划桨",
+          "phonetic": "/ˈiːzi/"
+        },
+        {
+          "en": "look up",
+          "zh": "v. 查找；查阅；探望；看望"
+        },
+        {
+          "en": "Internet",
+          "zh": "n. 因特网",
+          "phonetic": "/ˈɪntərnet/"
+        },
+        {
+          "en": "different",
+          "zh": "adj. 不同的；个别的，与众不同的",
+          "phonetic": "/ˈdɪfrənt/"
+        },
+        {
+          "en": "active",
+          "zh": "n. 主动语态；积极分子；adj. 积极的；活跃的；主动的；有效的；现役的",
+          "phonetic": "/ˈæktɪv/"
+        },
+        {
+          "en": "race",
+          "zh": "n. 属，种；种族，人种；家庭，门第；vt. 使参加比赛；和…竞赛；使急走，使全速行进；vi. 比速度，参加竞赛；全速行进",
+          "phonetic": "/reɪs/"
+        },
+        {
+          "en": "nothing",
+          "zh": "neg. 没什么；毫不；n. 无；零；不关紧要之事；adv. 毫不；决不；pron. 无事；无物；int. 什么也没有",
+          "phonetic": "/ˈnʌθɪŋ/"
+        },
+        {
+          "en": "thought",
+          "zh": "n. 思想；思考；想法；关心；v. 想，思考；认为（think的过去式和过去分词）",
+          "phonetic": "/θɔːt/"
+        },
+        {
+          "en": "felt",
+          "zh": "n. 毡；毡制品；v. 感觉（feel的过去式）；vi. 粘结；vt. 使粘结；把…制成毡",
+          "phonetic": "/felt/"
+        },
+        {
+          "en": "cheetah",
+          "zh": "n. [脊椎] 猎豹",
+          "phonetic": "/ˈtʃiːtə/"
+        },
+        {
+          "en": "trip",
+          "zh": "n. 旅行；绊倒；差错；vt. 绊倒；使犯错；vi. 绊倒；远足；犯错误；轻快地走",
+          "phonetic": "/trɪp/"
+        },
+        {
+          "en": "woke",
+          "zh": "v. 唤醒；激发；使…复活（wake的过去式）",
+          "phonetic": "/woʊk/"
+        },
+        {
+          "en": "dream",
+          "zh": "n. 梦想，愿望；梦；adj. 梦的；理想的；不切实际的；vt. 梦想；做梦；想到；vi. 梦想；做梦，梦见；想到",
+          "phonetic": "/driːm/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "oc-english",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "tauri": "tauri",
+    "test": "npm run test:rust && npm run test:contract && npm run test:render && npm run test:ui",
+    "test:rust": "cd src-tauri && cargo test",
+    "test:contract": "node test/api-contract.mjs",
+    "test:render": "node test/smoke-render.mjs",
+    "test:ui": "node test/smoke-ui.mjs",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "jsdom": "^29.1.1",
+    "puppeteer-core": "^25.9.0"
+  }
+}

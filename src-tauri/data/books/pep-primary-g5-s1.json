@@ -1,0 +1,689 @@
+{
+  "id": "pep-primary-g5-s1",
+  "title": "人教版小学英语 · 五年级上",
+  "stage": "primary",
+  "edition": "PEP",
+  "source": "lilinji/English 人教版 xlsx",
+  "units": [
+    {
+      "id": "u1",
+      "title": "Unit 1",
+      "words": [
+        {
+          "en": "old",
+          "zh": "adj. 陈旧的，古老的；年老的；n. 古时",
+          "phonetic": "/oʊld/"
+        },
+        {
+          "en": "young",
+          "zh": "n. 年轻人；（动物的）崽，仔；adj. 年轻的；初期的；没有经验的",
+          "phonetic": "/jʌŋ/"
+        },
+        {
+          "en": "funny",
+          "zh": "n. 滑稽人物；笑话，有趣的故事；滑稽连环漫画栏；（英）（比赛用）单人双桨小艇；adj. 有趣的，好笑的，滑稽的；（口）稀奇的，古怪的，奇异的；有病的，不舒服的；狡猾的，欺骗（性）的，可疑的，不光明",
+          "phonetic": "/ˈfʌni/"
+        },
+        {
+          "en": "kind",
+          "zh": "n. 种类；性质；adj. 和蔼的；宽容的；令人感激的",
+          "phonetic": "/kaɪnd/"
+        },
+        {
+          "en": "strict",
+          "zh": "adj. 严格的；绝对的；精确的；详细的",
+          "phonetic": "/strɪkt/"
+        },
+        {
+          "en": "polite",
+          "zh": "adj. 有礼貌的，客气的；文雅的；上流的；优雅的",
+          "phonetic": "/pəˈlaɪt/"
+        },
+        {
+          "en": "hard-working",
+          "zh": "adj. 勤勉的；勤奋的；勤劳的",
+          "phonetic": "/ˌhɑːrd ˈwɜːrkɪŋ/"
+        },
+        {
+          "en": "helpful",
+          "zh": "adj. 有帮助的；有益的",
+          "phonetic": "/ˈhelpfl/"
+        },
+        {
+          "en": "clever",
+          "zh": "adj. 聪明的；机灵的；熟练的；[ 比较级cleverer 最高级 cleverest ]",
+          "phonetic": "/ˈklevər/"
+        },
+        {
+          "en": "shy",
+          "zh": "n. 投掷；惊跳；adj. 害羞的；畏缩的，胆怯的；vi. 投；畏缩；惊退；厌恶；vt. 投；乱掷",
+          "phonetic": "/ʃaɪ/"
+        },
+        {
+          "en": "know",
+          "zh": "vt. 知道；认识；懂得；vi. 了解；熟悉；确信",
+          "phonetic": "/noʊ/"
+        },
+        {
+          "en": "our",
+          "zh": "pron. 我们的",
+          "phonetic": "/ɑːr/"
+        },
+        {
+          "en": "Ms",
+          "zh": "abbr. 存贮系统（Memory System）；主存储器（Main Storage）；主程序装置（Master Sequecer）；中速，平均速度（Medium Speed）；主（总）开关（Master Switch）",
+          "phonetic": "/mɪz/"
+        },
+        {
+          "en": "will",
+          "zh": "n. 意志；决心；情感；遗嘱；意图；心愿；vt. 决心要；遗赠；用意志力使；vi. 愿意；下决心；aux. 将；愿意；必须",
+          "phonetic": "/wɪl/"
+        },
+        {
+          "en": "sometimes",
+          "zh": "adv. 有时，间或",
+          "phonetic": "/ˈsʌmtaɪmz/"
+        },
+        {
+          "en": "robot",
+          "zh": "n. 机器人；遥控设备，自动机械；机械般工作的人",
+          "phonetic": "/ˈroʊbɑːt/"
+        },
+        {
+          "en": "him",
+          "zh": "pron. 他（宾格）",
+          "phonetic": "/hɪm; ɪm/"
+        },
+        {
+          "en": "speak",
+          "zh": "vi. 说话；演讲；表明；陈述；vt. 讲话；发言；讲演",
+          "phonetic": "/spiːk/"
+        },
+        {
+          "en": "finish",
+          "zh": "n. 结束；完美；回味（葡萄酒）；vt. 完成；结束；用完；vi. 结束，终止；终结",
+          "phonetic": "/ˈfɪnɪʃ/"
+        },
+        {
+          "en": "Monday",
+          "zh": "n. 星期一",
+          "phonetic": "/ˈmʌndeɪ/"
+        },
+        {
+          "en": "Tuesday",
+          "zh": "n. 星期二",
+          "phonetic": "/ˈtuːzdeɪ/"
+        },
+        {
+          "en": "Wednesday",
+          "zh": "n. 星期三",
+          "phonetic": "/ˈwenzdeɪ/"
+        },
+        {
+          "en": "Thursday",
+          "zh": "n. 星期四",
+          "phonetic": "/ˈθɜːrzdeɪ/"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Unit 2",
+      "words": [
+        {
+          "en": "Friday",
+          "zh": "n. 星期五",
+          "phonetic": "/ˈfraɪdeɪ/"
+        },
+        {
+          "en": "Saturday",
+          "zh": "n. 星期六",
+          "phonetic": "/ˈsætərdeɪ/"
+        },
+        {
+          "en": "Sunday",
+          "zh": "n. 星期日；礼拜日",
+          "phonetic": "/ˈsʌndeɪ/"
+        },
+        {
+          "en": "weekend",
+          "zh": "n. 周末，周末休假；周末聚会；adj. 周末的，周末用的；vi. 度周末",
+          "phonetic": "/ˈwiːkend/"
+        },
+        {
+          "en": "wash",
+          "zh": "n. 洗涤；洗的衣服；化妆水；冲积物；vt. 洗涤；洗刷；冲走；拍打；vi. 洗澡；被冲蚀",
+          "phonetic": "/wɑːʃ/"
+        },
+        {
+          "en": "wash my clothes",
+          "zh": "洗我的衣服；洗衣服"
+        },
+        {
+          "en": "watch",
+          "zh": "n. 手表；监视；守护；值班人；vt. 观察；注视；看守；警戒；vi. 观看，注视；守侯，看守",
+          "phonetic": "/wɑːtʃ/"
+        },
+        {
+          "en": "watch TV",
+          "zh": "v. 看电视"
+        },
+        {
+          "en": "do",
+          "zh": "vi. 行，足够；生长；n. 要求；规定；C大调音阶中的第一音；v. 做；干；学习；研究；进行；完成；解答；整理；算出；引起；行过；aux. 助动词（构成疑问句和否定句）；（代替动词）；（用于加强语气）；n. （口语）事件；（主英国口语）诈骗；（主英国、新西兰口语）宴会；（口语）必须做到的事情",
+          "phonetic": "/duː; də; du; doʊ/"
+        },
+        {
+          "en": "do homework",
+          "zh": "做作业；做家庭作业；做功课"
+        },
+        {
+          "en": "read",
+          "zh": "n. 阅读；读物；adj. 有学问的；vi. 读；读起来；vt. 阅读；读懂，理解",
+          "phonetic": "/riːd/"
+        },
+        {
+          "en": "read books",
+          "zh": "读书；看书；阅读"
+        },
+        {
+          "en": "play",
+          "zh": "n. 游戏；比赛；剧本；vt. 游戏；扮演；演奏；播放；同…比赛；vi. 演奏；玩耍；上演；参加比赛",
+          "phonetic": "/pleɪ/"
+        },
+        {
+          "en": "play football",
+          "zh": "na. 踢足球；对难办的事采取踢皮球的态度"
+        },
+        {
+          "en": "cooking",
+          "zh": "n. 烹饪；adj. 烹调的；v. 烹调；筹划（cook的ing形式）",
+          "phonetic": "/ˈkʊkɪŋ/"
+        },
+        {
+          "en": "often",
+          "zh": "adv. 常常，时常",
+          "phonetic": "/ˈɔːf(ə)n/"
+        },
+        {
+          "en": "park",
+          "zh": "n. 公园；[交] 停车场；vt. 停放；放置；寄存；vi. 停放车辆",
+          "phonetic": "/pɑːrk/"
+        },
+        {
+          "en": "tired",
+          "zh": "v. 疲倦；对…腻烦（tire的过去分词形式）；adj. 疲倦的；厌倦的，厌烦的",
+          "phonetic": "/ˈtaɪərd/"
+        },
+        {
+          "en": "sport",
+          "zh": "n. 运动；游戏；娱乐；运动会；玩笑；adj. 运动的；vt. 游戏；参加体育运动；夸耀；vi. 游戏",
+          "phonetic": "/spɔːrt/"
+        },
+        {
+          "en": "play sports",
+          "zh": "做运动；进行体育运动；进行体育活动"
+        },
+        {
+          "en": "should",
+          "zh": "aux. 应该；就；可能；将要",
+          "phonetic": "/ʃəd; ʃʊd/"
+        },
+        {
+          "en": "every",
+          "zh": "adj. 每一的，每个的；每隔…的",
+          "phonetic": "/ˈevri/"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Unit 3",
+      "words": [
+        {
+          "en": "day",
+          "zh": "n. 一天；时期；白昼；adj. 日间的；逐日的；adv. 每天；经常在白天地",
+          "phonetic": "/deɪ/"
+        },
+        {
+          "en": "schedule",
+          "zh": "n. 时间表；计划表；一览表；vt. 安排，计划；编制目录；将……列入计划表",
+          "phonetic": "/ˈskedʒuːl/"
+        },
+        {
+          "en": "sandwich",
+          "zh": "n. 三明治；夹心面包；vt. 夹入；挤进；把...做成三明治",
+          "phonetic": "/ˈsænwɪtʃ; ˈsænwɪdʒ/"
+        },
+        {
+          "en": "salad",
+          "zh": "n. 色拉；尤指莴苣",
+          "phonetic": "/ˈsæləd/"
+        },
+        {
+          "en": "hamburger",
+          "zh": "n. 汉堡包，火腿汉堡；牛肉饼，肉饼；碎牛肉",
+          "phonetic": "/ˈhæmbɜːrɡər/"
+        },
+        {
+          "en": "ice cream",
+          "zh": "n. 【食】冰淇淋",
+          "phonetic": "/ˈaɪs kriːm/"
+        },
+        {
+          "en": "tea",
+          "zh": "n. 茶叶；茶树；茶点；vt. 给…沏茶；vi. 喝茶；进茶点",
+          "phonetic": "/tiː/"
+        },
+        {
+          "en": "fresh",
+          "zh": "n. 开始；新生；泛滥；adj. 新鲜的；清新的；淡水的；无经验的；adv. 刚刚，才；最新地",
+          "phonetic": "/freʃ/"
+        },
+        {
+          "en": "healthy",
+          "zh": "adj. 健康的，健全的；有益于健康的",
+          "phonetic": "/ˈhelθi/"
+        },
+        {
+          "en": "delicious",
+          "zh": "adj. 美味的；可口的",
+          "phonetic": "/dɪˈlɪʃəs/"
+        },
+        {
+          "en": "hot",
+          "zh": "adj. 热的；辣的；热情的；激动的；紧迫的；vt. 增加；给…加温；adv. 热；紧迫地；vi. 变热",
+          "phonetic": "/hɑːt/"
+        },
+        {
+          "en": "sweet",
+          "zh": "n. 糖果；乐趣；芳香；宝贝；adj. 甜的；悦耳的；芳香的；亲切的；（俚）酷毙了",
+          "phonetic": "/swiːt/"
+        },
+        {
+          "en": "drink",
+          "zh": "n. 酒，饮料；喝酒；vt. 喝，饮；吸收；举杯庆贺；vi. 喝酒；饮水；干杯",
+          "phonetic": "/drɪŋk/"
+        },
+        {
+          "en": "thirsty",
+          "zh": "adj. 口渴的，口干的；渴望的，热望的",
+          "phonetic": "/ˈθɜːrsti/"
+        },
+        {
+          "en": "favourite",
+          "zh": "n. 特别喜爱的人（或物）；adj. 特别受喜爱的",
+          "phonetic": "/ˈfeɪvərɪt/"
+        },
+        {
+          "en": "food",
+          "zh": "n. 食物；养料",
+          "phonetic": "/fuːd/"
+        },
+        {
+          "en": "Dear",
+          "zh": "n. 亲爱的人；adj. 亲爱的；尊敬的；昂贵的；adv. 高价地；疼爱地；int. 哎呀",
+          "phonetic": "/dɪr/"
+        },
+        {
+          "en": "onion",
+          "zh": "n. 洋葱；洋葱头",
+          "phonetic": "/ˈʌnjən/"
+        },
+        {
+          "en": "sing",
+          "zh": "n. 演唱；鸣声；呼啸声；vt. 唱；用诗赞颂；唱着使；vi. 唱歌；歌颂；鸣叫；呼号",
+          "phonetic": "/sɪŋ/"
+        },
+        {
+          "en": "song",
+          "zh": "n. 歌曲；歌唱；诗歌；鸣声",
+          "phonetic": "/sɔŋ/"
+        },
+        {
+          "en": "sing English songs",
+          "zh": "无"
+        },
+        {
+          "en": "play the pipa",
+          "zh": "无"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "Unit 4",
+      "words": [
+        {
+          "en": "kung fu",
+          "zh": "n. 功夫（中国拳术）；v. 用功夫击打(对手)",
+          "phonetic": "/ˌkʌŋ ˈfuː/"
+        },
+        {
+          "en": "do kung fu",
+          "zh": "无"
+        },
+        {
+          "en": "dance",
+          "zh": "n. 舞蹈；舞会；舞曲；adj. 舞蹈的；用于跳舞的；vt. 跳舞；使跳跃；vi. 跳舞；跳跃；飘扬",
+          "phonetic": "/dæns/"
+        },
+        {
+          "en": "draw",
+          "zh": "n. 平局；抽签；vi. 拉；拖；vt. 画；拉；吸引",
+          "phonetic": "/drɔː/"
+        },
+        {
+          "en": "cartoon",
+          "zh": "n. 卡通片，[电影] 动画片；连环漫画；vt. 为…画漫画；vi. 画漫画",
+          "phonetic": "/kɑːrˈtuːn/"
+        },
+        {
+          "en": "draw cartoons",
+          "zh": "无"
+        },
+        {
+          "en": "cook",
+          "zh": "n. 厨师，厨子；vt. 烹调，煮；vi. 烹调，做菜",
+          "phonetic": "/kʊk/"
+        },
+        {
+          "en": "swim",
+          "zh": "n. 游泳；漂浮；眩晕；adj. 游泳时穿戴的；vi. 游泳；漂浮；浸；眩晕；vt. 游过；使浮起",
+          "phonetic": "/swɪm/"
+        },
+        {
+          "en": "play basketball",
+          "zh": "打篮球；玩篮球；篮球锻炼知多少"
+        },
+        {
+          "en": "ping-pong",
+          "zh": "n. 乒乓球；桌球",
+          "phonetic": "/ˈpɪŋ pɑːŋ/"
+        },
+        {
+          "en": "play ping-pong",
+          "zh": "打乒乓球"
+        },
+        {
+          "en": "speak English",
+          "zh": "说英语；讲英语；相信我会讲英文"
+        },
+        {
+          "en": "we'll",
+          "zh": "abbr. 我们将（we shall，we will）"
+        },
+        {
+          "en": "we will",
+          "zh": "无"
+        },
+        {
+          "en": "party",
+          "zh": "n. 政党，党派；聚会，派对；当事人 [复数 parties]；vi. 参加社交聚会 [ 过去式 partied 过去分词 partied 现在分词 partying ]",
+          "phonetic": "/ˈpɑːrti/"
+        },
+        {
+          "en": "next",
+          "zh": "adv. 然后；下次；其次；adj. 下一个的；其次的；贴近的；n. 下一个；prep. 靠近；居于…之后",
+          "phonetic": "/nekst/"
+        },
+        {
+          "en": "wonderful",
+          "zh": "adj. 极好的，精彩的，绝妙的；奇妙的；美妙；胜；神妙",
+          "phonetic": "/ˈwʌndərf(ə)l/"
+        },
+        {
+          "en": "learn",
+          "zh": "vt. 学习；得知；认识到；vi. 学习；获悉",
+          "phonetic": "/lɜːrn/"
+        },
+        {
+          "en": "any",
+          "zh": "adj. 任何的；所有的；丝毫；pron. 任何；任何一个；若干；adv. 稍微；少许",
+          "phonetic": "/ˈeni/"
+        },
+        {
+          "en": "problem",
+          "zh": "n. 难题；引起麻烦的人；adj. 成问题的；难处理的",
+          "phonetic": "/ˈprɑːbləm/"
+        },
+        {
+          "en": "no problem",
+          "zh": "n. 没问题"
+        },
+        {
+          "en": "want",
+          "zh": "n. 需要；缺乏；贫困；必需品；vt. 需要；希望；应该；缺少；vi. 需要；缺少",
+          "phonetic": "/wɑːnt/"
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "Unit 5",
+      "words": [
+        {
+          "en": "send",
+          "zh": "n. 上升运动；vi. 派人；寄信；vt. 发送，寄；派遣；使进入；发射",
+          "phonetic": "/send/"
+        },
+        {
+          "en": "email",
+          "zh": "n. 电子信函；vt. 给…发电子邮件",
+          "phonetic": "/ˈiːmeɪl/"
+        },
+        {
+          "en": "at",
+          "zh": "prep. 在（表示存在或出现的地点、场所、位置、空间）；以（某种价格、速度等）；向；达；因为；朝；忙于；n. 阿特（老挝货币基本单位att）；[化]砹（极不稳定放射性元素）；abbr. 密封的（airtight）；气温（air temperature）",
+          "phonetic": "/ət; æt/"
+        },
+        {
+          "en": "clock",
+          "zh": "n. 时钟；计时器；vt. 记录；记时；vi. 打卡；记录时间",
+          "phonetic": "/klɑːk/"
+        },
+        {
+          "en": "plant",
+          "zh": "n. 工厂，车间；植物；设备；庄稼；vt. 种植；培养；栽培；安置；vi. 种植",
+          "phonetic": "/plænt/"
+        },
+        {
+          "en": "bottle",
+          "zh": "n. 瓶子；一瓶的容量；vt. 控制；把…装入瓶中；vi. （街头艺人演出后）收拢钱币",
+          "phonetic": "/ˈbɑːtl/"
+        },
+        {
+          "en": "water bottle",
+          "zh": "un. 水壶；采水瓶；采水器；采水样器"
+        },
+        {
+          "en": "bike",
+          "zh": "n. 自行车；脚踏车；vi. 骑自行车（或摩托车）",
+          "phonetic": "/baɪk/"
+        },
+        {
+          "en": "photo",
+          "zh": "n. 照片",
+          "phonetic": "/ˈfoʊtoʊ/"
+        },
+        {
+          "en": "front",
+          "zh": "n. 前面；正面；前线；adj. 前面的；正面的；vt. 面对；朝向；对付；vi. 朝向；adv. 在前面；向前",
+          "phonetic": "/frʌnt/"
+        },
+        {
+          "en": "in front of",
+          "zh": "na. 在…的前面",
+          "phonetic": "/ɪn frʌnt ʌv/"
+        },
+        {
+          "en": "between",
+          "zh": "prep. 在…之间；adv. 在中间",
+          "phonetic": "/bɪˈtwiːn/"
+        },
+        {
+          "en": "above",
+          "zh": "prep. 超过；在……上面；在……之上；n. 上文；adj. 上文的；adv. 在上面；在上文",
+          "phonetic": "/əˈbʌv/"
+        },
+        {
+          "en": "beside",
+          "zh": "prep. 在旁边；与…相比；和…无关",
+          "phonetic": "/bɪˈsaɪd/"
+        },
+        {
+          "en": "behind",
+          "zh": "prep. 落后于；支持；晚于；n. 屁股；adv. 在后地；在原处",
+          "phonetic": "/bɪˈhaɪnd/"
+        },
+        {
+          "en": "there",
+          "zh": "n. 那个地方；adv. 在那里；在那边；在那点上；int. 你瞧",
+          "phonetic": "/ðer/"
+        },
+        {
+          "en": "grandparent",
+          "zh": "n. 祖父母；祖父或祖母；外祖父母；外祖父或外祖母",
+          "phonetic": "/ˈɡrænperənt/"
+        },
+        {
+          "en": "their",
+          "zh": "pron. 他们的，她们的；它们的",
+          "phonetic": "/ðer/"
+        },
+        {
+          "en": "house",
+          "zh": "n. 住宅；家庭；机构；议会；某种用途的建筑物；vt. 覆盖；给…房子住；把…储藏在房内；vi. 住",
+          "phonetic": "/haʊs/"
+        },
+        {
+          "en": "lot",
+          "zh": "n. 份额；许多；命运；阄；adv. （与形容词和副词连用）很，非常；（与动词连用）非常；pron. 大量，许多；vt. 分组，把…划分（常与out连用）；把（土地）划分成块；vi. 抽签，拈阄",
+          "phonetic": "/lɑːt/"
+        },
+        {
+          "en": "lots of",
+          "zh": "adj. 许多；很多"
+        },
+        {
+          "en": "flower",
+          "zh": "n. 花；精华；开花植物；vt. 使开花；用花装饰；vi. 成熟，发育；开花；繁荣；旺盛",
+          "phonetic": "/ˈflaʊər/"
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Unit 6",
+      "words": [
+        {
+          "en": "move",
+          "zh": "n. 移动；步骤；迁居；策略；vi. 移动；搬家，迁移；离开；vt. 移动；感动",
+          "phonetic": "/muːv/"
+        },
+        {
+          "en": "dirty",
+          "zh": "adj. 下流的，卑鄙的；肮脏的；恶劣的；暗淡的；vt. 弄脏；vi. 变脏",
+          "phonetic": "/ˈdɜːrti/"
+        },
+        {
+          "en": "everywhere",
+          "zh": "n. 每个地方；adv. 到处",
+          "phonetic": "/ˈevriwer/"
+        },
+        {
+          "en": "mouse",
+          "zh": "n. 鼠标；老鼠；胆小羞怯的人；vt. 探出；vi. 捕鼠；窥探",
+          "phonetic": "/maʊs/"
+        },
+        {
+          "en": "live",
+          "zh": "adj. 活的；生动的；实况转播的；精力充沛的；vt. 经历；度过；vi. 活；居住；生存",
+          "phonetic": "/lɪv; laɪv/"
+        },
+        {
+          "en": "nature",
+          "zh": "n. 自然；性质；本性；种类",
+          "phonetic": "/ˈneɪtʃər/"
+        },
+        {
+          "en": "forest",
+          "zh": "n. 森林；vt. 植树于，使成为森林",
+          "phonetic": "/ˈfɔːrɪst/"
+        },
+        {
+          "en": "river",
+          "zh": "n. 河，江",
+          "phonetic": "/ˈrɪvər/"
+        },
+        {
+          "en": "lake",
+          "zh": "n. 湖；深红色颜料；胭脂红；vt. （使）血球溶解；vi. （使）血球溶解",
+          "phonetic": "/leɪk/"
+        },
+        {
+          "en": "mountain",
+          "zh": "n. 山；山脉",
+          "phonetic": "/ˈmaʊntn/"
+        },
+        {
+          "en": "hill",
+          "zh": "n. 小山；丘陵；斜坡；山冈",
+          "phonetic": "/hɪl/"
+        },
+        {
+          "en": "tree",
+          "zh": "n. 树；木料；树状物；vt. 把...赶上树；vi. 爬上树；逃上树",
+          "phonetic": "/triː/"
+        },
+        {
+          "en": "bridge",
+          "zh": "n. 桥；桥牌；桥接器；船桥；vt. 架桥；渡过",
+          "phonetic": "/brɪdʒ/"
+        },
+        {
+          "en": "building",
+          "zh": "n. 建筑；建筑物；v. 建筑；建立；增加（build的ing形式）",
+          "phonetic": "/ˈbɪldɪŋ/"
+        },
+        {
+          "en": "village",
+          "zh": "n. 村庄；村民；（动物的）群落",
+          "phonetic": "/ˈvɪlɪdʒ/"
+        },
+        {
+          "en": "house",
+          "zh": "n. 住宅；家庭；机构；议会；某种用途的建筑物；vt. 覆盖；给…房子住；把…储藏在房内；vi. 住",
+          "phonetic": "/haʊs/"
+        },
+        {
+          "en": "boating",
+          "zh": "n. 划船；v. 划船（boat的ing形式）；adj. 划船的",
+          "phonetic": "/ˈboʊtɪŋ/"
+        },
+        {
+          "en": "go boating",
+          "zh": "na. 乘船〔尤指划船〕游玩"
+        },
+        {
+          "en": "aren't",
+          "zh": "abbr. 不是（are not）"
+        },
+        {
+          "en": "are not",
+          "zh": "无"
+        },
+        {
+          "en": "rabbit",
+          "zh": "n. 兔子，野兔；vt. 让…见鬼去吧；vi. 猎兔",
+          "phonetic": "/ˈræbɪt/"
+        },
+        {
+          "en": "high",
+          "zh": "n. 高水平；天空；由麻醉品引起的快感；高压地带；adj. 高的；高级的；崇高的；高音调的；adv. 高；奢侈地",
+          "phonetic": "/haɪ/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>带着OC学英语</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="lib/pixi.min.js"></script>
+</head>
+<body>
+
+<!-- ============ 注册 / 登录屏 ============ -->
+<div id="screen-register" class="screen" hidden>
+  <div class="register-box">
+    <div class="register-logo">🏠</div>
+    <h1>带着OC学英语</h1>
+    <p class="register-sub">养一个属于你的小人，用学英语喂饱它</p>
+
+    <div id="profile-list" class="profile-list"></div>
+
+    <div class="register-row">
+      <input id="reg-name" class="text-input" maxlength="20" placeholder="输入你的名字，注册新档案" />
+      <button id="reg-btn" class="primary-btn">📝 注册</button>
+    </div>
+    <p class="register-tip">本机可注册多个档案，各自独立存档；不联网、无密码</p>
+  </div>
+</div>
+
+<!-- ============ 主界面 ============ -->
+<div id="screen-main" class="screen" hidden>
+  <header class="top-bar">
+    <div class="top-left">
+      <span class="app-title">🏠 带着OC学英语</span>
+      <span class="profile-chip" id="profile-chip"></span>
+    </div>
+    <div class="top-right">
+      <span class="points-chip" id="points-chip">⭐ 0</span>
+      <button class="ghost-btn" id="logout-btn">切换档案</button>
+    </div>
+  </header>
+
+  <div class="char-bar" id="char-bar"></div>
+
+  <main class="main-grid">
+    <section class="room-panel">
+      <div class="room-head">
+        <h2 id="room-title">🛏️ 小家</h2>
+        <div class="room-tools">
+          <button class="action-btn" id="room-edit-btn">✏️ 布置房间</button>
+        </div>
+      </div>
+      <div class="room-wrap"><canvas id="room-canvas"></canvas></div>
+      <div class="tray" id="tray" hidden>
+        <span class="tray-label">收纳箱（点击放入房间 · 房间内右键收起）：</span>
+        <div class="tray-items" id="tray-items"></div>
+      </div>
+      <div class="action-row">
+        <button class="action-btn" id="create-char-btn">👤 新建人物</button>
+        <button class="action-btn" id="face-btn">🎨 捏脸</button>
+        <button class="action-btn" id="wardrobe-btn">👗 衣橱换装</button>
+        <button class="action-btn" id="shop-btn">🛍️ 商店</button>
+        <button class="primary-btn big" id="study-btn">📖 开始学习</button>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- ============ 学习屏 ============ -->
+<div id="screen-study" class="screen" hidden>
+  <header class="top-bar">
+    <button class="ghost-btn" id="study-back-btn">← 回家</button>
+    <span class="app-title">📖 学习中心</span>
+    <span class="points-chip" id="study-points-chip">⭐ 0</span>
+  </header>
+  <div id="study-body" class="study-body"></div>
+</div>
+
+<!-- ============ 弹窗：新建人物 ============ -->
+<dialog id="modal-create" class="modal">
+  <div class="modal-head"><h2>👤 新建人物</h2><button class="close-btn" data-close="modal-create">✕</button></div>
+  <label class="field-label">给 TA 起个名字</label>
+  <input id="char-name" class="text-input" maxlength="20" placeholder="比如：毛毛" />
+  <div class="modal-foot">
+    <button class="primary-btn" id="char-create-ok">🎉 创建</button>
+  </div>
+</dialog>
+
+<!-- ============ 弹窗：捏脸 ============ -->
+<dialog id="modal-face" class="modal wide">
+  <div class="modal-head"><h2>🎨 捏脸（免费）</h2><button class="close-btn" data-close="modal-face">✕</button></div>
+  <div class="face-grid">
+    <div class="face-preview" id="face-preview"></div>
+    <div class="face-options" id="face-options"></div>
+  </div>
+  <div class="modal-foot"><button class="primary-btn" id="face-save">✅ 保存</button></div>
+</dialog>
+
+<!-- ============ 弹窗：衣橱 ============ -->
+<dialog id="modal-wardrobe" class="modal wide">
+  <div class="modal-head"><h2>👗 衣橱换装</h2><button class="close-btn" data-close="modal-wardrobe">✕</button></div>
+  <div class="preset-row">
+    <span class="preset-label">✨ 一键同款：</span>
+    <button class="action-btn preset-btn" data-preset="0">🦋 蝴蝶少女</button>
+  </div>
+  <div class="face-grid">
+    <div class="face-preview" id="wardrobe-preview"></div>
+    <div class="wardrobe-slots" id="wardrobe-slots"></div>
+  </div>
+</dialog>
+
+<!-- ============ 弹窗：商店 ============ -->
+<dialog id="modal-shop" class="modal wide">
+  <div class="modal-head"><h2>🛍️ 商店</h2><button class="close-btn" data-close="modal-shop">✕</button></div>
+  <div class="shop-tabs">
+    <button class="tab-btn active" data-tab="wardrobe">👗 装扮（50 件）</button>
+    <button class="tab-btn" data-tab="furniture">🪑 家具（18 件）</button>
+    <span class="shop-points" id="shop-points"></span>
+  </div>
+  <div class="shop-grid" id="shop-grid"></div>
+</dialog>
+
+<!-- ============ 弹窗：跟练 ============ -->
+<dialog id="modal-practice" class="modal">
+  <div class="modal-head"><h2 id="practice-title">跟练</h2><button class="close-btn" data-close="modal-practice">✕</button></div>
+  <div class="quiz-progress"><div class="quiz-progress-bar" id="practice-bar"></div></div>
+  <div id="practice-area"></div>
+</dialog>
+
+<!-- ============ 弹窗：考试 ============ -->
+<dialog id="modal-exam" class="modal wide">
+  <div class="modal-head"><h2 id="exam-title">单元考</h2><button class="close-btn" data-close="modal-exam">✕</button></div>
+  <div id="exam-area"></div>
+</dialog>
+
+<!-- ============ 弹窗：语法卡 ============ -->
+<dialog id="modal-grammar" class="modal">
+  <div class="modal-head"><h2>📖 本册语法卡</h2><button class="close-btn" data-close="modal-grammar">✕</button></div>
+  <div id="grammar-area" class="grammar-area"></div>
+</dialog>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>

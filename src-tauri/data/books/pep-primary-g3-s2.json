@@ -1,0 +1,387 @@
+{
+  "id": "pep-primary-g3-s2",
+  "title": "人教版小学英语 · 三年级下",
+  "stage": "primary",
+  "edition": "PEP",
+  "source": "lilinji/English 人教版 xlsx",
+  "units": [
+    {
+      "id": "u1",
+      "title": "Unit 1",
+      "words": [
+        {
+          "en": "UK",
+          "zh": "n. 英国；abbr. 联合王国（United Kingdom）",
+          "phonetic": "/ˌjuː ˈkeɪ/"
+        },
+        {
+          "en": "Canada",
+          "zh": "n. 加拿大（北美洲国家）",
+          "phonetic": "/ˈkænədə/"
+        },
+        {
+          "en": "USA",
+          "zh": "abbr. 美国；美利坚合众国（the United States of America）"
+        },
+        {
+          "en": "China",
+          "zh": "n. 中国；n. china，瓷器；adj. 中国的；中国制造的；adj. china，瓷制的",
+          "phonetic": "/ˈtʃaɪnə/"
+        },
+        {
+          "en": "she",
+          "zh": "n. 女人；雌性动物；pron. 她（主格）；它（用来指雌性动物或国家、船舶、地球、月亮等）",
+          "phonetic": "/ʃi; ʃiː/"
+        },
+        {
+          "en": "student",
+          "zh": "n. 学生；学者",
+          "phonetic": "/ˈstuːdnt/"
+        },
+        {
+          "en": "pupil",
+          "zh": "n. 学生；[解剖] 瞳孔；未成年人",
+          "phonetic": "/ˈpjuːpl/"
+        },
+        {
+          "en": "he",
+          "zh": "n. 男孩，男人；它（雄性动物）；pron. 他",
+          "phonetic": "/hi; iː; i; hiː/"
+        },
+        {
+          "en": "teacher",
+          "zh": "n. 教师；导师",
+          "phonetic": "/ˈtiːtʃər/"
+        },
+        {
+          "en": "boy",
+          "zh": "n. 男孩；男人",
+          "phonetic": "/bɔɪ/"
+        },
+        {
+          "en": "and",
+          "zh": "conj. 和，与；就；而且；但是；然后",
+          "phonetic": "/ənd; ən; n; ænd/"
+        },
+        {
+          "en": "girl",
+          "zh": "n. 女孩；姑娘，未婚女子；女职员，女演员；（男人的）女朋友；n. （捷）吉尔",
+          "phonetic": "/ɡɜːrl/"
+        },
+        {
+          "en": "new",
+          "zh": "adj. 新的，新鲜的；更新的；初见的；adv. 新近",
+          "phonetic": "/nuː/"
+        },
+        {
+          "en": "friend",
+          "zh": "n. 朋友；助手；赞助者",
+          "phonetic": "/frend/"
+        },
+        {
+          "en": "today",
+          "zh": "n. 今天；现今；adv. 今天；现今",
+          "phonetic": "/təˈdeɪ/"
+        },
+        {
+          "en": "father",
+          "zh": "n. 父亲，爸爸；神父；祖先；前辈；vt. 发明，创立；当…的父亲",
+          "phonetic": "/ˈfɑːðər/"
+        },
+        {
+          "en": "dad",
+          "zh": "n. 爸爸；爹爹",
+          "phonetic": "/dæd/"
+        },
+        {
+          "en": "man",
+          "zh": "n. 人；男人；人类；丈夫；雇工；vt. 操纵；给…配置人员；使增强勇气；在…就位",
+          "phonetic": "/mæn/"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Unit 2",
+      "words": [
+        {
+          "en": "woman",
+          "zh": "n. 妇女；女性；成年女子",
+          "phonetic": "/ˈwʊmən/"
+        },
+        {
+          "en": "mother",
+          "zh": "n. 母亲；大娘；女修道院院长；vt. 生下；养育；像母亲般关怀或照管；adj. 母亲的；出生地的",
+          "phonetic": "/ˈmʌðər/"
+        },
+        {
+          "en": "sister",
+          "zh": "n. 姐妹；（称志同道合者）姐妹；修女；护士；adj. 姐妹般的；同类型的",
+          "phonetic": "/ˈsɪstər/"
+        },
+        {
+          "en": "brother",
+          "zh": "n. 兄弟；同事；战友；int. 我的老兄！",
+          "phonetic": "/ˈbrʌðər/"
+        },
+        {
+          "en": "grandmother",
+          "zh": "n. 祖母；女祖先；vt. 当…的祖母；vi. 当祖母",
+          "phonetic": "/ˈɡrænmʌðər/"
+        },
+        {
+          "en": "grandma",
+          "zh": "n. 奶奶；外婆",
+          "phonetic": "/ˈɡrænmɑː/"
+        },
+        {
+          "en": "grandfather",
+          "zh": "n. 祖父；始祖；vt. 不受新规定限制",
+          "phonetic": "/ˈɡrænfɑːðər/"
+        },
+        {
+          "en": "grandpa",
+          "zh": "n. 爷爷；外公",
+          "phonetic": "/ˈɡrænpɑː/"
+        },
+        {
+          "en": "family",
+          "zh": "n. 家庭；亲属；家族；子女；[生]科；语族；[化]族；adj. 家庭的；家族的；适合于全家的",
+          "phonetic": "/ˈfæməli/"
+        },
+        {
+          "en": "thin",
+          "zh": "n. 细小部分；adj. 薄的；瘦的；稀薄的；微弱的；vt. 使瘦；使淡；使稀疏；vi. 变薄；变瘦；变淡；adv. 稀疏地；微弱地",
+          "phonetic": "/θɪn/"
+        },
+        {
+          "en": "fat",
+          "zh": "n. 脂肪，肥肉；adj. 肥的，胖的；油腻的；丰满的；vt. 养肥；在…中加入脂肪；vi. 长肥",
+          "phonetic": "/fæt/"
+        },
+        {
+          "en": "tall",
+          "zh": "adj. 高的；长的；过分的；夸大的；adv. 夸大地",
+          "phonetic": "/tɔːl/"
+        },
+        {
+          "en": "short",
+          "zh": "n. 短；缺乏；短路；短裤；adj. 短的；不足的；矮的，低的；adv. 不足；突然；唐突地",
+          "phonetic": "/ʃɔːrt/"
+        },
+        {
+          "en": "long",
+          "zh": "n. 长时间；[语] 长音节；（服装的）长尺寸；长裤；adj. 长的；过长的；做多头的；长时间的；冗长的，长音；vi. 渴望；热望；adv. 长期地；始终",
+          "phonetic": "/lɔːŋ/"
+        },
+        {
+          "en": "small",
+          "zh": "n. 小件物品；矮小的人；adj. 少的，小的；微弱的；几乎没有的；不重要的；幼小的；adv. 小小地；卑鄙地",
+          "phonetic": "/smɔːl/"
+        },
+        {
+          "en": "big",
+          "zh": "adj. 大的；重要的；量大的；adv. 大量地；顺利；夸大地",
+          "phonetic": "/bɪɡ/"
+        },
+        {
+          "en": "giraffe",
+          "zh": "n. 长颈鹿",
+          "phonetic": "/dʒəˈræf/"
+        },
+        {
+          "en": "so",
+          "zh": "conj. 所以；因此；adv. 如此，这么；确是如此；pron. 这样",
+          "phonetic": "/soʊ/"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Unit 3",
+      "words": [
+        {
+          "en": "children",
+          "zh": "n. 孩子们（child的复数）",
+          "phonetic": "/ˈtʃɪldrən/"
+        },
+        {
+          "en": "tail",
+          "zh": "n. 尾巴；踪迹；辫子；燕尾服；adj. 从后面而来的；尾部的；vt. 尾随；装上尾巴；vi. 跟踪；变少或缩小",
+          "phonetic": "/teɪl/"
+        },
+        {
+          "en": "on",
+          "zh": "adv. 向前地；作用中，行动中；继续着；prep. 向，朝……；关于；在……之上；在……时候；adj. 开着的；发生着的，正在进行中",
+          "phonetic": "/ɑːn/"
+        },
+        {
+          "en": "in",
+          "zh": "prep. 按照（表示方式）；从事于；在…之内；n. 执政者；门路；知情者；adj. 在里面的；时髦的；adv. 进入；当选；（服装等）时髦；在屋里",
+          "phonetic": "/ɪn/"
+        },
+        {
+          "en": "under",
+          "zh": "prep. 低于，少于；在...之下；adj. 下面的；从属的；adv. 在下面；在下方",
+          "phonetic": "/ˈʌndər/"
+        },
+        {
+          "en": "chair",
+          "zh": "n. 椅子；讲座；（会议的）主席位；大学教授的职位；vt. 担任（会议的）主席；使…入座；使就任要职",
+          "phonetic": "/tʃer/"
+        },
+        {
+          "en": "desk",
+          "zh": "n. 办公桌；服务台；编辑部；（美）讲道台；乐谱架；adj. 书桌的；桌上用的；伏案做的",
+          "phonetic": "/desk/"
+        },
+        {
+          "en": "cap",
+          "zh": "n. 盖；帽子；vt. 覆盖；胜过；给…戴帽；加盖于；vi. 脱帽致意",
+          "phonetic": "/kæp/"
+        },
+        {
+          "en": "ball",
+          "zh": "n. 球；舞会；vt. 捏成球形；vi. 成团块",
+          "phonetic": "/bɔːl/"
+        },
+        {
+          "en": "car",
+          "zh": "n. 汽车；车厢",
+          "phonetic": "/kɑːr/"
+        },
+        {
+          "en": "boat",
+          "zh": "n. 小船；轮船；vi. 划船",
+          "phonetic": "/boʊt/"
+        },
+        {
+          "en": "map",
+          "zh": "vt. 映射；计划；绘制地图；确定基因在染色体中的位置；n. 地图；示意图；染色体图；vi. 基因被安置",
+          "phonetic": "/mæp/"
+        },
+        {
+          "en": "toy",
+          "zh": "n. 玩具；小装饰品；不值钱的东西；adj. 作为玩具的；玩物似的；vi. 玩弄；调情；随随便便地对待",
+          "phonetic": "/tɔɪ/"
+        },
+        {
+          "en": "box",
+          "zh": "n. 箱，盒子；包厢；一拳；vt. 拳击；装…入盒中；打耳光；vi. 拳击",
+          "phonetic": "/bɑːks/"
+        },
+        {
+          "en": "pear",
+          "zh": "n. [园艺] 梨树；梨子",
+          "phonetic": "/per/"
+        },
+        {
+          "en": "apple",
+          "zh": "n. 苹果，苹果树，苹果似的东西；[美俚]炸弹，手榴弹，（棒球的）球；[美俚]人，家伙。",
+          "phonetic": "/ˈæpl/"
+        },
+        {
+          "en": "orange",
+          "zh": "adj. 橙色的；橘色的；n. 橙；橙色；桔子",
+          "phonetic": "/ˈɔrɪndʒ/"
+        },
+        {
+          "en": "banana",
+          "zh": "n. 香蕉；喜剧演员；大鹰钩鼻",
+          "phonetic": "/bəˈnænə/"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "Unit 4",
+      "words": [
+        {
+          "en": "watermelon",
+          "zh": "n. 西瓜",
+          "phonetic": "/ˈwɔːtərmelən/"
+        },
+        {
+          "en": "strawberry",
+          "zh": "n. 草莓；草莓色",
+          "phonetic": "/ˈstrɔːberi/"
+        },
+        {
+          "en": "grape",
+          "zh": "n. 葡萄；葡萄酒；葡萄树；葡萄色",
+          "phonetic": "/ɡreɪp/"
+        },
+        {
+          "en": "buy",
+          "zh": "n. 购买，买卖；所购的物品；vi. 买，采购；vt. 购买；获得；贿赂",
+          "phonetic": "/baɪ/"
+        },
+        {
+          "en": "fruit",
+          "zh": "n. 水果；产物；vt. 使……结果实；vi. 结果实",
+          "phonetic": "/fruːt/"
+        },
+        {
+          "en": "eleven",
+          "zh": "num. 十一；十一个；n. 十一；十一个；adj. 十一的；十一个的",
+          "phonetic": "/ɪˈlevn/"
+        },
+        {
+          "en": "twelve",
+          "zh": "num. 十二；十二个；n. 十二；十二个；adj. 十二的；十二个的",
+          "phonetic": "/twelv/"
+        },
+        {
+          "en": "thirteen",
+          "zh": "n. 十三；十三岁；十三个；num. 十三；adj. 十三的；十三个的",
+          "phonetic": "/ˌθɜːrˈtiːn/"
+        },
+        {
+          "en": "fourteen",
+          "zh": "num. 十四；十四个；第十四；n. 十四的记号；十四岁；十四点钟；十五世纪",
+          "phonetic": "/ˌfɔːrˈtiːn/"
+        },
+        {
+          "en": "fifteen",
+          "zh": "n. 十五；十五个；十五人组成的橄榄球队；num. 十五；adj. 十五的",
+          "phonetic": "/ˌfɪfˈtiːn/"
+        },
+        {
+          "en": "sixteen",
+          "zh": "num. 十六；adj. 十六的，十六个的",
+          "phonetic": "/ˌsɪksˈtiːn/"
+        },
+        {
+          "en": "seventeen",
+          "zh": "n. 十七，十七个；num. 十七；adj. 十七岁的；十七的，十七个的",
+          "phonetic": "/ˌsevnˈtiːn/"
+        },
+        {
+          "en": "eighteen",
+          "zh": "n. 十八，十八个；num. 十八；adj. 十八个的，十八的",
+          "phonetic": "/ˌeɪˈtiːn/"
+        },
+        {
+          "en": "nineteen",
+          "zh": "num. 十九",
+          "phonetic": "/ˌnaɪnˈtiːn/"
+        },
+        {
+          "en": "twenty",
+          "zh": "num. 二十；n. 二十；二十年代；adj. 二十的",
+          "phonetic": "/ˈtwenti/"
+        },
+        {
+          "en": "kite",
+          "zh": "n. 风筝；vi. 使用空头支票；像风筝一样飞；轻快地移动；vt. 骗钱；涂改（支票）",
+          "phonetic": "/kaɪt/"
+        },
+        {
+          "en": "beautiful",
+          "zh": "adj. 美丽的；出色地；出色的；迷人的；迷人地",
+          "phonetic": "/ˈbjuːtɪf(ə)l/"
+        }
+      ]
+    }
+  ]
+}

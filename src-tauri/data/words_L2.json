@@ -1,0 +1,502 @@
+[
+  {
+    "word": "ability",
+    "pos": "n.",
+    "meaning": "能力"
+  },
+  {
+    "word": "accept",
+    "pos": "v.",
+    "meaning": "接受"
+  },
+  {
+    "word": "achieve",
+    "pos": "v.",
+    "meaning": "实现；达到"
+  },
+  {
+    "word": "active",
+    "pos": "adj.",
+    "meaning": "积极的"
+  },
+  {
+    "word": "advice",
+    "pos": "n.",
+    "meaning": "建议"
+  },
+  {
+    "word": "afford",
+    "pos": "v.",
+    "meaning": "负担得起"
+  },
+  {
+    "word": "ancient",
+    "pos": "adj.",
+    "meaning": "古代的"
+  },
+  {
+    "word": "angry",
+    "pos": "adj.",
+    "meaning": "生气的"
+  },
+  {
+    "word": "announce",
+    "pos": "v.",
+    "meaning": "宣布"
+  },
+  {
+    "word": "apologize",
+    "pos": "v.",
+    "meaning": "道歉"
+  },
+  {
+    "word": "attend",
+    "pos": "v.",
+    "meaning": "出席；参加"
+  },
+  {
+    "word": "available",
+    "pos": "adj.",
+    "meaning": "可获得的"
+  },
+  {
+    "word": "balance",
+    "pos": "n.",
+    "meaning": "平衡"
+  },
+  {
+    "word": "behave",
+    "pos": "v.",
+    "meaning": "表现"
+  },
+  {
+    "word": "borrow",
+    "pos": "v.",
+    "meaning": "借入"
+  },
+  {
+    "word": "celebrate",
+    "pos": "v.",
+    "meaning": "庆祝"
+  },
+  {
+    "word": "challenge",
+    "pos": "n.",
+    "meaning": "挑战"
+  },
+  {
+    "word": "chance",
+    "pos": "n.",
+    "meaning": "机会"
+  },
+  {
+    "word": "cheap",
+    "pos": "adj.",
+    "meaning": "便宜的"
+  },
+  {
+    "word": "comfortable",
+    "pos": "adj.",
+    "meaning": "舒适的"
+  },
+  {
+    "word": "communicate",
+    "pos": "v.",
+    "meaning": "交流"
+  },
+  {
+    "word": "compare",
+    "pos": "v.",
+    "meaning": "比较"
+  },
+  {
+    "word": "competition",
+    "pos": "n.",
+    "meaning": "竞争"
+  },
+  {
+    "word": "concentrate",
+    "pos": "v.",
+    "meaning": "专注"
+  },
+  {
+    "word": "confident",
+    "pos": "adj.",
+    "meaning": "自信的"
+  },
+  {
+    "word": "confuse",
+    "pos": "v.",
+    "meaning": "使困惑"
+  },
+  {
+    "word": "consider",
+    "pos": "v.",
+    "meaning": "考虑"
+  },
+  {
+    "word": "continue",
+    "pos": "v.",
+    "meaning": "继续"
+  },
+  {
+    "word": "conversation",
+    "pos": "n.",
+    "meaning": "对话"
+  },
+  {
+    "word": "correct",
+    "pos": "adj.",
+    "meaning": "正确的"
+  },
+  {
+    "word": "decide",
+    "pos": "v.",
+    "meaning": "决定"
+  },
+  {
+    "word": "depend",
+    "pos": "v.",
+    "meaning": "依靠"
+  },
+  {
+    "word": "describe",
+    "pos": "v.",
+    "meaning": "描述"
+  },
+  {
+    "word": "develop",
+    "pos": "v.",
+    "meaning": "发展"
+  },
+  {
+    "word": "difficulty",
+    "pos": "n.",
+    "meaning": "困难"
+  },
+  {
+    "word": "discover",
+    "pos": "v.",
+    "meaning": "发现"
+  },
+  {
+    "word": "discuss",
+    "pos": "v.",
+    "meaning": "讨论"
+  },
+  {
+    "word": "distance",
+    "pos": "n.",
+    "meaning": "距离"
+  },
+  {
+    "word": "education",
+    "pos": "n.",
+    "meaning": "教育"
+  },
+  {
+    "word": "encourage",
+    "pos": "v.",
+    "meaning": "鼓励"
+  },
+  {
+    "word": "environment",
+    "pos": "n.",
+    "meaning": "环境"
+  },
+  {
+    "word": "especially",
+    "pos": "adv.",
+    "meaning": "尤其"
+  },
+  {
+    "word": "excellent",
+    "pos": "adj.",
+    "meaning": "优秀的"
+  },
+  {
+    "word": "experience",
+    "pos": "n.",
+    "meaning": "经历"
+  },
+  {
+    "word": "explain",
+    "pos": "v.",
+    "meaning": "解释"
+  },
+  {
+    "word": "express",
+    "pos": "v.",
+    "meaning": "表达"
+  },
+  {
+    "word": "familiar",
+    "pos": "adj.",
+    "meaning": "熟悉的"
+  },
+  {
+    "word": "famous",
+    "pos": "adj.",
+    "meaning": "著名的"
+  },
+  {
+    "word": "favorite",
+    "pos": "adj.",
+    "meaning": "最喜爱的"
+  },
+  {
+    "word": "foreign",
+    "pos": "adj.",
+    "meaning": "外国的"
+  },
+  {
+    "word": "forget",
+    "pos": "v.",
+    "meaning": "忘记"
+  },
+  {
+    "word": "freedom",
+    "pos": "n.",
+    "meaning": "自由"
+  },
+  {
+    "word": "generous",
+    "pos": "adj.",
+    "meaning": "慷慨的"
+  },
+  {
+    "word": "happen",
+    "pos": "v.",
+    "meaning": "发生"
+  },
+  {
+    "word": "health",
+    "pos": "n.",
+    "meaning": "健康"
+  },
+  {
+    "word": "hobby",
+    "pos": "n.",
+    "meaning": "爱好"
+  },
+  {
+    "word": "honest",
+    "pos": "adj.",
+    "meaning": "诚实的"
+  },
+  {
+    "word": "imagine",
+    "pos": "v.",
+    "meaning": "想象"
+  },
+  {
+    "word": "improve",
+    "pos": "v.",
+    "meaning": "改善"
+  },
+  {
+    "word": "independent",
+    "pos": "adj.",
+    "meaning": "独立的"
+  },
+  {
+    "word": "influence",
+    "pos": "n.",
+    "meaning": "影响"
+  },
+  {
+    "word": "information",
+    "pos": "n.",
+    "meaning": "信息"
+  },
+  {
+    "word": "interest",
+    "pos": "n.",
+    "meaning": "兴趣"
+  },
+  {
+    "word": "introduce",
+    "pos": "v.",
+    "meaning": "介绍"
+  },
+  {
+    "word": "invite",
+    "pos": "v.",
+    "meaning": "邀请"
+  },
+  {
+    "word": "journey",
+    "pos": "n.",
+    "meaning": "旅程"
+  },
+  {
+    "word": "knowledge",
+    "pos": "n.",
+    "meaning": "知识"
+  },
+  {
+    "word": "language",
+    "pos": "n.",
+    "meaning": "语言"
+  },
+  {
+    "word": "lonely",
+    "pos": "adj.",
+    "meaning": "孤独的"
+  },
+  {
+    "word": "manage",
+    "pos": "v.",
+    "meaning": "管理"
+  },
+  {
+    "word": "market",
+    "pos": "n.",
+    "meaning": "市场"
+  },
+  {
+    "word": "mention",
+    "pos": "v.",
+    "meaning": "提及"
+  },
+  {
+    "word": "message",
+    "pos": "n.",
+    "meaning": "消息"
+  },
+  {
+    "word": "natural",
+    "pos": "adj.",
+    "meaning": "自然的"
+  },
+  {
+    "word": "necessary",
+    "pos": "adj.",
+    "meaning": "必要的"
+  },
+  {
+    "word": "nervous",
+    "pos": "adj.",
+    "meaning": "紧张的"
+  },
+  {
+    "word": "opportunity",
+    "pos": "n.",
+    "meaning": "机会"
+  },
+  {
+    "word": "organize",
+    "pos": "v.",
+    "meaning": "组织"
+  },
+  {
+    "word": "particular",
+    "pos": "adj.",
+    "meaning": "特别的"
+  },
+  {
+    "word": "patient",
+    "pos": "adj.",
+    "meaning": "有耐心的"
+  },
+  {
+    "word": "performance",
+    "pos": "n.",
+    "meaning": "表现"
+  },
+  {
+    "word": "personal",
+    "pos": "adj.",
+    "meaning": "个人的"
+  },
+  {
+    "word": "persuade",
+    "pos": "v.",
+    "meaning": "说服"
+  },
+  {
+    "word": "physical",
+    "pos": "adj.",
+    "meaning": "身体的"
+  },
+  {
+    "word": "possible",
+    "pos": "adj.",
+    "meaning": "可能的"
+  },
+  {
+    "word": "prepare",
+    "pos": "v.",
+    "meaning": "准备"
+  },
+  {
+    "word": "prevent",
+    "pos": "v.",
+    "meaning": "防止"
+  },
+  {
+    "word": "probably",
+    "pos": "adv.",
+    "meaning": "大概"
+  },
+  {
+    "word": "problem",
+    "pos": "n.",
+    "meaning": "问题"
+  },
+  {
+    "word": "promise",
+    "pos": "v.",
+    "meaning": "承诺"
+  },
+  {
+    "word": "protect",
+    "pos": "v.",
+    "meaning": "保护"
+  },
+  {
+    "word": "provide",
+    "pos": "v.",
+    "meaning": "提供"
+  },
+  {
+    "word": "realize",
+    "pos": "v.",
+    "meaning": "意识到"
+  },
+  {
+    "word": "receive",
+    "pos": "v.",
+    "meaning": "收到"
+  },
+  {
+    "word": "remember",
+    "pos": "v.",
+    "meaning": "记得"
+  },
+  {
+    "word": "restaurant",
+    "pos": "n.",
+    "meaning": "餐馆"
+  },
+  {
+    "word": "result",
+    "pos": "n.",
+    "meaning": "结果"
+  },
+  {
+    "word": "return",
+    "pos": "v.",
+    "meaning": "返回"
+  },
+  {
+    "word": "serious",
+    "pos": "adj.",
+    "meaning": "严肃的"
+  },
+  {
+    "word": "similar",
+    "pos": "adj.",
+    "meaning": "相似的"
+  }
+]

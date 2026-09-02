@@ -1,0 +1,502 @@
+[
+  {
+    "word": "abandon",
+    "pos": "v.",
+    "meaning": "放弃"
+  },
+  {
+    "word": "academic",
+    "pos": "adj.",
+    "meaning": "学业的"
+  },
+  {
+    "word": "accompany",
+    "pos": "v.",
+    "meaning": "陪伴"
+  },
+  {
+    "word": "accomplish",
+    "pos": "v.",
+    "meaning": "完成"
+  },
+  {
+    "word": "accurate",
+    "pos": "adj.",
+    "meaning": "精确的"
+  },
+  {
+    "word": "admire",
+    "pos": "v.",
+    "meaning": "钦佩"
+  },
+  {
+    "word": "admit",
+    "pos": "v.",
+    "meaning": "承认"
+  },
+  {
+    "word": "adopt",
+    "pos": "v.",
+    "meaning": "采纳"
+  },
+  {
+    "word": "advantage",
+    "pos": "n.",
+    "meaning": "优势"
+  },
+  {
+    "word": "ambition",
+    "pos": "n.",
+    "meaning": "雄心"
+  },
+  {
+    "word": "analyze",
+    "pos": "v.",
+    "meaning": "分析"
+  },
+  {
+    "word": "ancestor",
+    "pos": "n.",
+    "meaning": "祖先"
+  },
+  {
+    "word": "anticipate",
+    "pos": "v.",
+    "meaning": "预期"
+  },
+  {
+    "word": "anxiety",
+    "pos": "n.",
+    "meaning": "焦虑"
+  },
+  {
+    "word": "apparent",
+    "pos": "adj.",
+    "meaning": "明显的"
+  },
+  {
+    "word": "appeal",
+    "pos": "v.",
+    "meaning": "呼吁"
+  },
+  {
+    "word": "apply",
+    "pos": "v.",
+    "meaning": "申请"
+  },
+  {
+    "word": "appreciate",
+    "pos": "v.",
+    "meaning": "感激"
+  },
+  {
+    "word": "approach",
+    "pos": "v.",
+    "meaning": "接近"
+  },
+  {
+    "word": "appropriate",
+    "pos": "adj.",
+    "meaning": "恰当的"
+  },
+  {
+    "word": "approve",
+    "pos": "v.",
+    "meaning": "批准"
+  },
+  {
+    "word": "assess",
+    "pos": "v.",
+    "meaning": "评估"
+  },
+  {
+    "word": "assume",
+    "pos": "v.",
+    "meaning": "假定"
+  },
+  {
+    "word": "atmosphere",
+    "pos": "n.",
+    "meaning": "气氛"
+  },
+  {
+    "word": "attribute",
+    "pos": "n.",
+    "meaning": "属性"
+  },
+  {
+    "word": "authentic",
+    "pos": "adj.",
+    "meaning": "真实的"
+  },
+  {
+    "word": "average",
+    "pos": "adj.",
+    "meaning": "平均的"
+  },
+  {
+    "word": "awkward",
+    "pos": "adj.",
+    "meaning": "尴尬的"
+  },
+  {
+    "word": "barrier",
+    "pos": "n.",
+    "meaning": "障碍"
+  },
+  {
+    "word": "behalf",
+    "pos": "n.",
+    "meaning": "代表"
+  },
+  {
+    "word": "brilliant",
+    "pos": "adj.",
+    "meaning": "杰出的"
+  },
+  {
+    "word": "campaign",
+    "pos": "n.",
+    "meaning": "运动"
+  },
+  {
+    "word": "candidate",
+    "pos": "n.",
+    "meaning": "候选人"
+  },
+  {
+    "word": "capacity",
+    "pos": "n.",
+    "meaning": "容量"
+  },
+  {
+    "word": "cautious",
+    "pos": "adj.",
+    "meaning": "谨慎的"
+  },
+  {
+    "word": "circumstance",
+    "pos": "n.",
+    "meaning": "情况"
+  },
+  {
+    "word": "collaborate",
+    "pos": "v.",
+    "meaning": "合作"
+  },
+  {
+    "word": "commit",
+    "pos": "v.",
+    "meaning": "承诺"
+  },
+  {
+    "word": "community",
+    "pos": "n.",
+    "meaning": "社区"
+  },
+  {
+    "word": "compensate",
+    "pos": "v.",
+    "meaning": "补偿"
+  },
+  {
+    "word": "competent",
+    "pos": "adj.",
+    "meaning": "胜任的"
+  },
+  {
+    "word": "complex",
+    "pos": "adj.",
+    "meaning": "复杂的"
+  },
+  {
+    "word": "concern",
+    "pos": "v.",
+    "meaning": "关心"
+  },
+  {
+    "word": "conflict",
+    "pos": "n.",
+    "meaning": "冲突"
+  },
+  {
+    "word": "conscious",
+    "pos": "adj.",
+    "meaning": "意识到的"
+  },
+  {
+    "word": "consequence",
+    "pos": "n.",
+    "meaning": "后果"
+  },
+  {
+    "word": "conservative",
+    "pos": "adj.",
+    "meaning": "保守的"
+  },
+  {
+    "word": "controversy",
+    "pos": "n.",
+    "meaning": "争论"
+  },
+  {
+    "word": "convince",
+    "pos": "v.",
+    "meaning": "说服"
+  },
+  {
+    "word": "critical",
+    "pos": "adj.",
+    "meaning": "批评的"
+  },
+  {
+    "word": "crucial",
+    "pos": "adj.",
+    "meaning": "至关重要的"
+  },
+  {
+    "word": "cultivate",
+    "pos": "v.",
+    "meaning": "培养"
+  },
+  {
+    "word": "curious",
+    "pos": "adj.",
+    "meaning": "好奇的"
+  },
+  {
+    "word": "declare",
+    "pos": "v.",
+    "meaning": "宣布"
+  },
+  {
+    "word": "decline",
+    "pos": "v.",
+    "meaning": "下降"
+  },
+  {
+    "word": "dedicate",
+    "pos": "v.",
+    "meaning": "奉献"
+  },
+  {
+    "word": "delicate",
+    "pos": "adj.",
+    "meaning": "精致的"
+  },
+  {
+    "word": "demonstrate",
+    "pos": "v.",
+    "meaning": "证明"
+  },
+  {
+    "word": "deny",
+    "pos": "v.",
+    "meaning": "否认"
+  },
+  {
+    "word": "depress",
+    "pos": "v.",
+    "meaning": "使沮丧"
+  },
+  {
+    "word": "deserve",
+    "pos": "v.",
+    "meaning": "应得"
+  },
+  {
+    "word": "desperate",
+    "pos": "adj.",
+    "meaning": "绝望的"
+  },
+  {
+    "word": "dilemma",
+    "pos": "n.",
+    "meaning": "困境"
+  },
+  {
+    "word": "discipline",
+    "pos": "n.",
+    "meaning": "纪律"
+  },
+  {
+    "word": "dismiss",
+    "pos": "v.",
+    "meaning": "解雇"
+  },
+  {
+    "word": "distinct",
+    "pos": "adj.",
+    "meaning": "明显的"
+  },
+  {
+    "word": "distribute",
+    "pos": "v.",
+    "meaning": "分发"
+  },
+  {
+    "word": "diverse",
+    "pos": "adj.",
+    "meaning": "多样的"
+  },
+  {
+    "word": "dramatic",
+    "pos": "adj.",
+    "meaning": "戏剧性的"
+  },
+  {
+    "word": "efficient",
+    "pos": "adj.",
+    "meaning": "高效的"
+  },
+  {
+    "word": "elaborate",
+    "pos": "adj.",
+    "meaning": "精细的"
+  },
+  {
+    "word": "eliminate",
+    "pos": "v.",
+    "meaning": "消除"
+  },
+  {
+    "word": "embrace",
+    "pos": "v.",
+    "meaning": "拥抱"
+  },
+  {
+    "word": "emerge",
+    "pos": "v.",
+    "meaning": "出现"
+  },
+  {
+    "word": "emphasize",
+    "pos": "v.",
+    "meaning": "强调"
+  },
+  {
+    "word": "enormous",
+    "pos": "adj.",
+    "meaning": "巨大的"
+  },
+  {
+    "word": "essential",
+    "pos": "adj.",
+    "meaning": "必要的"
+  },
+  {
+    "word": "establish",
+    "pos": "v.",
+    "meaning": "建立"
+  },
+  {
+    "word": "estimate",
+    "pos": "v.",
+    "meaning": "估计"
+  },
+  {
+    "word": "evaluate",
+    "pos": "v.",
+    "meaning": "评估"
+  },
+  {
+    "word": "eventually",
+    "pos": "adv.",
+    "meaning": "最终"
+  },
+  {
+    "word": "evidence",
+    "pos": "n.",
+    "meaning": "证据"
+  },
+  {
+    "word": "evolve",
+    "pos": "v.",
+    "meaning": "演变"
+  },
+  {
+    "word": "exceed",
+    "pos": "v.",
+    "meaning": "超过"
+  },
+  {
+    "word": "exhibit",
+    "pos": "v.",
+    "meaning": "展出"
+  },
+  {
+    "word": "expand",
+    "pos": "v.",
+    "meaning": "扩大"
+  },
+  {
+    "word": "expose",
+    "pos": "v.",
+    "meaning": "暴露"
+  },
+  {
+    "word": "facilitate",
+    "pos": "v.",
+    "meaning": "促进"
+  },
+  {
+    "word": "feasible",
+    "pos": "adj.",
+    "meaning": "可行的"
+  },
+  {
+    "word": "flourish",
+    "pos": "v.",
+    "meaning": "繁荣"
+  },
+  {
+    "word": "fundamental",
+    "pos": "adj.",
+    "meaning": "基本的"
+  },
+  {
+    "word": "generate",
+    "pos": "v.",
+    "meaning": "产生"
+  },
+  {
+    "word": "genuine",
+    "pos": "adj.",
+    "meaning": "真诚的"
+  },
+  {
+    "word": "guarantee",
+    "pos": "v.",
+    "meaning": "保证"
+  },
+  {
+    "word": "identify",
+    "pos": "v.",
+    "meaning": "鉴定"
+  },
+  {
+    "word": "ignorance",
+    "pos": "n.",
+    "meaning": "无知"
+  },
+  {
+    "word": "illustrate",
+    "pos": "v.",
+    "meaning": "阐明"
+  },
+  {
+    "word": "imply",
+    "pos": "v.",
+    "meaning": "暗示"
+  },
+  {
+    "word": "income",
+    "pos": "n.",
+    "meaning": "收入"
+  },
+  {
+    "word": "incredible",
+    "pos": "adj.",
+    "meaning": "难以置信的"
+  }
+]

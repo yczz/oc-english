@@ -1,0 +1,2179 @@
+{
+  "id": "pep-junior-g7-s1",
+  "title": "人教版初中英语 · 七年级上册",
+  "stage": "junior",
+  "edition": "PEP",
+  "source": "lilinji/English 人教版 xlsx",
+  "units": [
+    {
+      "id": "u1",
+      "title": "Unit 1",
+      "words": [
+        {
+          "en": "good",
+          "zh": "n. 好处；善行；慷慨的行为；adj. 好的；优良的；愉快的；虔诚的；adv. 好",
+          "phonetic": "/ɡʊd/"
+        },
+        {
+          "en": "morning",
+          "zh": "n. 早晨；黎明；初期",
+          "phonetic": "/ˈmɔːrnɪŋ/"
+        },
+        {
+          "en": "Good morning!",
+          "zh": "int. （上午见面时用语，非正式场合常说 Morning）早上好"
+        },
+        {
+          "en": "hi",
+          "zh": "int. 嗨！（表示问候或用以唤起注意）",
+          "phonetic": "/haɪ/"
+        },
+        {
+          "en": "hello",
+          "zh": "n. 表示问候， 惊奇或唤起注意时的用语；int. 喂；哈罗",
+          "phonetic": "/həˈləʊ/"
+        },
+        {
+          "en": "afternoon",
+          "zh": "n. 午后，下午",
+          "phonetic": "/ˌæftərˈnuːn/"
+        },
+        {
+          "en": "Good afternoon!",
+          "zh": "下午好![午后见面时的招呼语]；再见![午后分别时的招呼语]"
+        },
+        {
+          "en": "evening",
+          "zh": "n. 晚上；傍晚；（联欢性的）晚会；后期；adj. 在晚上的；为晚上的；晚上用的；int. 晚上好（等于good evening）",
+          "phonetic": "/ˈiːvnɪŋ/"
+        },
+        {
+          "en": "Good evening!",
+          "zh": "int. （晚上见面时用语）晚上好",
+          "phonetic": "/ˌɡʊd ˈiːvnɪŋ/"
+        },
+        {
+          "en": "how",
+          "zh": "adv. 如何；多少；多么；n. 方法；方式；conj. 如何",
+          "phonetic": "/haʊ/"
+        },
+        {
+          "en": "are",
+          "zh": "v. 是（be的第二人称单复数现在式）；n. 公亩",
+          "phonetic": "/ər; ɑːr; er/"
+        },
+        {
+          "en": "you",
+          "zh": "pron. 你；你们",
+          "phonetic": "/juː; jə/"
+        },
+        {
+          "en": "How are you?",
+          "zh": "你身体好吗？",
+          "phonetic": "/haʊ ɑr ju/"
+        },
+        {
+          "en": "I",
+          "zh": "n. 碘元素；英语字母I；pron. 我",
+          "phonetic": "/aɪ/"
+        },
+        {
+          "en": "am",
+          "zh": "abbr. 调幅；v. 是",
+          "phonetic": "/əm; æm/"
+        },
+        {
+          "en": "fine",
+          "zh": "n. 罚款；adj. 好的；优良的；细小的，精美的；健康的；晴朗的；vt. 罚款；澄清；adv. 很好地；精巧地",
+          "phonetic": "/faɪn/"
+        },
+        {
+          "en": "thanks",
+          "zh": "n. 谢谢（只用复数）；int. 谢谢",
+          "phonetic": "/θæŋks/"
+        },
+        {
+          "en": "OK",
+          "zh": "adj. 好的；不错的；adv. 行；很好；int. 好；可以；vt. 对…表示同意；n. 同意",
+          "phonetic": "/ˌoʊ'keɪ/"
+        },
+        {
+          "en": "HB",
+          "zh": "abbr. 厚膛壁身管（Heavy Barrel）；symb. (铅笔)硬黑"
+        },
+        {
+          "en": "CD",
+          "zh": "abbr. 光盘，激光唱片（Compact Disc）；呼叫设备（Calling Device）；中央地区（Central District）；商务部（Commerce Department）",
+          "phonetic": "/ˌsiː ˈdiː/"
+        },
+        {
+          "en": "BBC",
+          "zh": "abbr. 英国广播公司（British Broadcasting Corporation）"
+        },
+        {
+          "en": "Alice",
+          "zh": "n. 爱丽丝（女子名）",
+          "phonetic": "/ˈælɪs/"
+        },
+        {
+          "en": "Bob",
+          "zh": "n. 短发；摆动；浮子；轻敲；悬挂的饰品；vt. 剪短；敲击；使上下快速摆动；vi. 上下跳动；振动"
+        },
+        {
+          "en": "Cindy",
+          "zh": "n. 辛迪（女子名，Cynthia的昵称）"
+        },
+        {
+          "en": "Dale",
+          "zh": "n. 山谷；排水孔；n. 戴尔；黛尔",
+          "phonetic": "/deɪl/"
+        },
+        {
+          "en": "Eric",
+          "zh": "埃里克（人名）"
+        },
+        {
+          "en": "Frank",
+          "zh": "n. 免费邮寄特权；adj. 坦白的，直率的；老实的；vt. 免费邮寄",
+          "phonetic": "/fræŋk/"
+        },
+        {
+          "en": "Grace",
+          "zh": "n. 优雅；恩惠；魅力；慈悲；vt. 使优美",
+          "phonetic": "/ɡreɪs/"
+        },
+        {
+          "en": "Helen",
+          "zh": "n. 海伦（女子名，火把、光亮的之义）",
+          "phonetic": "/ˈhelən/"
+        },
+        {
+          "en": "what",
+          "zh": "pron. 什么；多么；多少；adv. 到什么程度，在哪一方面；adj. 什么；多么；何等；int. 什么；多么",
+          "phonetic": "/wʌt/"
+        },
+        {
+          "en": "is",
+          "zh": "v. 是（be的三单形式）；n. 存在",
+          "phonetic": "/ɪz/"
+        },
+        {
+          "en": "this",
+          "zh": "adj. 这；本；这个；今；pron. 这；这个；这里；adv. 这样地；这么",
+          "phonetic": "/ðɪs/"
+        },
+        {
+          "en": "in",
+          "zh": "prep. 按照（表示方式）；从事于；在…之内；n. 执政者；门路；知情者；adj. 在里面的；时髦的；adv. 进入；当选；（服装等）时髦；在屋里",
+          "phonetic": "/ɪn/"
+        },
+        {
+          "en": "English",
+          "zh": "n. 英语；英国人；英文；英格兰人；adj. 英国人的；英国的；英文的；vt. 把…译成英语",
+          "phonetic": "/ˈɪŋɡlɪʃ/"
+        },
+        {
+          "en": "in English",
+          "zh": "用英语；用英语说；用英语表达"
+        },
+        {
+          "en": "map",
+          "zh": "vt. 映射；计划；绘制地图；确定基因在染色体中的位置；n. 地图；示意图；染色体图；vi. 基因被安置",
+          "phonetic": "/mæp/"
+        },
+        {
+          "en": "cup",
+          "zh": "n. 杯子；奖杯；酒杯；vt. 使成杯状；为…拔火罐",
+          "phonetic": "/kʌp/"
+        },
+        {
+          "en": "ruler",
+          "zh": "n. 尺；统治者；[测] 划线板，划线的人",
+          "phonetic": "/ˈruːlər/"
+        },
+        {
+          "en": "pen",
+          "zh": "n. 钢笔；作家；围栏；vt. 写；关入栏中",
+          "phonetic": "/pen/"
+        },
+        {
+          "en": "orange",
+          "zh": "adj. 橙色的；橘色的；n. 橙；橙色；桔子",
+          "phonetic": "/ˈɔrɪndʒ/"
+        },
+        {
+          "en": "jacket",
+          "zh": "n. 羽绒滑雪衫；西装短外套；短上衣，夹克；土豆皮；书籍的护封；文件套，公文夹；vt. 给…穿夹克；给…装护套；给…包上护封；〈口",
+          "phonetic": "/ˈdʒækɪt/"
+        },
+        {
+          "en": "key",
+          "zh": "n. （打字机等的）键；关键；钥匙；vt. 键入；锁上；调节…的音调；提供线索；vi. 使用钥匙；adj. 关键的",
+          "phonetic": "/kiː/"
+        },
+        {
+          "en": "quilt",
+          "zh": "n. 被子；棉被；vt. 东拼西凑地编；加软衬料后缝制；vi. 缝被子",
+          "phonetic": "/kwɪlt/"
+        },
+        {
+          "en": "it",
+          "zh": "abbr. 信息技术information technology；abbr. 意大利Italy；意大利的Italian",
+          "phonetic": "/ɪt/"
+        },
+        {
+          "en": "a",
+          "zh": "n. 字母A；第一流的；学业成绩达最高标准的评价符号；abbr. [物]安（ampere）",
+          "phonetic": "/ə; eɪ/"
+        },
+        {
+          "en": "that",
+          "zh": "conj. 因为；以至于；adj. 那；那个；pron. 那；那个；adv. 那么；那样",
+          "phonetic": "/ðæt/"
+        },
+        {
+          "en": "spell",
+          "zh": "n. 符咒；一段时间；魅力；vi. 拼字；轮替；vt. 拼，拼写；意味着；招致；拼成；迷住；轮值",
+          "phonetic": "/spel/"
+        },
+        {
+          "en": "please",
+          "zh": "int. 请（礼貌用语）；vt. 使喜欢；使高兴，使满意；vi. 讨人喜欢；令人高兴",
+          "phonetic": "/pliːz/"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "title": "Unit 2",
+      "words": [
+        {
+          "en": "NBA",
+          "zh": "abbr. 全美篮球协会（National Basketball Association）",
+          "phonetic": "/ˌen biː ˈeɪ/"
+        },
+        {
+          "en": "P",
+          "zh": "symb. 磷（phosphorus）；n. 字母P；abbr. 人员（personnel）；停车场（parking）",
+          "phonetic": "/piː/"
+        },
+        {
+          "en": "kg",
+          "zh": "abbr. [计量] 公斤（kilogram）"
+        },
+        {
+          "en": "color",
+          "zh": "n. 颜色；肤色；颜料；脸色；vt. 粉饰；给...涂颜色；歪曲；vi. 变色；获得颜色",
+          "phonetic": "/ˈkʌlər/"
+        },
+        {
+          "en": "red",
+          "zh": "n. 红色，红颜料；赤字；adj. 红色的；红肿的，充血的",
+          "phonetic": "/red/"
+        },
+        {
+          "en": "yellow",
+          "zh": "n. 黄色；黄种人；黄色颜料；adj. 黄色的；黄皮肤的；vt. 使变黄或发黄；vi. 变黄或发黄",
+          "phonetic": "/ˈjeloʊ/"
+        },
+        {
+          "en": "green",
+          "zh": "n. 绿色；青春；adj. 绿色的；青春的；vt. 使…变绿色；vi. 变绿色",
+          "phonetic": "/ɡriːn/"
+        },
+        {
+          "en": "blue",
+          "zh": "adj. 蓝色的；沮丧的，忧郁的；下流的；n. 蓝色；[复数]（美国海、陆、空三军穿的）蓝色制服；蓝颜料；[the blue(s)][用作单数或复数]布",
+          "phonetic": "/bluː/"
+        },
+        {
+          "en": "black",
+          "zh": "n. 黑色；黑人；黑颜料；adj. 黑色的；黑人的；邪恶的；vt. 使变黑；把鞋油等涂在…上；把（眼眶）打成青肿；vi. 变黑",
+          "phonetic": "/blæk/"
+        },
+        {
+          "en": "white",
+          "zh": "n. 白色；洁白；白种人；adj. 白色的；白种的；纯洁的",
+          "phonetic": "/waɪt/"
+        },
+        {
+          "en": "purple",
+          "zh": "n. 紫色；紫袍；adj. 紫色的；帝王的；华而不实的；vt. 使成紫色；vi. 变成紫色",
+          "phonetic": "/ˈpɜːrpl/"
+        },
+        {
+          "en": "brown",
+          "zh": "n. 褐色，棕色；adj. 棕色的，褐色的；太阳晒黑的；vt. 使变成褐色；vi. 变成褐色",
+          "phonetic": "/braʊn/"
+        },
+        {
+          "en": "the",
+          "zh": "art. 这；那；adv. 更加（用于比较级，最高级前）",
+          "phonetic": "/ðə; ði; ðiː/"
+        },
+        {
+          "en": "now",
+          "zh": "adv. 现在；如今；立刻；adj. 现在的；n. 现在；目前；conj. 由于；既然",
+          "phonetic": "/naʊ/"
+        },
+        {
+          "en": "see",
+          "zh": "vi. 看；看见；领会；vt. 看见；理解；领会",
+          "phonetic": "/siː/"
+        },
+        {
+          "en": "can",
+          "zh": "aux. 能； 能够； 可以； 可能；n. 罐头； （用金属或塑料制作的）容器； （马口铁或其他金属制作的）食品罐头；vt. 将…装入密封罐中保存",
+          "phonetic": "/kən; kæn/"
+        },
+        {
+          "en": "say",
+          "zh": "vt. 讲；说明；例如；声称；假设；指明；vi. 讲；表示；念；假定；背诵",
+          "phonetic": "/seɪ/"
+        },
+        {
+          "en": "my",
+          "zh": "pron. 我的；int. 哎呀（表示惊奇等）；喔唷",
+          "phonetic": "/maɪ/"
+        },
+        {
+          "en": "S",
+          "zh": "n. 字母s，英语字母中第十九个字母；abbr. 南，南方（south）",
+          "phonetic": "/es/"
+        },
+        {
+          "en": "M",
+          "zh": "abbr. 兆；模；毫；米",
+          "phonetic": "/em/"
+        },
+        {
+          "en": "L",
+          "zh": "n. 字母l（英语字母中的第十二个字母）",
+          "phonetic": "/el/"
+        },
+        {
+          "en": "UFO",
+          "zh": "abbr. 不明飞行物（Unidentified Flying Object）",
+          "phonetic": "/ˌjuː ef ˈoʊˌˈjuːfoʊ/"
+        },
+        {
+          "en": "CCTV",
+          "zh": "abbr. 闭路电视（Closed Circuit Television）；中国中央电视台（China Central Television）",
+          "phonetic": "/ˌsiː siː tiː ˈviː/"
+        },
+        {
+          "en": "name",
+          "zh": "n. 名称，名字；姓名；名誉；vt. 命名，任命；指定；称呼；提名；叫出；adj. 姓名的；据以取名的",
+          "phonetic": "/neɪm/"
+        },
+        {
+          "en": "nice",
+          "zh": "adj. 精密的；美好的；细微的；和蔼的",
+          "phonetic": "/naɪs/"
+        },
+        {
+          "en": "to",
+          "zh": "prep. 到；向；（表示时间、方向）朝…方向；adv. 向前；（门等）关上",
+          "phonetic": "/tə; tu; tuː/"
+        },
+        {
+          "en": "meet",
+          "zh": "vt. 满足；遇见；对付；vi. 相遇；接触；n. 集会；adj. 合适的；适宜的",
+          "phonetic": "/miːt/"
+        },
+        {
+          "en": "too",
+          "zh": "adv. 太；也；很；还；非常；过度",
+          "phonetic": "/tuː/"
+        },
+        {
+          "en": "your",
+          "zh": "pron. 你的，你们的",
+          "phonetic": "/jʊr; jər/"
+        },
+        {
+          "en": "Ms.",
+          "zh": "女士",
+          "phonetic": "/mɪz; məz/"
+        },
+        {
+          "en": "his",
+          "zh": "pron. 他的",
+          "phonetic": "/hɪz; ɪz/"
+        },
+        {
+          "en": "and",
+          "zh": "conj. 和，与；就；而且；但是；然后",
+          "phonetic": "/ənd; ən; n; ænd/"
+        },
+        {
+          "en": "her",
+          "zh": "pron. 她（she的宾格）；她的（she的所有格）；她（指某个国家；一艘船）",
+          "phonetic": "/hər; ɜːr; ər; hɜːr/"
+        },
+        {
+          "en": "yes",
+          "zh": "n. 是（表示肯定）；adv. 是, 是的",
+          "phonetic": "/jes/"
+        },
+        {
+          "en": "she",
+          "zh": "n. 女人；雌性动物；pron. 她（主格）；它（用来指雌性动物或国家、船舶、地球、月亮等）",
+          "phonetic": "/ʃi; ʃiː/"
+        },
+        {
+          "en": "he",
+          "zh": "n. 男孩，男人；它（雄性动物）；pron. 他",
+          "phonetic": "/hi; iː; i; hiː/"
+        },
+        {
+          "en": "no",
+          "zh": "adv. 不；adj. 没有；不是；n. 不；否决票；abbr. 数字（number）；元素锘（nobelium）的符号",
+          "phonetic": "/noʊ/"
+        },
+        {
+          "en": "not",
+          "zh": "adv. 表示否定，不；n. “非”（计算机中逻辑运算的一种）",
+          "phonetic": "/nɑːt/"
+        },
+        {
+          "en": "zero",
+          "zh": "num. 零；n. 零点，零度",
+          "phonetic": "/ˈzɪroʊ/"
+        },
+        {
+          "en": "one",
+          "zh": "pron. 一个人；任何人；adj. 一的；唯一的；n. 一；num. 一；一个",
+          "phonetic": "/wʌn/"
+        },
+        {
+          "en": "two",
+          "zh": "num. 二；n. 两个；adj. 两个的",
+          "phonetic": "/tuː/"
+        },
+        {
+          "en": "three",
+          "zh": "num. 三；n. 三，三个；adj. 三的，三个的",
+          "phonetic": "/θriː/"
+        },
+        {
+          "en": "four",
+          "zh": "num. 四；四个；adj. 四的；四个的",
+          "phonetic": "/fɔːr/"
+        },
+        {
+          "en": "five",
+          "zh": "num. 五，五个；n. 五，五个；五美元钞票；adj. 五的；五个的",
+          "phonetic": "/faɪv/"
+        },
+        {
+          "en": "six",
+          "zh": "num. 六，六个；n. 六，六个",
+          "phonetic": "/sɪks/"
+        },
+        {
+          "en": "seven",
+          "zh": "num. 七个，七；n. 七个，七；adj. 七的；七个的",
+          "phonetic": "/ˈsev(ə)n/"
+        },
+        {
+          "en": "eight",
+          "zh": "num. 八；八个；第八；n. 八字形；adj. 八的",
+          "phonetic": "/eɪt/"
+        },
+        {
+          "en": "nine",
+          "zh": "n. 九，九个；num. 九；九个；adj. 九的，九个的",
+          "phonetic": "/naɪn/"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "title": "Unit 3",
+      "words": [
+        {
+          "en": "telephone",
+          "zh": "n. （美）电话；电话机；电话耳机；vt. 打电话给…；vi. 打电话",
+          "phonetic": "/ˈtelɪfoʊn/"
+        },
+        {
+          "en": "number",
+          "zh": "n. 数；（杂志等的）期；号码；数字；算术；vi. 计入；总数达到；vt. 编号；计入；数…的数目；使为数有限",
+          "phonetic": "/ˈnʌmbər/"
+        },
+        {
+          "en": "phone",
+          "zh": "n. 电话；耳机，听筒；vt. 打电话；vi. 打电话",
+          "phonetic": "/foʊn/"
+        },
+        {
+          "en": "telephone",
+          "zh": "n. （美）电话；电话机；电话耳机；vt. 打电话给…；vi. 打电话",
+          "phonetic": "/ˈtelɪfoʊn/"
+        },
+        {
+          "en": "first",
+          "zh": "num. 第一；n. 第一；开始；冠军；adj. 第一的；基本的；最早的；adv. 第一；首先；优先；宁愿",
+          "phonetic": "/fɜːrst/"
+        },
+        {
+          "en": "first name",
+          "zh": "n. 名字"
+        },
+        {
+          "en": "last",
+          "zh": "n. 末尾，最后；上个；鞋楦（做鞋的模型）；adj. 最后的；最近的，最新的；仅剩的；最不可能…的；vi. 持续；维持，够用；持久；vt. 度过，拖过；使维持；adv. 最后地；上次，最近；最后一点",
+          "phonetic": "/læst/"
+        },
+        {
+          "en": "last name",
+          "zh": "n. 姓"
+        },
+        {
+          "en": "friend",
+          "zh": "n. 朋友；助手；赞助者",
+          "phonetic": "/frend/"
+        },
+        {
+          "en": "China",
+          "zh": "n. 中国；n. china，瓷器；adj. 中国的；中国制造的；adj. china，瓷制的",
+          "phonetic": "/ˈtʃaɪnə/"
+        },
+        {
+          "en": "middle",
+          "zh": "adj. 中间的，中部的；中级的，中等的；n. 中间，中央；腰部",
+          "phonetic": "/ˈmɪd(ə)l/"
+        },
+        {
+          "en": "school",
+          "zh": "n. 学校；学院；学派；鱼群；vt. 教育",
+          "phonetic": "/skuːl/"
+        },
+        {
+          "en": "middle school",
+          "zh": "n. 初中；（英国为 9 到 13 岁儿童所设的）中间学校",
+          "phonetic": "/ˈmɪdl skuːl/"
+        },
+        {
+          "en": "Gina",
+          "zh": "n. 吉娜 （Regina,Angelina等的昵称）"
+        },
+        {
+          "en": "Jenny",
+          "zh": "n. 詹妮(女子名)[Jennifer 的昵称]",
+          "phonetic": "/ˈdʒeni/"
+        },
+        {
+          "en": "Brown",
+          "zh": "n. 褐色，棕色；adj. 棕色的，褐色的；太阳晒黑的；vt. 使变成褐色；vi. 变成褐色",
+          "phonetic": "/braʊn/"
+        },
+        {
+          "en": "Alan",
+          "zh": "n. 艾伦（男子名）",
+          "phonetic": "/ˈælən/"
+        },
+        {
+          "en": "Tom",
+          "zh": "n. 汤姆（男子名）",
+          "phonetic": "/tɑːm/"
+        },
+        {
+          "en": "Mike",
+          "zh": "n. 扩音器，麦克风；话筒；休息, 游手好闲；vi. 使用扩音器；偷懒, 游手好闲；vt. 用扩音器传送；用窃听器窃听",
+          "phonetic": "/maɪk/"
+        },
+        {
+          "en": "Jack",
+          "zh": "n. 千斤顶；[电] 插座；男人；adj. 雄的；vt. 增加；提醒；抬起；用千斤顶顶起某物",
+          "phonetic": "/dʒæk/"
+        },
+        {
+          "en": "Mary",
+          "zh": "n. 玛丽（女子名）",
+          "phonetic": "/ˈmeri/"
+        },
+        {
+          "en": "Miller",
+          "zh": "n. 磨坊主；碾磨工；蛾",
+          "phonetic": "/ˈmɪlər/"
+        },
+        {
+          "en": "Linda",
+          "zh": "n. 琳达（女子名）",
+          "phonetic": "/'lində/"
+        },
+        {
+          "en": "Jane",
+          "zh": "n. 简（女子名）",
+          "phonetic": "/dʒeɪn/"
+        },
+        {
+          "en": "Green",
+          "zh": "n. 绿色；青春；adj. 绿色的；青春的；vt. 使…变绿色；vi. 变绿色"
+        },
+        {
+          "en": "Smith",
+          "zh": "n. 史密斯（男子姓氏）",
+          "phonetic": "/smɪθ/"
+        },
+        {
+          "en": "sister",
+          "zh": "n. 姐妹；（称志同道合者）姐妹；修女；护士；adj. 姐妹般的；同类型的",
+          "phonetic": "/ˈsɪstər/"
+        },
+        {
+          "en": "mother",
+          "zh": "n. 母亲；大娘；女修道院院长；vt. 生下；养育；像母亲般关怀或照管；adj. 母亲的；出生地的",
+          "phonetic": "/ˈmʌðər/"
+        },
+        {
+          "en": "father",
+          "zh": "n. 父亲，爸爸；神父；祖先；前辈；vt. 发明，创立；当…的父亲",
+          "phonetic": "/ˈfɑːðər/"
+        },
+        {
+          "en": "parent",
+          "zh": "n. 父亲（或母亲）；父母亲；根源",
+          "phonetic": "/ˈperənt/"
+        },
+        {
+          "en": "brother",
+          "zh": "n. 兄弟；同事；战友；int. 我的老兄！",
+          "phonetic": "/ˈbrʌðər/"
+        },
+        {
+          "en": "grandmother",
+          "zh": "n. 祖母；女祖先；vt. 当…的祖母；vi. 当祖母",
+          "phonetic": "/ˈɡrænmʌðər/"
+        },
+        {
+          "en": "grandfather",
+          "zh": "n. 祖父；始祖；vt. 不受新规定限制",
+          "phonetic": "/ˈɡrænfɑːðər/"
+        },
+        {
+          "en": "grandparent",
+          "zh": "n. 祖父母；祖父或祖母；外祖父母；外祖父或外祖母",
+          "phonetic": "/ˈɡrænperənt/"
+        },
+        {
+          "en": "family",
+          "zh": "n. 家庭；亲属；家族；子女；[生]科；语族；[化]族；adj. 家庭的；家族的；适合于全家的",
+          "phonetic": "/ˈfæməli/"
+        },
+        {
+          "en": "those",
+          "zh": "adj. 那些的；pron. 那些（that的复数）",
+          "phonetic": "/ðoʊz/"
+        },
+        {
+          "en": "who",
+          "zh": "pron. 谁；什么人",
+          "phonetic": "/huː/"
+        },
+        {
+          "en": "oh",
+          "zh": "int. 哦；哎呀（表示惊讶或恐惧等）",
+          "phonetic": "/oʊ/"
+        },
+        {
+          "en": "these",
+          "zh": "adj. 这些的；pron. 这些",
+          "phonetic": "/ðiːz/"
+        },
+        {
+          "en": "they",
+          "zh": "pron. 他们；它们；她们",
+          "phonetic": "/ðeɪ/"
+        },
+        {
+          "en": "well",
+          "zh": "n. 井；源泉；adj. 良好的；健康的；适宜的；adv. 很好地；充分地；满意地；适当地；v. 涌出",
+          "phonetic": "/wel/"
+        },
+        {
+          "en": "have",
+          "zh": "aux. 已经；vt. 有；让；拿；从事；允许",
+          "phonetic": "/həv; əv; hæv/"
+        },
+        {
+          "en": "day",
+          "zh": "n. 一天；时期；白昼；adj. 日间的；逐日的；adv. 每天；经常在白天地",
+          "phonetic": "/deɪ/"
+        },
+        {
+          "en": "Have a good day!",
+          "zh": "祝你今天开心；祝一天愉快；度过愉快的一天"
+        },
+        {
+          "en": "bye",
+          "zh": "n. 轮空；次要的东西；int. 再见；adj. 次要的",
+          "phonetic": "/baɪ/"
+        },
+        {
+          "en": "son",
+          "zh": "n. 儿子；孩子（对年轻人的称呼）；男性后裔",
+          "phonetic": "/sʌn/"
+        },
+        {
+          "en": "cousin",
+          "zh": "n. 堂兄弟姊妹；表兄弟姊妹",
+          "phonetic": "/ˈkʌzn/"
+        },
+        {
+          "en": "grandpa",
+          "zh": "n. 爷爷；外公",
+          "phonetic": "/ˈɡrænpɑː/"
+        }
+      ]
+    },
+    {
+      "id": "u4",
+      "title": "Unit 4",
+      "words": [
+        {
+          "en": "mom",
+          "zh": "n. 妈妈",
+          "phonetic": "/mɑːm/"
+        },
+        {
+          "en": "aunt",
+          "zh": "n. 阿姨；姑妈；伯母；舅妈",
+          "phonetic": "/ænt/"
+        },
+        {
+          "en": "grandma",
+          "zh": "n. 奶奶；外婆",
+          "phonetic": "/ˈɡrænmɑː/"
+        },
+        {
+          "en": "dad",
+          "zh": "n. 爸爸；爹爹",
+          "phonetic": "/dæd/"
+        },
+        {
+          "en": "uncle",
+          "zh": "n. 叔叔；伯父；伯伯；舅父；姨丈；姑父",
+          "phonetic": "/ˈʌŋkl/"
+        },
+        {
+          "en": "daughter",
+          "zh": "n. 女儿；[遗][农学] 子代；adj. 女儿的；子代的",
+          "phonetic": "/ˈdɔːtər/"
+        },
+        {
+          "en": "here",
+          "zh": "n. 这里；adv. 在这里；此时；int. 嘿！；喂！",
+          "phonetic": "/hɪr/"
+        },
+        {
+          "en": "photo",
+          "zh": "n. 照片",
+          "phonetic": "/ˈfoʊtoʊ/"
+        },
+        {
+          "en": "of",
+          "zh": "prep. 关于；属于；…的；由…组成的",
+          "phonetic": "/əv; ʌv/"
+        },
+        {
+          "en": "next",
+          "zh": "adv. 然后；下次；其次；adj. 下一个的；其次的；贴近的；n. 下一个；prep. 靠近；居于…之后",
+          "phonetic": "/nekst/"
+        },
+        {
+          "en": "picture",
+          "zh": "n. 照片，图画；影片；景色；化身；vt. 画；想像；描写",
+          "phonetic": "/ˈpɪktʃər/"
+        },
+        {
+          "en": "girl",
+          "zh": "n. 女孩；姑娘，未婚女子；女职员，女演员；（男人的）女朋友；n. （捷）吉尔",
+          "phonetic": "/ɡɜːrl/"
+        },
+        {
+          "en": "dog",
+          "zh": "n. 狗；丑女人；卑鄙的人；(俚)朋友；vt. 跟踪；尾随",
+          "phonetic": "/dɔːɡ/"
+        },
+        {
+          "en": "Sally",
+          "zh": "n. 突围；[军] 出击；（感情等）迸发；俏皮话；远足；vt. 突围；出发；动身，外出",
+          "phonetic": "/ˈsæli/"
+        },
+        {
+          "en": "Kate",
+          "zh": "n. 凯特（女子名，等于Catherine）",
+          "phonetic": "/keit/"
+        },
+        {
+          "en": "Paul",
+          "zh": "n. 保罗（男子名）",
+          "phonetic": "/pɔːl/"
+        },
+        {
+          "en": "pencil",
+          "zh": "n. 铅笔；笔状物；vt. 用铅笔写；用眉笔涂；vi. 成铅笔状",
+          "phonetic": "/ˈpensl/"
+        },
+        {
+          "en": "book",
+          "zh": "n. 书籍；卷；帐簿；名册；工作簿；vt. 预订；登记",
+          "phonetic": "/bʊk/"
+        },
+        {
+          "en": "eraser",
+          "zh": "n. 橡皮；擦除器；[计] 清除器",
+          "phonetic": "/ɪˈreɪsər/"
+        },
+        {
+          "en": "box",
+          "zh": "n. 箱，盒子；包厢；一拳；vt. 拳击；装…入盒中；打耳光；vi. 拳击",
+          "phonetic": "/bɑːks/"
+        },
+        {
+          "en": "pencil box",
+          "zh": "铅笔盒；文具盒；你的铅笔盒"
+        },
+        {
+          "en": "schoolbag",
+          "zh": "n. 书包",
+          "phonetic": "/ˈskuːlˌbæɡ/"
+        },
+        {
+          "en": "dictionary",
+          "zh": "n. 字典；词典",
+          "phonetic": "/ˈdɪkʃəneri/"
+        },
+        {
+          "en": "his",
+          "zh": "pron. 他的",
+          "phonetic": "/hɪz; ɪz/"
+        },
+        {
+          "en": "mine",
+          "zh": "n. 矿，矿藏；矿山，矿井；地雷，水雷；vt. 开采，采掘；在…布雷；vi. 开矿，采矿；埋设地雷；pron. 我的",
+          "phonetic": "/maɪn/"
+        },
+        {
+          "en": "hers",
+          "zh": "pron. 她的（所有格）",
+          "phonetic": "/hɜːrz; ɜːrz/"
+        },
+        {
+          "en": "excuse",
+          "zh": "n. 借口；理由；vt. 原谅；为…申辩；给…免去；vi. 作为借口；请求宽恕；表示宽恕",
+          "phonetic": "/ɪkˈskjuːs/"
+        },
+        {
+          "en": "me",
+          "zh": "pron. 我（宾格）；n. 自我；极端自私的人；自我的一部分",
+          "phonetic": "/mi; miː/"
+        },
+        {
+          "en": "excuse me",
+          "zh": "un. 请原谅；对不起",
+          "phonetic": "/ɪkˈskjuːz mi/"
+        },
+        {
+          "en": "thank",
+          "zh": "n. 感谢；vt. 感谢；int. 谢谢",
+          "phonetic": "/θæŋk/"
+        },
+        {
+          "en": "teacher",
+          "zh": "n. 教师；导师",
+          "phonetic": "/ˈtiːtʃər/"
+        },
+        {
+          "en": "about",
+          "zh": "prep. 关于；大约；n. 大致；粗枝大叶；不拘小节的人；adj. 在附近的；四处走动的；在起作用的；adv. 大约；周围；到处",
+          "phonetic": "/əˈbaʊt/"
+        },
+        {
+          "en": "What about ...?",
+          "zh": "un. 不；…怎样"
+        },
+        {
+          "en": "yours",
+          "zh": "pron. 你（们）的东西；你的责任[义务]；你的家属；来信，尊函；adj. 你（们）的（东西）；信末署名前用语",
+          "phonetic": "/jərz; jɔːrz; jʊrz/"
+        },
+        {
+          "en": "for",
+          "zh": "prep. 为，为了；因为；给；对于；至于；适合于；conj. 因为",
+          "phonetic": "/fər; fɔːr/"
+        },
+        {
+          "en": "thank you for ...",
+          "zh": "感谢您；为某事感谢；为……而感谢"
+        },
+        {
+          "en": "help",
+          "zh": "n. 帮助；补救办法；帮忙者；有益的东西；vt. 帮助；促进；治疗；补救；vi. 帮助；有用；招待",
+          "phonetic": "/help/"
+        },
+        {
+          "en": "welcome",
+          "zh": "n. 欢迎；vt. 欢迎；adj. 受欢迎的；int. 欢迎",
+          "phonetic": "/ˈwelkəm/"
+        },
+        {
+          "en": "You're welcome.",
+          "zh": "不客气；别客气；不用谢"
+        },
+        {
+          "en": "baseball",
+          "zh": "n. 棒球；棒球运动",
+          "phonetic": "/ˈbeɪsbɔːl/"
+        },
+        {
+          "en": "watch",
+          "zh": "n. 手表；监视；守护；值班人；vt. 观察；注视；看守；警戒；vi. 观看，注视；守侯，看守",
+          "phonetic": "/wɑːtʃ/"
+        },
+        {
+          "en": "computer",
+          "zh": "n. 计算机；电脑；电子计算机",
+          "phonetic": "/kəmˈpjuːtər/"
+        },
+        {
+          "en": "game",
+          "zh": "n. 游戏；比赛；adj. 勇敢的；vi. 赌博",
+          "phonetic": "/ɡeɪm/"
+        },
+        {
+          "en": "card",
+          "zh": "n. 卡片；纸牌；明信片；vt. 记于卡片上",
+          "phonetic": "/kɑːrd/"
+        },
+        {
+          "en": "ID card",
+          "zh": "n. 身份证"
+        },
+        {
+          "en": "notebook",
+          "zh": "n. 笔记本，笔记簿；手册",
+          "phonetic": "/ˈnoʊtbʊk/"
+        },
+        {
+          "en": "ring",
+          "zh": "n. 戒指；铃声，钟声；拳击场；环形物；vi. 按铃；敲钟；回响；成环形；vt. 按铃；包围；敲钟；套住",
+          "phonetic": "/rɪŋ/"
+        },
+        {
+          "en": "bag",
+          "zh": "n. 袋；猎获物；（俚）一瓶啤酒；vt. 猎获；把…装入袋中；占据，私吞；使膨大；vi. 松垂",
+          "phonetic": "/bæɡ/"
+        }
+      ]
+    },
+    {
+      "id": "u5",
+      "title": "Unit 5",
+      "words": [
+        {
+          "en": "in",
+          "zh": "prep. 按照（表示方式）；从事于；在…之内；n. 执政者；门路；知情者；adj. 在里面的；时髦的；adv. 进入；当选；（服装等）时髦；在屋里",
+          "phonetic": "/ɪn/"
+        },
+        {
+          "en": "library",
+          "zh": "n. 图书馆，藏书室；文库",
+          "phonetic": "/ˈlaɪbreri/"
+        },
+        {
+          "en": "ask",
+          "zh": "vt. 问，询问；要求；需要；邀请；讨价；vi. 问，询问；要求",
+          "phonetic": "/æsk/"
+        },
+        {
+          "en": "ask ... for ...",
+          "zh": "na. 要(价)；来找"
+        },
+        {
+          "en": "find",
+          "zh": "n. 发现；vi. 裁决；vt. 查找，找到；发现；认为；感到；获得",
+          "phonetic": "/faɪnd/"
+        },
+        {
+          "en": "some",
+          "zh": "adj. 一些；某个；大约；相当多的；pron. 一些；若干；其中的一部分；（数量不确切时用）有些人；adv. 非常；相当；<美>稍微",
+          "phonetic": "/sʌm; səm/"
+        },
+        {
+          "en": "classroom",
+          "zh": "n. 教室",
+          "phonetic": "/ˈklæsruːm; ˈklæsrʊm/"
+        },
+        {
+          "en": "e-mail",
+          "zh": "n. 电子邮件；v. 给…发电子邮件",
+          "phonetic": "/ˈiː meɪl/"
+        },
+        {
+          "en": "at",
+          "zh": "prep. 在（表示存在或出现的地点、场所、位置、空间）；以（某种价格、速度等）；向；达；因为；朝；忙于；n. 阿特（老挝货币基本单位att）；[化]砹（极不稳定放射性元素）；abbr. 密封的（airtight）；气温（air temperature）",
+          "phonetic": "/ət; æt/"
+        },
+        {
+          "en": "call",
+          "zh": "n. 电话；呼叫；要求；访问；vi. 呼叫；拜访；叫牌；vt. 呼叫；称呼；召集",
+          "phonetic": "/kɔːl/"
+        },
+        {
+          "en": "lost",
+          "zh": "adj. 失去的；丧失的；迷惑的；v. 遗失（lose的过去分词）；失败",
+          "phonetic": "/lɔːst/"
+        },
+        {
+          "en": "must",
+          "zh": "aux. 必须，一定；可以，应当；很可能；n. 绝对必要的事物；未发酵葡萄汁",
+          "phonetic": "/məst; mʌst/"
+        },
+        {
+          "en": "set",
+          "zh": "n. [数] 集合；一套；布景；[机] 装置；adj. 固定的；规定的；固执的；vi. (日,月)落沉；凝固；结果；vt. 树立；点燃；点缀；",
+          "phonetic": "/set/"
+        },
+        {
+          "en": "a set of",
+          "zh": "det. 一套；一副"
+        },
+        {
+          "en": "Anna",
+          "zh": "n. 安娜（女子名）",
+          "phonetic": "/ˈʌnə/"
+        },
+        {
+          "en": "John",
+          "zh": "n. 厕所",
+          "phonetic": "/dʒɑːn/"
+        },
+        {
+          "en": "David",
+          "zh": "n. 大卫；戴维（男子名）",
+          "phonetic": "/ˈdeɪvɪd/"
+        },
+        {
+          "en": "where",
+          "zh": "conj. 在…的地方；n. 地点；adv. 在哪里；pron. 哪里",
+          "phonetic": "/wer/"
+        },
+        {
+          "en": "table",
+          "zh": "n. 桌子；表格；平地层；vt. 制表；搁置；嵌合；adj. 桌子的",
+          "phonetic": "/ˈteɪbl/"
+        },
+        {
+          "en": "bed",
+          "zh": "n. 床；基础；河底， 海底；vt. 使睡觉；安置，嵌入；栽种；vi. 上床；分层",
+          "phonetic": "/bed/"
+        },
+        {
+          "en": "bookcase",
+          "zh": "n. [家具] 书柜，书架",
+          "phonetic": "/ˈbʊkkeɪs/"
+        },
+        {
+          "en": "sofa",
+          "zh": "n. 沙发；长椅",
+          "phonetic": "/ˈsoʊfə/"
+        },
+        {
+          "en": "chair",
+          "zh": "n. 椅子；讲座；（会议的）主席位；大学教授的职位；vt. 担任（会议的）主席；使…入座；使就任要职",
+          "phonetic": "/tʃer/"
+        },
+        {
+          "en": "on",
+          "zh": "adv. 向前地；作用中，行动中；继续着；prep. 向，朝……；关于；在……之上；在……时候；adj. 开着的；发生着的，正在进行中",
+          "phonetic": "/ɑːn/"
+        },
+        {
+          "en": "under",
+          "zh": "prep. 低于，少于；在...之下；adj. 下面的；从属的；adv. 在下面；在下方",
+          "phonetic": "/ˈʌndər/"
+        },
+        {
+          "en": "come",
+          "zh": "vi. 来；开始；出现；发生；变成；到达；vt. 做；假装；将满（…岁）；int. 嗨！",
+          "phonetic": "/kʌm/"
+        },
+        {
+          "en": "come on",
+          "zh": "na. (演员)出台；进行(很好)；(暴风雨等)起；(病,苦痛等)加深"
+        },
+        {
+          "en": "desk",
+          "zh": "n. 办公桌；服务台；编辑部；（美）讲道台；乐谱架；adj. 书桌的；桌上用的；伏案做的",
+          "phonetic": "/desk/"
+        },
+        {
+          "en": "think",
+          "zh": "n. 想；想法；adj. 思想的；vi. 想；认为；vt. 想；认为；想起；想像；打算",
+          "phonetic": "/θɪŋk/"
+        },
+        {
+          "en": "room",
+          "zh": "n. 房间；空间；余地；机会；房间里所有的人；vt. 为…提供住处；租房，合住；投宿，住宿；留…住宿；vi. 居住；住宿",
+          "phonetic": "/ruːm; rʊm/"
+        },
+        {
+          "en": "their",
+          "zh": "pron. 他们的，她们的；它们的",
+          "phonetic": "/ðer/"
+        },
+        {
+          "en": "hat",
+          "zh": "n. 帽子；vt. 给……戴上帽子；vi. 供应帽子；制造帽子",
+          "phonetic": "/hæt/"
+        },
+        {
+          "en": "head",
+          "zh": "n. 头；头痛；上端；最前的部分；理解力；adj. 头的；主要的；在顶端的；vt. 前进；用头顶；作为…的首领；站在…的前头；给…加标题；vi. 出发；成头状物；船驶往",
+          "phonetic": "/hed/"
+        },
+        {
+          "en": "yeah",
+          "zh": "adv. 是；int. 是",
+          "phonetic": "/jeə/"
+        },
+        {
+          "en": "know",
+          "zh": "vt. 知道；认识；懂得；vi. 了解；熟悉；确信",
+          "phonetic": "/noʊ/"
+        },
+        {
+          "en": "radio",
+          "zh": "n. 收音机；无线电广播设备；vt. 用无线电发送；vi. 用无线电进行通信",
+          "phonetic": "/ˈreɪdioʊ/"
+        },
+        {
+          "en": "clock",
+          "zh": "n. 时钟；计时器；vt. 记录；记时；vi. 打卡；记录时间",
+          "phonetic": "/klɑːk/"
+        },
+        {
+          "en": "tape",
+          "zh": "n. 胶带；磁带；带子；卷尺；vt. 录音；用带子捆扎；用胶布把…封住；vi. 用磁带录音",
+          "phonetic": "/teɪp/"
+        },
+        {
+          "en": "player",
+          "zh": "n. 运动员，比赛者；游戏者，做游戏的人；演奏者，表演者；演员；播放器",
+          "phonetic": "/ˈpleɪər/"
+        },
+        {
+          "en": "tape player",
+          "zh": "un. 磁带录音机的放音装置；小型录音机；磁带放音机；磁带重放装置"
+        },
+        {
+          "en": "model",
+          "zh": "n. 模型；典型；模范；模特儿；样式；vt. 模拟；塑造；模仿；vi. 做模型；做模特儿；adj. 模范的；作模型用的",
+          "phonetic": "/ˈmɑːdl/"
+        },
+        {
+          "en": "plane",
+          "zh": "n. 飞机；平面；程度，水平；adj. 平的；平面的；vt. 刨平；用刨子刨；掠过水面；vi. 刨；乘飞机旅行；翱翔",
+          "phonetic": "/pleɪn/"
+        },
+        {
+          "en": "model plane",
+          "zh": "模型飞机；飞机模型；一架飞机模型"
+        },
+        {
+          "en": "tidy",
+          "zh": "n. 椅子的背罩；adj. 整齐的；相当大的；vi. 整理；收拾；vt. 整理；收拾；弄整齐",
+          "phonetic": "/ˈtaɪdi/"
+        },
+        {
+          "en": "but",
+          "zh": "conj. 但是；而是；然而；adv. 仅仅，只；prep. 除…以外",
+          "phonetic": "/bət; bʌt/"
+        },
+        {
+          "en": "our",
+          "zh": "pron. 我们的",
+          "phonetic": "/ɑːr/"
+        },
+        {
+          "en": "everywhere",
+          "zh": "n. 每个地方；adv. 到处",
+          "phonetic": "/ˈevriwer/"
+        },
+        {
+          "en": "always",
+          "zh": "adv. 永远，一直；总是；常常",
+          "phonetic": "/ˈɔːlweɪz/"
+        }
+      ]
+    },
+    {
+      "id": "u6",
+      "title": "Unit 6",
+      "words": [
+        {
+          "en": "do",
+          "zh": "vi. 行，足够；生长；n. 要求；规定；C大调音阶中的第一音；v. 做；干；学习；研究；进行；完成；解答；整理；算出；引起；行过；aux. 助动词（构成疑问句和否定句）；（代替动词）；（用于加强语气）；n. （口语）事件；（主英国口语）诈骗；（主英国、新西兰口语）宴会；（口语）必须做到的事情",
+          "phonetic": "/duː; də; du; doʊ/"
+        },
+        {
+          "en": "have",
+          "zh": "aux. 已经；vt. 有；让；拿；从事；允许",
+          "phonetic": "/həv; əv; hæv/"
+        },
+        {
+          "en": "tennis",
+          "zh": "n. 网球（运动）",
+          "phonetic": "/ˈtenɪs/"
+        },
+        {
+          "en": "ball",
+          "zh": "n. 球；舞会；vt. 捏成球形；vi. 成团块",
+          "phonetic": "/bɔːl/"
+        },
+        {
+          "en": "ping-pong",
+          "zh": "n. 乒乓球；桌球",
+          "phonetic": "/ˈpɪŋ pɑːŋ/"
+        },
+        {
+          "en": "bat",
+          "zh": "n. 蝙蝠；球棒；球拍；批处理文件的扩展名；vt. 用球棒击球；击球率达…；vi. 轮到击球；用球棒击球",
+          "phonetic": "/bæt/"
+        },
+        {
+          "en": "soccer",
+          "zh": "n. 英式足球，足球",
+          "phonetic": "/ˈsɑːkər/"
+        },
+        {
+          "en": "soccer ball",
+          "zh": "足球；英式足球；足球体"
+        },
+        {
+          "en": "volleyball",
+          "zh": "n. 排球",
+          "phonetic": "/ˈvɑːlibɔːl/"
+        },
+        {
+          "en": "basketball",
+          "zh": "n. 篮球；篮球运动",
+          "phonetic": "/ˈbæskɪtbɔːl/"
+        },
+        {
+          "en": "hey",
+          "zh": "n. 干草（等于hay）；int. 喂！（引起注意等）；你好！（表示问候）",
+          "phonetic": "/heɪ/"
+        },
+        {
+          "en": "let",
+          "zh": "vt. 允许，让；出租；假设；妨碍；vi. 出租；被承包；n. 障碍；出租屋",
+          "phonetic": "/let/"
+        },
+        {
+          "en": "us",
+          "zh": "pron. 我们",
+          "phonetic": "/əs; ʌs/"
+        },
+        {
+          "en": "let's",
+          "zh": "让我们（let us的简写）"
+        },
+        {
+          "en": "let us",
+          "zh": "让我们；让我们自己；让我们一起"
+        },
+        {
+          "en": "go",
+          "zh": "n. 去；进行；尝试；vi. 走；达到；运转；趋于；vt. 忍受；出产；以…打赌；[复数 goes 第三人称单数 goes 过去式 went 过去分词 gone 现在分词 going]",
+          "phonetic": "/ɡoʊ/"
+        },
+        {
+          "en": "we",
+          "zh": "pron. 我们（主格）；笔者，本人（作者或演讲人使用）；朕，寡人",
+          "phonetic": "/wi/"
+        },
+        {
+          "en": "late",
+          "zh": "adj. 晚的；迟的；已故的；最近的；adv. 晚；迟；最近；在晚期",
+          "phonetic": "/leɪt/"
+        },
+        {
+          "en": "has",
+          "zh": "v. 有，吃，得到，从事，允许，雇用，享有（have的第三人称单数）；（亲属关系中）接受；拿；买到",
+          "phonetic": "/həz; əz; hæz/"
+        },
+        {
+          "en": "get",
+          "zh": "n. 生殖；幼兽；vi. 成为；变得；到达；vt. 使得；获得；受到；变成",
+          "phonetic": "/ɡet/"
+        },
+        {
+          "en": "great",
+          "zh": "n. 大师；大人物；伟人们；adj. 伟大的，重大的；极好的，好的；主要的",
+          "phonetic": "/ɡreɪt/"
+        },
+        {
+          "en": "play",
+          "zh": "n. 游戏；比赛；剧本；vt. 游戏；扮演；演奏；播放；同…比赛；vi. 演奏；玩耍；上演；参加比赛",
+          "phonetic": "/pleɪ/"
+        },
+        {
+          "en": "sound",
+          "zh": "n. 声音，语音；噪音；海峡；吵闹；听力范围；[医] 探条；adj. 健全的，健康的；合理的；可靠的；有效彻底的；vt. 听（诊）；测量，测…深；使发声；试探；宣告；vi. 听起来；发出声音；回响；测深；adv. 彻底地，充分地",
+          "phonetic": "/saʊnd/"
+        },
+        {
+          "en": "interesting",
+          "zh": "adj. 有趣的；引起兴趣的，令人关注的",
+          "phonetic": "/ˈɪntrəstɪŋ; ˈɪntrestɪŋ/"
+        },
+        {
+          "en": "boring",
+          "zh": "n. 钻孔；adj. 无聊的；令人厌烦的；v. 钻孔；使厌烦；挖空（bore的ing形式）",
+          "phonetic": "/ˈbɔːrɪŋ/"
+        },
+        {
+          "en": "fun",
+          "zh": "n. 乐趣；玩笑；有趣的人或事；adj. 供娱乐用的；vi. 开玩笑",
+          "phonetic": "/fʌn/"
+        },
+        {
+          "en": "difficult",
+          "zh": "adj. 困难的；不随和的；执拗的",
+          "phonetic": "/ˈdɪfɪkəlt/"
+        },
+        {
+          "en": "relaxing",
+          "zh": "v. 放松；休息（relax的ing形式）；缓和；松懈；adj. 令人轻松的",
+          "phonetic": "/rɪˈlæksɪŋ/"
+        },
+        {
+          "en": "watch",
+          "zh": "n. 手表；监视；守护；值班人；vt. 观察；注视；看守；警戒；vi. 观看，注视；守侯，看守",
+          "phonetic": "/wɑːtʃ/"
+        },
+        {
+          "en": "TV",
+          "zh": "abbr. 电视（television）",
+          "phonetic": "/ˌtiː ˈviː/"
+        },
+        {
+          "en": "watch TV",
+          "zh": "v. 看电视"
+        },
+        {
+          "en": "same",
+          "zh": "adj. 相同的；同一的；上述的（通常与the连用）；无变化的；adv. 同样地（通常与the连用）；pron. 同样的事物或人（通常与the连用）",
+          "phonetic": "/seɪm/"
+        },
+        {
+          "en": "love",
+          "zh": "n. 恋爱；亲爱的；酷爱；喜爱的事物；爱情，爱意；疼爱；热爱；爱人，所爱之物；v. 爱，热爱；爱戴；赞美，称赞；喜爱；喜好；喜欢；爱慕",
+          "phonetic": "/lʌv/"
+        },
+        {
+          "en": "with",
+          "zh": "prep. 用；随着；支持；和…在一起",
+          "phonetic": "/wɪð; wɪθ/"
+        },
+        {
+          "en": "sport",
+          "zh": "n. 运动；游戏；娱乐；运动会；玩笑；adj. 运动的；vt. 游戏；参加体育运动；夸耀；vi. 游戏",
+          "phonetic": "/spɔːrt/"
+        },
+        {
+          "en": "them",
+          "zh": "pron. 他们；它们；她们",
+          "phonetic": "/ðəm; ðem/"
+        },
+        {
+          "en": "only",
+          "zh": "adv. 只，仅仅；不料；adj. 唯一的，仅有的；最合适的；conj. 但是；不过；可是",
+          "phonetic": "/ˈoʊnli/"
+        },
+        {
+          "en": "like",
+          "zh": "vt. 喜欢；想；愿意；vi. 喜欢；希望；prep. 像；如同；adj. 同样的；相似的；n. 爱好；同样的人或物；adv. 可能；conj. 好像",
+          "phonetic": "/laɪk/"
+        },
+        {
+          "en": "easy",
+          "zh": "adj. 容易的；舒适的；vt. 发出停划命令；adv. 不费力地，从容地；vi. 停止划桨",
+          "phonetic": "/ˈiːzi/"
+        },
+        {
+          "en": "after",
+          "zh": "conj. 在……之后；prep. 在……之后；adj. 以后的；adv. 后来，以后",
+          "phonetic": "/ˈæftər/"
+        },
+        {
+          "en": "class",
+          "zh": "n. 阶级；班级；种类；班；等级；adj. 极好的；很好的，优秀的，出色的；vt. 分类；把…分等级；把…归入某等级，把…看作（或分类、归类）；把…编入某一班级；vi. 属于…类（或等级），被列为某类（或某级）",
+          "phonetic": "/klæs/"
+        },
+        {
+          "en": "classmate",
+          "zh": "n. 同班同学",
+          "phonetic": "/ˈklæsmeɪt/"
+        },
+        {
+          "en": "Bill",
+          "zh": "n. [法] 法案；广告；账单；[金融] 票据；钞票；清单；vt. 宣布；开账单；用海报宣传"
+        },
+        {
+          "en": "banana",
+          "zh": "n. 香蕉；喜剧演员；大鹰钩鼻",
+          "phonetic": "/bəˈnænə/"
+        },
+        {
+          "en": "hamburger",
+          "zh": "n. 汉堡包，火腿汉堡；牛肉饼，肉饼；碎牛肉",
+          "phonetic": "/ˈhæmbɜːrɡər/"
+        },
+        {
+          "en": "tomato",
+          "zh": "n. 番茄，西红柿",
+          "phonetic": "/təˈmeɪtoʊ/"
+        },
+        {
+          "en": "ice-cream",
+          "zh": "a. 冰淇淋的, 乳白色的",
+          "phonetic": "/ˈaɪs kriːm/"
+        },
+        {
+          "en": "salad",
+          "zh": "n. 色拉；尤指莴苣",
+          "phonetic": "/ˈsæləd/"
+        }
+      ]
+    },
+    {
+      "id": "u7",
+      "title": "Unit 7",
+      "words": [
+        {
+          "en": "strawberry",
+          "zh": "n. 草莓；草莓色",
+          "phonetic": "/ˈstrɔːberi/"
+        },
+        {
+          "en": "pear",
+          "zh": "n. [园艺] 梨树；梨子",
+          "phonetic": "/per/"
+        },
+        {
+          "en": "milk",
+          "zh": "n. 牛奶；乳状物；vt. 榨取；挤…的奶；vi. 挤奶",
+          "phonetic": "/mɪlk/"
+        },
+        {
+          "en": "bread",
+          "zh": "n. 面包；生计；vt. 在…上洒面包屑",
+          "phonetic": "/bred/"
+        },
+        {
+          "en": "birthday",
+          "zh": "n. 生日，诞辰；诞生的日子",
+          "phonetic": "/ˈbɜːrθdeɪ/"
+        },
+        {
+          "en": "dinner",
+          "zh": "n. 晚餐，晚宴；宴会；正餐",
+          "phonetic": "/ˈdɪnər/"
+        },
+        {
+          "en": "week",
+          "zh": "n. 周，星期",
+          "phonetic": "/wiːk/"
+        },
+        {
+          "en": "think about",
+          "zh": "un. 思考；探讨；为…费心思；想像"
+        },
+        {
+          "en": "food",
+          "zh": "n. 食物；养料",
+          "phonetic": "/fuːd/"
+        },
+        {
+          "en": "sure",
+          "zh": "adj. 确信的；可靠的；必定的；adv. 当然；的确",
+          "phonetic": "/ʃʊr/"
+        },
+        {
+          "en": "How about ...?",
+          "zh": "怎么样；如何；怎麽样"
+        },
+        {
+          "en": "burger",
+          "zh": "n. 汉堡包",
+          "phonetic": "/ˈbɜːrɡər/"
+        },
+        {
+          "en": "vegetable",
+          "zh": "n. 蔬菜；植物；植物人；adj. 蔬菜的；植物的",
+          "phonetic": "/ˈvedʒtəbl/"
+        },
+        {
+          "en": "fruit",
+          "zh": "n. 水果；产物；vt. 使……结果实；vi. 结果实",
+          "phonetic": "/fruːt/"
+        },
+        {
+          "en": "right",
+          "zh": "n. 正确；右边；正义；adj. 正确的；直接的；右方的；vt. 纠正；adv. 正确地；恰当地；彻底地；vi. 复正；恢复平稳",
+          "phonetic": "/raɪt/"
+        },
+        {
+          "en": "apple",
+          "zh": "n. 苹果，苹果树，苹果似的东西；[美俚]炸弹，手榴弹，（棒球的）球；[美俚]人，家伙。",
+          "phonetic": "/ˈæpl/"
+        },
+        {
+          "en": "then",
+          "zh": "conj. 然后，当时；n. 那时；adv. 然后；那么；于是；当时；此外",
+          "phonetic": "/ðen/"
+        },
+        {
+          "en": "egg",
+          "zh": "n. 蛋；卵子；家伙；鸡蛋；vt. 煽动；怂恿",
+          "phonetic": "/eɡ/"
+        },
+        {
+          "en": "carrot",
+          "zh": "n. 胡萝卜；诱饵",
+          "phonetic": "/ˈkærət/"
+        },
+        {
+          "en": "rice",
+          "zh": "n. 稻；米饭；vt. 把…捣成米糊状",
+          "phonetic": "/raɪs/"
+        },
+        {
+          "en": "chicken",
+          "zh": "n. 鸡肉；小鸡；胆小鬼，懦夫；adj. 鸡肉的；胆怯的；幼小的",
+          "phonetic": "/ˈtʃɪkɪn/"
+        },
+        {
+          "en": "so",
+          "zh": "conj. 所以；因此；adv. 如此，这么；确是如此；pron. 这样",
+          "phonetic": "/soʊ/"
+        },
+        {
+          "en": "breakfast",
+          "zh": "n. 早餐；早饭；vt. 为…供应早餐；vi. 吃早餐",
+          "phonetic": "/ˈbrekfəst/"
+        },
+        {
+          "en": "lunch",
+          "zh": "n. 午餐；vt. 吃午餐；供给午餐；vi. 吃午餐；供给午餐",
+          "phonetic": "/lʌntʃ/"
+        },
+        {
+          "en": "star",
+          "zh": "n. 星，恒星；明星；星形物；adj. 明星的，主角的；星形的；vt. 用星号标于；由…主演，由…担任主角；vi. 担任主角",
+          "phonetic": "/stɑːr/"
+        },
+        {
+          "en": "eat",
+          "zh": "vt. 吃，喝；腐蚀；烦扰；vi. 进食；腐蚀，侵蚀",
+          "phonetic": "/iːt/"
+        },
+        {
+          "en": "well",
+          "zh": "n. 井；源泉；adj. 良好的；健康的；适宜的；adv. 很好地；充分地；满意地；适当地；v. 涌出",
+          "phonetic": "/wel/"
+        },
+        {
+          "en": "habit",
+          "zh": "n. 习惯，习性；嗜好；vt. 使穿衣",
+          "phonetic": "/ˈhæbɪt/"
+        },
+        {
+          "en": "healthy",
+          "zh": "adj. 健康的，健全的；有益于健康的",
+          "phonetic": "/ˈhelθi/"
+        },
+        {
+          "en": "really",
+          "zh": "adv. 实际上，事实上；真正地，真实地；真的吗？（表语气）",
+          "phonetic": "/ˈriːəli/"
+        },
+        {
+          "en": "question",
+          "zh": "n. 问题，疑问；询问；疑问句；vt. 询问；怀疑；审问；vi. 询问；怀疑；审问",
+          "phonetic": "/ˈkwestʃən/"
+        },
+        {
+          "en": "want",
+          "zh": "n. 需要；缺乏；贫困；必需品；vt. 需要；希望；应该；缺少；vi. 需要；缺少",
+          "phonetic": "/wɑːnt/"
+        },
+        {
+          "en": "be",
+          "zh": "vt. 是； 有，存在； 做，成为； 发生",
+          "phonetic": "/bi; biː/"
+        },
+        {
+          "en": "fat",
+          "zh": "n. 脂肪，肥肉；adj. 肥的，胖的；油腻的；丰满的；vt. 养肥；在…中加入脂肪；vi. 长肥",
+          "phonetic": "/fæt/"
+        },
+        {
+          "en": "much",
+          "zh": "adv. 非常，很；adj. 大量的；n. 许多，大量；pron. 许多，大量",
+          "phonetic": "/mʌtʃ/"
+        },
+        {
+          "en": "How much ...?",
+          "zh": "conj. 多少"
+        },
+        {
+          "en": "sock",
+          "zh": "vt. 重击；给……穿袜；n. 短袜；一击；adv. 正着地；不偏不倚地；adj. 非常成功的",
+          "phonetic": "/sɑːk/"
+        },
+        {
+          "en": "T-shirt",
+          "zh": "n. 短袖圆领汗衫",
+          "phonetic": "/ˈtiː ʃɜːrt/"
+        },
+        {
+          "en": "shorts",
+          "zh": "n. 短裤",
+          "phonetic": "/ʃɔːrts/"
+        },
+        {
+          "en": "sweater",
+          "zh": "n. 毛线衣，运动衫；大量出汗的人，发汗剂",
+          "phonetic": "/ˈswetər/"
+        },
+        {
+          "en": "trousers",
+          "zh": "n. 裤子，长裤",
+          "phonetic": "/ˈtraʊzərz/"
+        },
+        {
+          "en": "shoe",
+          "zh": "n. 鞋；蹄铁；外胎；vt. 给……穿上鞋；穿……鞋",
+          "phonetic": "/ʃuː/"
+        },
+        {
+          "en": "skirt",
+          "zh": "n. 裙子；vt. 绕过，回避；位于…边缘；vi. 沿边走，绕开；环绕",
+          "phonetic": "/skɜːrt/"
+        },
+        {
+          "en": "dollar",
+          "zh": "n. 美元",
+          "phonetic": "/ˈdɑːlər/"
+        },
+        {
+          "en": "big",
+          "zh": "adj. 大的；重要的；量大的；adv. 大量地；顺利；夸大地",
+          "phonetic": "/bɪɡ/"
+        },
+        {
+          "en": "small",
+          "zh": "n. 小件物品；矮小的人；adj. 少的，小的；微弱的；几乎没有的；不重要的；幼小的；adv. 小小地；卑鄙地",
+          "phonetic": "/smɔːl/"
+        },
+        {
+          "en": "short",
+          "zh": "n. 短；缺乏；短路；短裤；adj. 短的；不足的；矮的，低的；adv. 不足；突然；唐突地",
+          "phonetic": "/ʃɔːrt/"
+        },
+        {
+          "en": "long",
+          "zh": "n. 长时间；[语] 长音节；（服装的）长尺寸；长裤；adj. 长的；过长的；做多头的；长时间的；冗长的，长音；vi. 渴望；热望；adv. 长期地；始终",
+          "phonetic": "/lɔːŋ/"
+        }
+      ]
+    },
+    {
+      "id": "u8",
+      "title": "Unit 8",
+      "words": [
+        {
+          "en": "woman",
+          "zh": "n. 妇女；女性；成年女子",
+          "phonetic": "/ˈwʊmən/"
+        },
+        {
+          "en": "Can I help you?",
+          "zh": "我能帮你吗；我能帮助你吗；我能帮你忙吗"
+        },
+        {
+          "en": "need",
+          "zh": "n. 需要，要求；缺乏；必要之物；vt. 需要；vi. 需要",
+          "phonetic": "/niːd/"
+        },
+        {
+          "en": "look",
+          "zh": "vt. 看；期待；注意；面向；看上去像；vi. 看；看起来；注意；面向；n. 看；样子；面容",
+          "phonetic": "/lʊk/"
+        },
+        {
+          "en": "pair",
+          "zh": "n. 一对，一双，一副；vt. 把…组成一对",
+          "phonetic": "/per/"
+        },
+        {
+          "en": "take",
+          "zh": "vi. 拿；获得；vt. 拿，取；采取；接受（礼物等）；买，花费；耗费（时间等）；n. 捕获量；看法；利益，盈益；（入场券的）售得金额",
+          "phonetic": "/teɪk/"
+        },
+        {
+          "en": "Here you are.",
+          "zh": "[口语]；我们(或你，你们)到了!；这就是我们(或你，你们)所要的东西。"
+        },
+        {
+          "en": "ten",
+          "zh": "num. 十个，十",
+          "phonetic": "/ten/"
+        },
+        {
+          "en": "eleven",
+          "zh": "num. 十一；十一个；n. 十一；十一个；adj. 十一的；十一个的",
+          "phonetic": "/ɪˈlevn/"
+        },
+        {
+          "en": "twelve",
+          "zh": "num. 十二；十二个；n. 十二；十二个；adj. 十二的；十二个的",
+          "phonetic": "/twelv/"
+        },
+        {
+          "en": "thirteen",
+          "zh": "n. 十三；十三岁；十三个；num. 十三；adj. 十三的；十三个的",
+          "phonetic": "/ˌθɜːrˈtiːn/"
+        },
+        {
+          "en": "fifteen",
+          "zh": "n. 十五；十五个；十五人组成的橄榄球队；num. 十五；adj. 十五的",
+          "phonetic": "/ˌfɪfˈtiːn/"
+        },
+        {
+          "en": "eighteen",
+          "zh": "n. 十八，十八个；num. 十八；adj. 十八个的，十八的",
+          "phonetic": "/ˌeɪˈtiːn/"
+        },
+        {
+          "en": "twenty",
+          "zh": "num. 二十；n. 二十；二十年代；adj. 二十的",
+          "phonetic": "/ˈtwenti/"
+        },
+        {
+          "en": "thirty",
+          "zh": "num. 三十；n. 三十年代；adj. 三十个的",
+          "phonetic": "/ˈθɜːrti/"
+        },
+        {
+          "en": "Mr.",
+          "zh": "n. 先生",
+          "phonetic": "/ˈmɪstər/"
+        },
+        {
+          "en": "clothes",
+          "zh": "n. 衣服",
+          "phonetic": "/kloʊðz; kloʊz/"
+        },
+        {
+          "en": "store",
+          "zh": "n. 商店；储备，贮藏；仓库；vt. 贮藏，储存",
+          "phonetic": "/stɔːr/"
+        },
+        {
+          "en": "buy",
+          "zh": "n. 购买，买卖；所购的物品；vi. 买，采购；vt. 购买；获得；贿赂",
+          "phonetic": "/baɪ/"
+        },
+        {
+          "en": "sale",
+          "zh": "n. 销售；出售；拍卖；销售额；廉价出售",
+          "phonetic": "/seɪl/"
+        },
+        {
+          "en": "sell",
+          "zh": "n. 销售；失望；推销术；vt. 销售；推销；出卖；欺骗；vi. 卖；出售；受欢迎；有销路",
+          "phonetic": "/sel/"
+        },
+        {
+          "en": "all",
+          "zh": "n. 全部；adj. 全部的；adv. 全然地；越发；pron. 全部",
+          "phonetic": "/ɔːl/"
+        },
+        {
+          "en": "very",
+          "zh": "adv. 非常，很；完全；adj. 恰好是，正是；甚至；十足的；特有的",
+          "phonetic": "/ˈveri/"
+        },
+        {
+          "en": "price",
+          "zh": "n. 价格；价值；代价；vt. 给……定价；问……的价格",
+          "phonetic": "/praɪs/"
+        },
+        {
+          "en": "boy",
+          "zh": "n. 男孩；男人",
+          "phonetic": "/bɔɪ/"
+        },
+        {
+          "en": "a pair of",
+          "zh": "det. 一双"
+        },
+        {
+          "en": "when",
+          "zh": "conj. 考虑到；既然；当…时；在…时；如果；n. 时间，时候；日期；场合；adv. 什么时候，何时；（用于时间的表达方式之后）在那时；其时；当时；pron. 那时；什么时侯",
+          "phonetic": "/wen/"
+        },
+        {
+          "en": "month",
+          "zh": "n. 月，一个月的时间",
+          "phonetic": "/mʌnθ/"
+        },
+        {
+          "en": "January",
+          "zh": "n. 一月",
+          "phonetic": "/ˈdʒænjueri/"
+        },
+        {
+          "en": "February",
+          "zh": "n. 二月",
+          "phonetic": "/ˈfebrueri/"
+        },
+        {
+          "en": "March",
+          "zh": "n. 三月",
+          "phonetic": "/mɑːrtʃ/"
+        },
+        {
+          "en": "April",
+          "zh": "n. 四月",
+          "phonetic": "/ˈeɪprəl/"
+        },
+        {
+          "en": "May",
+          "zh": "aux. 可以，能够；可能，也许；祝，愿；会，能",
+          "phonetic": "/meɪ/"
+        },
+        {
+          "en": "June",
+          "zh": "n. 六月；琼（人名，来源于拉丁语，含义是“年轻气盛的六月”）",
+          "phonetic": "/dʒuːn/"
+        },
+        {
+          "en": "July",
+          "zh": "n. 七月",
+          "phonetic": "/dʒʊˈlaɪ/"
+        },
+        {
+          "en": "August",
+          "zh": "n. 八月（简写为Aug）；adj. 威严的；令人敬畏的",
+          "phonetic": "/ˈɔːɡəst/"
+        },
+        {
+          "en": "September",
+          "zh": "n. 九月",
+          "phonetic": "/sepˈtembər/"
+        },
+        {
+          "en": "October",
+          "zh": "n. [天] 十月",
+          "phonetic": "/ɑːkˈtoʊbər/"
+        },
+        {
+          "en": "November",
+          "zh": "n. 十一月",
+          "phonetic": "/noʊˈvembər/"
+        },
+        {
+          "en": "December",
+          "zh": "n. 十二月",
+          "phonetic": "/dɪˈsembər/"
+        },
+        {
+          "en": "happy",
+          "zh": "adj. 幸福的；高兴的；巧妙的",
+          "phonetic": "/ˈhæpi/"
+        },
+        {
+          "en": "Happy birthday!",
+          "zh": "un. 生日快乐"
+        },
+        {
+          "en": "old",
+          "zh": "adj. 陈旧的，古老的；年老的；n. 古时",
+          "phonetic": "/oʊld/"
+        },
+        {
+          "en": "How old ...?",
+          "zh": "conj. 多少岁"
+        },
+        {
+          "en": "party",
+          "zh": "n. 政党，党派；聚会，派对；当事人 [复数 parties]；vi. 参加社交聚会 [ 过去式 partied 过去分词 partied 现在分词 partying ]",
+          "phonetic": "/ˈpɑːrti/"
+        },
+        {
+          "en": "See you!",
+          "zh": "[口语]再见!"
+        },
+        {
+          "en": "first",
+          "zh": "num. 第一；n. 第一；开始；冠军；adj. 第一的；基本的；最早的；adv. 第一；首先；优先；宁愿",
+          "phonetic": "/fɜːrst/"
+        },
+        {
+          "en": "second",
+          "zh": "num. 第二；n. 秒；第二名；瞬间；二等品；adj. 第二的；次要的；附加的；vt. 支持；adv. 第二；其次；居第二位",
+          "phonetic": "/ˈsekənd; sɪˈkɑːnd/"
+        }
+      ]
+    },
+    {
+      "id": "u9",
+      "title": "Unit 9",
+      "words": [
+        {
+          "en": "third",
+          "zh": "num. 第三；三分之一；adj. 第三的；三分之一的",
+          "phonetic": "/θɜːrd/"
+        },
+        {
+          "en": "fifth",
+          "zh": "num. 第五；n. 第五；五分之一；adj. 第五的；五分之一的",
+          "phonetic": "/fɪfθ/"
+        },
+        {
+          "en": "eighth",
+          "zh": "num. 第八；八分之一；adj. 第八的；八分之一的",
+          "phonetic": "/eɪtθ/"
+        },
+        {
+          "en": "ninth",
+          "zh": "num. 第九；adj. 第九的；九分之一的；n. 九分之一",
+          "phonetic": "/naɪnθ/"
+        },
+        {
+          "en": "twelfth",
+          "zh": "n. 第十二；月的第十二日；adj. 第十二的，第十二个的；十二分之一的",
+          "phonetic": "/twelfθ/"
+        },
+        {
+          "en": "twentieth",
+          "zh": "n. 二十分之一；num. 第二十；adj. 第二十的；二十分之一的",
+          "phonetic": "/ˈtwentiəθ/"
+        },
+        {
+          "en": "test",
+          "zh": "n. 试验；检验；vt. 试验；测试；vi. 试验；测试",
+          "phonetic": "/test/"
+        },
+        {
+          "en": "trip",
+          "zh": "n. 旅行；绊倒；差错；vt. 绊倒；使犯错；vi. 绊倒；远足；犯错误；轻快地走",
+          "phonetic": "/trɪp/"
+        },
+        {
+          "en": "art",
+          "zh": "n. 艺术；美术；艺术品；v. 是（be的变体）；adj. 艺术的；艺术品的",
+          "phonetic": "/ɑːrt/"
+        },
+        {
+          "en": "festival",
+          "zh": "n. 节日；庆祝，纪念活动；欢乐；adj. 节日的，喜庆的；快乐的",
+          "phonetic": "/ˈfestɪvl/"
+        },
+        {
+          "en": "dear",
+          "zh": "n. 亲爱的人；adj. 亲爱的；尊敬的；昂贵的；adv. 高价地；疼爱地；int. 哎呀",
+          "phonetic": "/dɪr/"
+        },
+        {
+          "en": "student",
+          "zh": "n. 学生；学者",
+          "phonetic": "/ˈstuːdnt/"
+        },
+        {
+          "en": "thing",
+          "zh": "n. 事情；东西；事物；情况",
+          "phonetic": "/θɪŋ/"
+        },
+        {
+          "en": "term",
+          "zh": "n. 术语；学期；期限；条款；(代数式等的)项；vt. 把…叫做",
+          "phonetic": "/tɜːrm/"
+        },
+        {
+          "en": "busy",
+          "zh": "adj. 忙碌的；热闹的；正被占用的；vt. 使忙于",
+          "phonetic": "/ˈbɪzi/"
+        },
+        {
+          "en": "time",
+          "zh": "n. 时间；时代；次数；节拍；倍数；adj. 定时的；定期的；分期的；vt. 计时；测定…的时间；安排…的速度",
+          "phonetic": "/taɪm/"
+        },
+        {
+          "en": "Have a good time!",
+          "zh": "na. 过得愉快；很愉快"
+        },
+        {
+          "en": "there",
+          "zh": "n. 那个地方；adv. 在那里；在那边；在那点上；int. 你瞧",
+          "phonetic": "/ðer/"
+        },
+        {
+          "en": "favorite",
+          "zh": "n. 幸运儿；喜欢的事物；特别喜欢的人；adj. 最喜爱的；中意的；宠爱的",
+          "phonetic": "/ˈfeɪvərɪt/"
+        },
+        {
+          "en": "subject",
+          "zh": "n. 主题；科目；[语] 主语；国民；adj. 服从的；易患…的；受制于…的；vt. 使…隶属；使屈从于…",
+          "phonetic": "/ˈsʌbdʒɪkt; ˈsʌbdʒekt/"
+        },
+        {
+          "en": "science",
+          "zh": "n. 科学；技术；学科；理科",
+          "phonetic": "/ˈsaɪəns/"
+        },
+        {
+          "en": "P.E.",
+          "zh": "n. 体育（课）（全写为 physical education）"
+        },
+        {
+          "en": "music",
+          "zh": "n. 音乐，乐曲",
+          "phonetic": "/ˈmjuːzɪk/"
+        },
+        {
+          "en": "math",
+          "zh": "n. 数学（等于mathematics）",
+          "phonetic": "/mæθ/"
+        },
+        {
+          "en": "Chinese",
+          "zh": "n. 中文，汉语；中国人；adj. 中国的，中国人的；中国话的",
+          "phonetic": "/ˌtʃaɪˈniːz/"
+        },
+        {
+          "en": "geography",
+          "zh": "n. 地理；地形",
+          "phonetic": "/dʒiˈɑːɡrəfi/"
+        },
+        {
+          "en": "history",
+          "zh": "n. 历史，历史学；历史记录；来历",
+          "phonetic": "/ˈhɪstri/"
+        },
+        {
+          "en": "why",
+          "zh": "int. 哎呀！什么？；adv. 为什么",
+          "phonetic": "/waɪ/"
+        },
+        {
+          "en": "because",
+          "zh": "conj. 因为",
+          "phonetic": "/bɪˈkəz/"
+        },
+        {
+          "en": "Monday",
+          "zh": "n. 星期一",
+          "phonetic": "/ˈmʌndeɪ/"
+        },
+        {
+          "en": "Friday",
+          "zh": "n. 星期五",
+          "phonetic": "/ˈfraɪdeɪ/"
+        },
+        {
+          "en": "Saturday",
+          "zh": "n. 星期六",
+          "phonetic": "/ˈsætərdeɪ/"
+        },
+        {
+          "en": "for sure",
+          "zh": "adv. 确实"
+        },
+        {
+          "en": "free",
+          "zh": "adj. 免费的；自由的，不受约束的；[化学] 游离的；vt. 使自由，解放；释放；adv. 自由地；免费",
+          "phonetic": "/friː/"
+        },
+        {
+          "en": "cool",
+          "zh": "n. 凉爽；凉爽的空气；adj. 凉爽的；冷静的；出色的；vt. 使…冷却；使…平静下来；vi. 变凉；平息；adv. 冷静地",
+          "phonetic": "/kuːl/"
+        },
+        {
+          "en": "Tuesday",
+          "zh": "n. 星期二",
+          "phonetic": "/ˈtuːzdeɪ/"
+        },
+        {
+          "en": "Wednesday",
+          "zh": "n. 星期三",
+          "phonetic": "/ˈwenzdeɪ/"
+        },
+        {
+          "en": "Thursday",
+          "zh": "n. 星期四",
+          "phonetic": "/ˈθɜːrzdeɪ/"
+        },
+        {
+          "en": "Sunday",
+          "zh": "n. 星期日；礼拜日",
+          "phonetic": "/ˈsʌndeɪ/"
+        },
+        {
+          "en": "A.M.",
+          "zh": "abbr. 调幅；振幅调制；议员（威尔士议会成员）"
+        },
+        {
+          "en": "P.M.",
+          "zh": "abbr. 下午（post meridiem）"
+        },
+        {
+          "en": "useful",
+          "zh": "adj. 有用的，有益的；有帮助的",
+          "phonetic": "/ˈjuːsfl/"
+        },
+        {
+          "en": "from",
+          "zh": "prep. 来自，从；由于；今后",
+          "phonetic": "/frəm; frʌm; frɑːm/"
+        },
+        {
+          "en": "from ... to ...",
+          "zh": "从到；从什么到什么；起止时间"
+        },
+        {
+          "en": "Mrs.",
+          "zh": "n. 先生",
+          "phonetic": "/ˈmɪsɪz/"
+        },
+        {
+          "en": "finish",
+          "zh": "n. 结束；完美；回味（葡萄酒）；vt. 完成；结束；用完；vi. 结束，终止；终结",
+          "phonetic": "/ˈfɪnɪʃ/"
+        },
+        {
+          "en": "lesson",
+          "zh": "n. 教训；课；vt. 教训；上课",
+          "phonetic": "/ˈlesn/"
+        },
+        {
+          "en": "hour",
+          "zh": "n. 小时；钟头；课时；…点钟",
+          "phonetic": "/ˈaʊər/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  { "id": "bed_basic", "name": "小床", "price": 0, "w": 3, "h": 2 },
+  { "id": "bed_soft", "name": "软软床", "price": 300, "w": 3, "h": 2 },
+  { "id": "bed_lux", "name": "豪华床", "price": 800, "w": 4, "h": 2 },
+  { "id": "desk", "name": "书桌", "price": 150, "w": 2, "h": 1 },
+  { "id": "shelf", "name": "书架", "price": 200, "w": 2, "h": 2 },
+  { "id": "lamp", "name": "台灯", "price": 80, "w": 1, "h": 1 },
+  { "id": "sofa", "name": "沙发", "price": 400, "w": 3, "h": 1 },
+  { "id": "tv", "name": "电视", "price": 600, "w": 2, "h": 2 },
+  { "id": "rug", "name": "地毯", "price": 120, "w": 3, "h": 2 },
+  { "id": "toybox", "name": "玩具箱", "price": 250, "w": 1, "h": 1 },
+  { "id": "plant", "name": "盆栽", "price": 60, "w": 1, "h": 1 },
+  { "id": "painting", "name": "挂画", "price": 90, "w": 1, "h": 1 },
+  { "id": "curtain", "name": "窗帘", "price": 150, "w": 2, "h": 1 },
+  { "id": "floorlamp", "name": "落地灯", "price": 180, "w": 1, "h": 1 },
+  { "id": "catbed", "name": "猫窝", "price": 500, "w": 1, "h": 1 },
+  { "id": "piano", "name": "钢琴", "price": 1500, "w": 3, "h": 2 },
+  { "id": "wardrobe", "name": "衣柜", "price": 220, "w": 2, "h": 2 },
+  { "id": "clock", "name": "挂钟", "price": 70, "w": 1, "h": 1 }
+]
