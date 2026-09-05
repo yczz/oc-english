@@ -1,31 +1,19 @@
-// 房间渲染器：等距 2.5D 视角（左墙 + 后墙 + 菱形地砖地板）
+// 房间渲染器：正面平铺视角（墙面 + 地板铺满整个画布，模拟人生式自由走动）
 // 依赖全局 PIXI（lib/pixi.min.js UMD）
 import { FURNITURE_ART } from './furniture.js';
+import { buildCharacterLayers, PIVOTS, VB_W, VB_H } from './character.js';
 
 export const ROOM_W = 12;
 export const ROOM_H = 8;
 
-// ---- 等距投影参数 ----
-const TILE_W = 48, TILE_H = 24;          // 地砖菱形：宽 48 高 24（2:1 等距）
-const TW2 = TILE_W / 2, TH2 = TILE_H / 2;
-const WALL_H = 100;                       // 墙面高度
-const OX = ROOM_H * TW2 + 48;             // 房间后角(0,0)的屏幕 x
-const OY = WALL_H + 8;                    // 后角的屏幕 y
-const CANVAS_W = (ROOM_W + ROOM_H) * TW2 + 96;
-const CANVAS_H = OY + (ROOM_W + ROOM_H) * TH2 + 16;
-
-// 网格角点 → 屏幕坐标
-const px = (x, y) => OX + (x - y) * TW2;
-const py = (x, y) => OY + (x + y) * TH2;
-// 屏幕坐标 → 网格角点（拖拽反算用）
-function toGrid(sx, sy) {
-  const d = (sy - OY) / TH2, a = (sx - OX) / TW2;
-  return { gx: (a + d) / 2, gy: (d - a) / 2 };
-}
-
-// 家具的立体高度系数（贴地家具按等距深度压扁，立柜类保持挺立）
-const HEIGHT_K = { rug: 0.55, bed_basic: 0.72, bed_soft: 0.72, bed_lux: 0.62, sofa: 0.85, piano: 0.9 };
-const heightK = id => HEIGHT_K[id] ?? 0.95;
+const WALL_RATIO = 0.58;   // 墙面占画布高度比例，其余为地板
+const CHAR_H_GRID = 2.75;  // 人物身高（以格宽为单位，随深度缩放）
+const WALK_SPEED = 2.6;    // 格/秒
+// 手臂自然下垂的静止角（素体手臂原为斜张 45°，收拢到体侧）
+const ARM_REST = { armL: -0.52, armR: 0.52 };
+const BONE_ORDER = ['back', 'armL', 'armR', 'legL', 'legR', 'core'];
+const FLAT_ITEMS = new Set(['rug']); // 贴地物件（正面视角平铺压扁）
+const layerSvg = inner => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${VB_W} ${VB_H}">${inner}</svg>`;
 
 function svgTexture(svgStr, w, h) {
   return new Promise(resolve => {
@@ -34,7 +22,7 @@ function svgTexture(svgStr, w, h) {
     img.onerror = () => resolve(null);
     // 2x 超采样保证 Retina 清晰
     img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(
-      svgStr.replace('<svg ', `<svg width="${w * 2}" height="${h * 2}" `)
+      svgStr.replace('<svg ', `<svg width="${Math.round(w * 2)}" height="${Math.round(h * 2)}" `)
     );
   });
 }
@@ -50,14 +38,22 @@ export class Room {
     this.placed = [];
     this.app = null;
     this.hover = null; // 拖拽目标格 {gx,gy,w,h}
+    // 人物行走状态（网格坐标：x 横向 0..ROOM_W，y 深度 0..ROOM_H）
+    this.charPos = { x: ROOM_W / 2, y: ROOM_H * 0.62 };
+    this.charTarget = null;
+    this.walkPhase = 0;
+    this.charFace = 1;      // 朝向（1 右 / -1 左）
+    this.idleDelay = 1.6;   // 站多久后开始自己溜达（模拟人生式自主走动）
+    this.charK = 1;         // 人物当前深度缩放
+    this._lastCharZ = null;
   }
 
   async init() {
     this.app = new PIXI.Application({
       view: this.canvas,
-      width: CANVAS_W,
-      height: CANVAS_H,
-      background: '#e9e0cf',
+      width: 1,
+      height: 1,
+      background: '#f6e9d1',
       antialias: true,
       resolution: window.devicePixelRatio || 1,
       autoDensity: true,
@@ -68,91 +64,118 @@ export class Room {
     this.furnitureLayer.sortableChildren = true;
     this.app.stage.addChild(this.furnitureLayer);
 
-    // 舞台级指针事件（拖拽用）
+    // 舞台级指针事件（拖拽 / 点击走动用）
     this.app.stage.eventMode = 'static';
     this.app.stage.hitArea = this.app.screen;
     this.app.stage.on('pointermove', e => this.onMove(e));
     this.app.stage.on('pointerup', () => this.onUp());
     this.app.stage.on('pointerupoutside', () => this.onUp());
-    this.redrawBg();
+    this.app.stage.on('pointerdown', e => this.onStageDown(e));
+    this.app.ticker.add(() => this.tick());
+
+    // 容器尺寸变化（窗口拉伸 / 收纳箱展开）时重新平铺
+    this._ro = new ResizeObserver(() => this.layout());
+    this._ro.observe(this.canvas.parentElement);
+    this.layout();
   }
 
-  // ---------- 背景：墙面 + 地板 ----------
+  // ---------- 坐标映射：网格 → 屏幕（正面平铺，无等距投影） ----------
+  sx(gx) { return gx / ROOM_W * this.W; }
+  depthY(gy) { return this.FT + gy / ROOM_H * (this.H - this.FT); }
+  depthK(gy) { return 0.74 + 0.26 * (gy / ROOM_H); } // 越靠前越大（近大远小）
+  toGrid(bx, by) { // 屏幕点 → 网格（地板范围内）
+    return {
+      gx: bx / this.W * ROOM_W,
+      gy: (by - this.FT) / (this.H - this.FT) * ROOM_H,
+    };
+  }
+
+  // 画布铺满容器，背景与所有物件按新尺寸重排
+  layout() {
+    if (!this.app) return;
+    const wrap = this.canvas.parentElement;
+    const cw = wrap.clientWidth, ch = wrap.clientHeight;
+    if (cw < 10 || ch < 10) return;
+    this.app.renderer.resize(cw, ch);
+    this.W = cw; this.H = ch;
+    this.FT = ch * WALL_RATIO;
+    this.cellW = cw / ROOM_W;
+    this.redrawBg();
+    for (const sp of this.sprites.values()) this.posSprite(sp);
+    this.furnitureLayer.sortChildren();
+    this.updateCharTransform();
+  }
+
+  // ---------- 背景：整面墙 + 整片地板 ----------
   redrawBg() {
     const g = this.bgLayer;
     g.clear();
+    const { W, H, FT } = this;
 
-    // 左墙（面向右侧）：后角 → 左下角，向下延伸墙高
-    g.beginFill('#e9d7ba');
-    g.moveTo(px(0, 0), py(0, 0));
-    g.lineTo(px(0, ROOM_H), py(0, ROOM_H));
-    g.lineTo(px(0, ROOM_H), py(0, ROOM_H) + WALL_H);
-    g.lineTo(px(0, 0), py(0, 0) + WALL_H);
-    g.closePath(); g.endFill();
+    // 墙面 + 竖条纹墙纸
+    g.beginFill('#f6e9d1'); g.drawRect(0, 0, W, FT); g.endFill();
+    g.beginFill('#efdfc2', 0.55);
+    for (let x = 0; x < W; x += 64) g.drawRect(x, 0, 32, FT);
+    g.endFill();
 
-    // 后墙（面向下侧）：后角 → 右上角，更亮一点
-    g.beginFill('#f6e9d1');
-    g.moveTo(px(0, 0), py(0, 0));
-    g.lineTo(px(ROOM_W, 0), py(ROOM_W, 0));
-    g.lineTo(px(ROOM_W, 0), py(ROOM_W, 0) + WALL_H);
-    g.lineTo(px(0, 0), py(0, 0) + WALL_H);
-    g.closePath(); g.endFill();
-
-    // 墙顶描边
-    g.lineStyle(2, '#c8b18c', 1);
-    g.moveTo(px(0, ROOM_H), py(0, ROOM_H) + WALL_H);
-    g.lineTo(px(0, 0), py(0, 0) + WALL_H);
-    g.lineTo(px(ROOM_W, 0), py(ROOM_W, 0) + WALL_H);
-
-    // 后墙上的窗户（阳光感）
+    // 窗户（右上墙面，阳光感）
     {
-      const cx = px(8, 0), top = py(8, 0) + 22, w = 82, h = 48;
-      g.lineStyle(4, '#b58a5f', 1); g.beginFill('#cfe8f7');
-      g.drawRect(cx - w / 2, top, w, h); g.endFill();
-      g.lineStyle(3, '#b58a5f', 1);
-      g.moveTo(cx, top); g.lineTo(cx, top + h);
-      g.moveTo(cx - w / 2, top + h / 2); g.lineTo(cx + w / 2, top + h / 2);
-      // 窗外云朵
+      const ww = Math.min(W * 0.17, 230), wh = ww * 0.66;
+      const wx = W * 0.70 - ww / 2, wy = FT * 0.24;
+      g.lineStyle(5, '#b58a5f', 1); g.beginFill('#cfe8f7');
+      g.drawRect(wx, wy, ww, wh); g.endFill();
+      g.lineStyle(3.5, '#b58a5f', 1);
+      g.moveTo(wx + ww / 2, wy); g.lineTo(wx + ww / 2, wy + wh);
+      g.moveTo(wx, wy + wh / 2); g.lineTo(wx + ww, wy + wh / 2);
       g.lineStyle(0); g.beginFill('#ffffff', 0.9);
-      g.drawCircle(cx - 18, top + 15, 6); g.drawCircle(cx - 10, top + 13, 5);
-      g.drawCircle(cx + 16, top + 30, 5);
+      g.drawCircle(wx + ww * 0.26, wy + wh * 0.3, wh * 0.11);
+      g.drawCircle(wx + ww * 0.36, wy + wh * 0.26, wh * 0.09);
+      g.drawCircle(wx + ww * 0.74, wy + wh * 0.66, wh * 0.09);
       g.endFill();
     }
-    // 左墙上的挂画
+    // 挂画（左上墙面）
     {
-      const mx = px(0, 4.5), my = py(0, 4.5) + 34;
-      g.lineStyle(0); g.beginFill('#f2cc5b');
-      g.drawRect(mx - 14, my, 28, 22); g.endFill();
-      g.lineStyle(2.5, '#b07d45', 1);
-      g.drawRect(mx - 14, my, 28, 22);
+      const mw = Math.min(W * 0.075, 96), mh = mw * 0.8;
+      const mx = W * 0.24 - mw / 2, my = FT * 0.3;
+      g.lineStyle(0); g.beginFill('#f2cc5b'); g.drawRect(mx, my, mw, mh); g.endFill();
+      g.lineStyle(3, '#b07d45', 1); g.drawRect(mx, my, mw, mh);
       g.lineStyle(0); g.beginFill('#8fd194');
-      g.moveTo(mx - 10, my + 18); g.lineTo(mx - 2, my + 7); g.lineTo(mx + 4, my + 13); g.lineTo(mx + 10, my + 5); g.lineTo(mx + 10, my + 18);
+      g.moveTo(mx + mw * 0.12, my + mh * 0.82); g.lineTo(mx + mw * 0.4, my + mh * 0.3);
+      g.lineTo(mx + mw * 0.6, my + mh * 0.58); g.lineTo(mx + mw * 0.85, my + mh * 0.22);
+      g.lineTo(mx + mw * 0.88, my + mh * 0.82);
       g.closePath(); g.endFill();
     }
 
-    // 菱形地砖地板（棋盘格 + 网格线）
-    for (let gy = 0; gy < ROOM_H; gy++) {
-      for (let gx = 0; gx < ROOM_W; gx++) {
-        const p0 = [px(gx, gy), py(gx, gy)], p1 = [px(gx + 1, gy), py(gx + 1, gy)];
-        const p2 = [px(gx + 1, gy + 1), py(gx + 1, gy + 1)], p3 = [px(gx, gy + 1), py(gx, gy + 1)];
-        const hl = this.hover && gx >= this.hover.gx && gx < this.hover.gx + this.hover.w
-          && gy >= this.hover.gy && gy < this.hover.gy + this.hover.h;
-        g.lineStyle(1, '#d8c9ad', 0.8);
-        g.beginFill(hl ? '#bcd7f0' : ((gx + gy) % 2 === 0 ? '#f3e9d4' : '#ede0c6'), 1);
-        g.moveTo(p0[0], p0[1]); g.lineTo(p1[0], p1[1]); g.lineTo(p2[0], p2[1]); g.lineTo(p3[0], p3[1]);
-        g.closePath(); g.endFill();
-      }
-    }
+    // 踢脚线（墙地交界）
+    g.lineStyle(0); g.beginFill('#c8a87a'); g.drawRect(0, FT - 8, W, 8); g.endFill();
 
-    // 踢脚线（墙与地板交界）
-    g.lineStyle(3, '#c8a87a', 0.9);
-    g.moveTo(px(0, ROOM_H), py(0, ROOM_H));
-    g.lineTo(px(0, 0), py(0, 0));
-    g.lineTo(px(ROOM_W, 0), py(ROOM_W, 0));
+    // 地板：横向错缝拼花，越靠后越暗（深度感）
+    for (let gy = 0; gy < ROOM_H; gy++) {
+      const y0 = this.depthY(gy), y1 = this.depthY(gy + 1);
+      g.beginFill(gy % 2 === 0 ? '#f3e9d4' : '#ede0c6');
+      g.drawRect(0, y0, W, y1 - y0 + 1); g.endFill();
+      g.lineStyle(1, '#d8c9ad', 0.8);
+      const off = (gy % 2) * this.cellW / 2;
+      for (let x = off; x <= W + 1; x += this.cellW) { g.moveTo(x, y0); g.lineTo(x, y1); }
+      g.moveTo(0, y0); g.lineTo(W, y0);
+    }
+    g.lineStyle(0); g.beginFill('#8a6f4d', 0.08);
+    g.drawRect(0, FT, W, (H - FT) * 0.4); g.endFill();
+
+    // 拖拽落点高亮
+    if (this.hover) {
+      const t = this.hover;
+      g.beginFill('#bcd7f0', 0.75);
+      g.drawRect(this.sx(t.gx), this.depthY(t.gy), this.sx(t.w), this.depthY(t.h) - this.depthY(t.gy));
+      g.endFill();
+      g.lineStyle(2, '#7fa8cc', 0.9);
+      g.drawRect(this.sx(t.gx), this.depthY(t.gy), this.sx(t.w), this.depthY(t.h) - this.depthY(t.gy));
+    }
   }
 
   setEditable(on) {
     this.editable = on;
+    if (on) this.charTarget = null; // 布置房间时小人站定不乱走
     this.redrawBg();
     for (const sp of this.sprites.values()) {
       sp.alpha = 1;
@@ -162,19 +185,28 @@ export class Room {
   }
 
   // ---------- 家具摆放 ----------
-  // 家具底面中心 = 其占地格的前角（最靠屏幕下方的角）
-  frontOf(gx, gy, w, h) {
-    return { x: px(gx + w, gy + h), y: py(gx + w, gy + h) };
-  }
   posSprite(sp) {
     const p = this.placed.find(q => q.item_id === sp.itemId);
     if (!p) return;
     const def = this.catalog.find(f => f.id === sp.itemId);
     if (!def) return;
-    const f = this.frontOf(p.x, p.y, def.w, def.h);
-    sp.x = f.x;
-    sp.y = f.y;
-    sp.zIndex = (p.x + def.w + p.y + def.h) * 10;
+    const gyF = p.y + def.h;                 // 底面所在深度
+    const k = this.depthK(gyF);
+    let w = def.w * this.cellW * k;
+    let h = w * sp.aspect;
+    const maxH = this.H * 0.82;              // 立柜太高时整体收一点
+    if (h > maxH) { const f = maxH / h; w *= f; h *= f; }
+    sp.width = w; sp.height = h;
+    sp.x = this.sx(p.x + def.w / 2);
+    if (sp.flat) {
+      // 地毯等贴地物件：正面视角下压扁平铺在地板中央
+      sp.height = h * 0.42;
+      sp.y = this.depthY(p.y + def.h / 2);
+      sp.zIndex = Math.round(sp.y) - 1;
+    } else {
+      sp.y = this.depthY(gyF);
+      sp.zIndex = Math.round(sp.y);
+    }
   }
 
   // placed: [{item_id,x,y}]
@@ -199,7 +231,7 @@ export class Room {
     }
     this.furnitureLayer.sortChildren();
     this.setEditable(this.editable);
-    if (this.charSprite) this.placeCharSprite();
+    if (this.charRig) this.updateCharTransform();
   }
 
   async makeSprite(itemId) {
@@ -207,15 +239,14 @@ export class Room {
     const def = this.catalog.find(f => f.id === itemId);
     const art = FURNITURE_ART[itemId];
     if (!def || !art) return null;
-    // 占地宽 = 网格对角线投影宽；高按素材比例 × 立体系数
-    const w = (def.w + def.h) * TW2;
     const vb = art.match(/viewBox="0 0 (\d+) (\d+)"/);
     const aspect = vb ? +vb[2] / +vb[1] : 1;
-    const h = Math.min(w * aspect * heightK(itemId), WALL_H + 40);
-    const tex = await svgTexture(art, w, h);
+    const tex = await svgTexture(art, def.w * 96, def.w * 96 * aspect);
     if (!tex) return null;
     const sp = new PIXI.Sprite(tex);
-    sp.anchor.set(0.5, 1); // 底边中心对齐地面接触点
+    sp.flat = FLAT_ITEMS.has(itemId);
+    sp.anchor.set(0.5, sp.flat ? 0.5 : 1); // 底边中心对齐地面接触点（贴地物件居中）
+    sp.aspect = aspect;
     sp.itemId = itemId;
     sp.eventMode = this.editable ? 'static' : 'none';
     sp.cursor = 'grab';
@@ -248,18 +279,18 @@ export class Room {
     // 反算落点格并高亮
     const def = this.catalog?.find(f => f.id === sp.itemId);
     if (!def) return;
-    const g = toGrid(sp.x, sp.y);
-    const t = this.targetOf(g.gx, g.gy, def.w, def.h);
+    const t = this.targetOf(sp.x, sp.y, def.w, def.h);
     const changed = JSON.stringify(t) !== JSON.stringify(this.hover);
     this.hover = t;
     if (changed) this.redrawBg();
   }
 
-  // 底面前角对齐的落点（钳在房间范围内）
-  targetOf(gx, gy, w, h) {
+  // 底面中心对齐的落点（钳在房间范围内）
+  targetOf(bx, by, w, h) {
+    const g = this.toGrid(bx, by);
     return {
-      gx: Math.min(Math.max(Math.round(gx) - w, 0), ROOM_W - w),
-      gy: Math.min(Math.max(Math.round(gy) - h, 0), ROOM_H - h),
+      gx: Math.min(Math.max(Math.round(g.gx - w / 2), 0), ROOM_W - w),
+      gy: Math.min(Math.max(Math.round(g.gy - h), 0), ROOM_H - h),
       w, h,
     };
   }
@@ -274,13 +305,10 @@ export class Room {
     const def = this.catalog?.find(f => f.id === sp.itemId);
     const old = this.placed.find(p => p.item_id === sp.itemId);
     if (!def) return;
-    const g = toGrid(sp.x, sp.y);
-    const t = this.targetOf(g.gx, g.gy, def.w, def.h);
+    const t = this.targetOf(sp.x, sp.y, def.w, def.h);
     const ok = !this.overlaps(sp.itemId, t.gx, t.gy, def.w, def.h);
     if (ok) {
-      sp.x = px(t.gx + def.w, t.gy + def.h);
-      sp.y = py(t.gx + def.w, t.gy + def.h);
-      sp.zIndex = (t.gx + def.w + t.gy + def.h) * 10;
+      this.posSprite(sp);
       this.furnitureLayer.sortChildren();
       if (!old || old.x !== t.gx || old.y !== t.gy) this.cb.onPlace?.(sp.itemId, t.gx, t.gy);
     } else {
@@ -314,39 +342,172 @@ export class Room {
     return null;
   }
 
-  // ---------- 人物 ----------
-  async setCharacter(dataURL) {
-    if (this.charSprite) {
-      this.charSprite.destroy();
-      this.charSprite = null;
+  // ---------- 人物：骨骼分层（back/armL/armR/legL/legR/core）----------
+  async setCharacter(cfg) {
+    const token = this._charToken = (this._charToken ?? 0) + 1;
+    if (this.charRig) {
+      this.charRig.destroy({ children: true });
+      this.charRig = null;
+      this.bones = null;
     }
-    const tex = await new Promise(resolve => {
-      const img = new Image();
-      img.onload = () => resolve(PIXI.Texture.from(img));
-      img.onerror = () => resolve(null);
-      img.src = dataURL;
-    });
-    if (!tex) return;
-    const sp = new PIXI.Sprite(tex);
-    sp.anchor.set(0.5, 1);
-    const scale = 108 / tex.height;
-    sp.width = tex.width * scale;
-    sp.height = tex.height * scale;
-    this.charSprite = sp;
-    this.furnitureLayer.addChild(sp);
-    this.placeCharSprite();
+    if (this.charShadow) { this.charShadow.destroy(); this.charShadow = null; }
+    const layers = buildCharacterLayers(cfg);
+    const rig = new PIXI.Container(); // 原点=脚底，整体缩放/朝向/摇摆
+    const body = new PIXI.Container(); // 承载骨骼层，呼吸以脚为基准缩放
+    rig.addChild(body);
+    this.bones = {};
+    for (const key of BONE_ORDER) {
+      const svg = layers[key];
+      if (!svg) continue;
+      const tex = await svgTexture(layerSvg(svg), VB_W, VB_H);
+      if (token !== this._charToken) return; // 已有更新的 setCharacter，放弃本次
+      if (!tex) continue;
+      const sp = new PIXI.Sprite(tex);
+      sp.width = VB_W; sp.height = VB_H; // rig 内部用 viewBox 单位，整体由 rig.scale 缩放
+      const piv = PIVOTS[key] ?? PIVOTS.feet; // back 等静态层随身体整体移动
+      sp.anchor.set(piv[0] / VB_W, piv[1] / VB_H); // 锚点=骨骼枢轴，旋转即绕肩/髋摆动
+      sp.position.set(piv[0], piv[1]);
+      body.addChild(sp);
+      this.bones[key] = sp;
+    }
+    this.body = body;
+    this.furnitureLayer.addChild(rig);
+    this.charRig = rig;
+    this.ensureShadow();
+    this.updateCharTransform();
   }
 
-  placeCharSprite() {
-    if (!this.charSprite) return;
-    // 站在房间中央偏前
-    this.charSprite.x = px(ROOM_W / 2 + 0.5, ROOM_H / 2 + 0.5);
-    this.charSprite.y = py(ROOM_W / 2 + 0.5, ROOM_H / 2 + 0.5) + 6;
-    this.charSprite.zIndex = (ROOM_W / 2 + 0.5 + ROOM_H / 2 + 0.5) * 10;
-    this.furnitureLayer.sortChildren();
+  // 落地阴影：让人物“踩”在地板上而不是贴着的纸片（并发破坏后自愈）
+  ensureShadow() {
+    if (this.charShadow && !this.charShadow.destroyed) return;
+    this.charShadow = new PIXI.Graphics();
+    this.charShadow.beginFill('#4a3a26', 0.2);
+    this.charShadow.drawEllipse(0, 0, 1, 0.32);
+    this.charShadow.endFill();
+    this.furnitureLayer.addChild(this.charShadow);
+  }
+
+  // 人物位置/缩放（随深度近大远小），并同步阴影与层级
+  updateCharTransform() {
+    if (!this.charRig) return;
+    this.ensureShadow();
+    const { x, y } = this.charPos;
+    this.charK = CHAR_H_GRID * this.cellW * this.depthK(y) / VB_H;
+    this.charFeetX = this.sx(x);
+    this.charFeetY = this.depthY(y);
+    const rig = this.charRig;
+    rig.scale.set(this.charK * this.charFace, this.charK);
+    rig.position.set(this.charFeetX, this.charFeetY - (this.charBob || 0));
+    if (this.charShadow) {
+      this.charShadow.position.set(this.charFeetX, this.charFeetY + 2);
+      this.charShadow.scale.set(VB_H * this.charK * 0.17, VB_H * this.charK * 0.055);
+    }
+    const z = Math.round(this.charFeetY);
+    if (z !== this._lastCharZ) {
+      rig.zIndex = z;
+      if (this.charShadow) this.charShadow.zIndex = z - 1;
+      this._lastCharZ = z;
+      this.furnitureLayer.sortChildren();
+    }
+  }
+
+  // 非编辑模式点击地板 → 小人走到该处
+  onStageDown(e) {
+    if (this.editable || this.dragging || !this.charRig) return;
+    const { x, y } = e.global;
+    if (y < this.FT) return; // 只响应地板范围内
+    const g = this.toGrid(x, y);
+    this.charTarget = {
+      x: Math.min(Math.max(g.gx, 0.5), ROOM_W - 0.5),
+      y: Math.min(Math.max(g.gy, 0.8), ROOM_H - 0.4),
+    };
+  }
+
+  // 每帧驱动：自主溜达/点击行走 + 四肢摆动 + 待机呼吸
+  tick() {
+    const rig = this.charRig;
+    if (!rig || !this.bones) return;
+    const ds = Math.min(this.app.ticker.deltaMS / 1000, 0.05);
+    const pos = this.charPos;
+    let moving = false, dirx = 0;
+
+    // 模拟人生式自主走动：站一会儿就自己挑个地方溜达
+    if (!this.editable && !this.charTarget) {
+      this.idleDelay -= ds;
+      if (this.idleDelay <= 0) {
+        this.charTarget = {
+          x: 0.8 + Math.random() * (ROOM_W - 1.6),
+          y: 1.2 + Math.random() * (ROOM_H - 1.8),
+        };
+      }
+    }
+    if (this.charTarget) {
+      const dx = this.charTarget.x - pos.x, dy = this.charTarget.y - pos.y;
+      const dist = Math.hypot(dx, dy);
+      const step = WALK_SPEED * ds;
+      if (dist <= step || dist < 1e-4) {
+        pos.x = this.charTarget.x; pos.y = this.charTarget.y;
+        this.charTarget = null;
+        this.idleDelay = 2.5 + Math.random() * 4; // 到点后站一会儿再溜达
+      } else {
+        dirx = dx / dist;
+        pos.x += dx / dist * step; pos.y += dy / dist * step;
+        moving = true;
+      }
+    }
+
+    const t = performance.now() / 1000;
+    const b = this.bones;
+    const k = Math.min(1, ds * 14); // 起停平滑，避免姿态突变
+    let bob = 0;
+    if (moving) {
+      this.walkPhase += ds * 10;
+      const s = Math.sin(this.walkPhase);
+      if (Math.abs(dirx) > 0.05) this.charFace = dirx > 0 ? 1 : -1;
+      // 手脚对侧摆动：左腿配右臂
+      this._pose = {
+        legL: -s * 0.24, legR: s * 0.24,
+        armL: ARM_REST.armL - s * 0.3, armR: ARM_REST.armR + s * 0.3,
+      };
+      bob = Math.abs(s) * VB_H * this.charK * 0.022;
+      this._sway = s * 0.016;
+    } else {
+      // 待机：手臂垂落微摆 + 呼吸起伏
+      this._pose = {
+        legL: 0, legR: 0,
+        armL: ARM_REST.armL + Math.sin(t * 1.5) * 0.045,
+        armR: ARM_REST.armR - Math.sin(t * 1.5 + 0.6) * 0.045,
+      };
+      this._sway = 0;
+      this.charBob = 0;
+    }
+    for (const key of ['armL', 'armR', 'legL', 'legR']) {
+      if (b[key]) b[key].rotation += (this._pose[key] - b[key].rotation) * k;
+    }
+    this.charBob += (bob - this.charBob) * k;
+    rig.rotation += ((this._sway || 0) - rig.rotation) * k;
+    const breathe = moving ? 1 : 1 + Math.sin(t * 2.2) * 0.012;
+    this.body.scale.set(breathe);
+    this.body.position.set(-PIVOTS.feet[0] * breathe, -PIVOTS.feet[1] * breathe); // 呼吸时脚不离地
+    rig.scale.set(this.charK * this.charFace, this.charK);
+    rig.position.set(this.sx(pos.x), this.depthY(pos.y) - this.charBob);
+    this.charFeetY = this.depthY(pos.y);
+    this.ensureShadow();
+    this.charShadow.position.set(this.sx(pos.x), this.depthY(pos.y) + 2);
+    this.charShadow.scale.set(VB_H * this.charK * 0.17, VB_H * this.charK * 0.055);
+    // 前后遮挡：越靠下（越靠前）层级越高
+    const z = Math.round(this.charFeetY);
+    if (z !== this._lastCharZ) {
+      rig.zIndex = z;
+      if (this.charShadow) this.charShadow.zIndex = z - 1;
+      this._lastCharZ = z;
+      this.furnitureLayer.sortChildren();
+    }
   }
 
   destroy() {
+    this._ro?.disconnect();
+    this._ro = null;
     this.app?.destroy(true, { children: true });
     this.app = null;
   }

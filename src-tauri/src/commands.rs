@@ -183,7 +183,7 @@ pub fn create_character_core<S: StateAccess>(state: &S, name: String) -> Result<
         let c = crate::models::Character {
             id: crate::models::uid(),
             name: name.clone(),
-            face: Face { show_blush: false, mouth: 5, ..Default::default() },
+            face: Face { show_blush: true, mouth: 0, ..Default::default() },
             outfit: Default::default(),
             room: vec![Placed { item_id: "bed_basic".into(), x: 1, y: 3 }], // 新手小床
             created_at: crate::models::today_str(),

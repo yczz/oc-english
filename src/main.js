@@ -2,7 +2,7 @@
 import { api, toast } from './js/api.js';
 import {
   renderCharacterSVG, profileCharToCfg, getPartOptions,
-  SKIN_TONES, HAIR_COLORS, EYE_COLORS, characterDataURL, registerCustomArt,
+  SKIN_TONES, HAIR_COLORS, EYE_COLORS, registerCustomArt,
 } from './js/character.js';
 import { wardrobeThumb } from './js/wardrobe.js';
 import { furnitureThumb } from './js/furniture.js';
@@ -146,7 +146,7 @@ async function renderRoom() {
   $('#room-title').textContent = ch ? `🛏️ ${ch.name} 的小家` : '🛏️ 小家';
   if (!ch) return;
   await room.setRoom(ch.room);
-  await room.setCharacter(characterDataURL(profileCharToCfg(ch)));
+  await room.setCharacter(profileCharToCfg(ch));
   renderTray();
 }
 

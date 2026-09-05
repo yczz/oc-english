@@ -34,13 +34,17 @@ window.SpeechSynthesisUtterance = globalThis.SpeechSynthesisUtterance;
 // PIXI stub（本测试只验证 DOM 逻辑，不验证 WebGL 渲染）
 class FakeStage { constructor() { this.children = []; } addChild(c) { this.children.push(c); } on() {} set eventMode(_) {} set hitArea(_) {} get screen() { return { width: 576, height: 384 }; } }
 globalThis.PIXI = {
-  Application: class { constructor(opts) { this.stage = new FakeStage(); this.screen = this.stage.screen; } destroy() {} },
-  Graphics: class { clear() {} beginFill() {} drawRect() {} drawCircle() {} endFill() {} lineStyle() {} moveTo() {} lineTo() {} closePath() {} },
-  Container: class { constructor() { this.children = []; } addChild(c) { this.children.push(c); } sortChildren() {} set sortableChildren(_) {} },
-  Sprite: class { constructor(t) { this.texture = t; this.anchor = { set() {} }; this.x = 0; this.y = 0; this.zIndex = 0; this.alpha = 1; } destroy() {} on() {} set eventMode(_) {} set cursor(_) {} },
+  Application: class { constructor(opts) { this.stage = new FakeStage(); this.screen = this.stage.screen; this.renderer = { resize() {} }; this.ticker = { add() {}, deltaMS: 16 }; } destroy() {} },
+  Graphics: class { constructor() { this.position = { set() {} }; this.scale = { set() {} }; this.destroyed = false; } clear() {} beginFill() {} drawRect() {} drawCircle() {} drawEllipse() {} endFill() {} lineStyle() {} moveTo() {} lineTo() {} closePath() {} destroy() { this.destroyed = true; } },
+  Container: class { constructor() { this.children = []; this.scale = { set() {} }; this.position = { set() {} }; } addChild(c) { this.children.push(c); } sortChildren() {} set sortableChildren(_) {} toLocal(p) { return p; } destroy() {} },
+  Sprite: class { constructor(t) { this.texture = t; this.anchor = { set() {} }; this.position = { set() {} }; this.scale = { set() {} }; this.x = 0; this.y = 0; this.zIndex = 0; this.alpha = 1; } destroy() {} on() {} set eventMode(_) {} set cursor(_) {} },
   Texture: { from: () => ({ width: 10, height: 10, height: 10 }) },
 };
 window.PIXI = globalThis.PIXI;
+
+// ResizeObserver stub（jsdom 未实现；真实 WebView 原生支持）
+globalThis.ResizeObserver = class { constructor(cb) { this.cb = cb; } observe() {} disconnect() {} };
+window.ResizeObserver = globalThis.ResizeObserver;
 
 // ---------- 契约级后端 mock（与 Rust 指令同形状） ----------
 const load = p => JSON.parse(readFileSync(p, 'utf8'));

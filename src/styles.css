@@ -125,7 +125,7 @@ body {
 .char-avatar.add:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ---------- 主区域 ---------- */
-.main-grid { flex: 1; display: flex; padding: 12px; overflow: hidden; min-height: 0; }
+.main-grid { flex: 1; display: flex; padding: 12px; overflow-y: auto; min-height: 0; }
 .room-panel {
   flex: 1; min-width: 0; min-height: 0;
   background: var(--panel); border-radius: 20px; padding: 14px 18px;
@@ -138,6 +138,7 @@ body {
   border-radius: 14px; overflow: hidden; border: 2px solid var(--line);
 }
 #room-canvas { display: block; position: absolute; top: 0; left: 0; }
+.room-hint { font-size: .78rem; color: var(--muted); }
 .tray {
   background: var(--panel-2); border: 2px dashed var(--line); border-radius: 12px;
   padding: 8px 12px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
