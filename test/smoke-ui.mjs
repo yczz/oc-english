@@ -72,7 +72,7 @@ const mockInvoke = async (cmd, args = {}) => {
     case 'list_profiles': return [...profiles.keys()].sort();
     case 'register_profile': {
       if (profiles.has(args.name)) throw new Error('已被注册');
-      const p = { name: args.name, points: 200, characters: [], active_character_id: null, inventory: ['bed_basic', 'top_starter', 'bottom_starter', 'shoes_starter'], progress: {}, created_at: '2026-08-23' };
+      const p = { name: args.name, points: 200, characters: [], active_character_id: null, inventory: ['bed_basic', 'top_starter', 'bottom_starter', 'shoes_starter'], custom_items: [], progress: {}, created_at: '2026-08-23' };
       profiles.set(args.name, p); cur = p; return structuredClone(p);
     }
     case 'login_profile': { const p = profiles.get(args.name); if (!p) throw new Error('不存在'); cur = p; return structuredClone(p); }
@@ -89,11 +89,36 @@ const mockInvoke = async (cmd, args = {}) => {
     case 'equip_item': {
       const p = need(); const c = p.characters.find(c => c.id === args.charId); if (!c) throw new Error('找不到');
       if (args.itemId) {
-        const item = wardrobeItems.find(w => w.id === args.itemId); if (!item) throw new Error('商品不存在');
-        if (item.slot !== args.slot) throw new Error('部位不符');
-        if (!p.inventory.includes(args.itemId)) throw new Error('未拥有');
+        const custom = p.custom_items.find(x => x.id === args.itemId);
+        if (custom) {
+          if (custom.slot !== args.slot) throw new Error('部位不符');
+        } else {
+          const item = wardrobeItems.find(w => w.id === args.itemId); if (!item) throw new Error('商品不存在');
+          if (item.slot !== args.slot) throw new Error('部位不符');
+          if (!p.inventory.includes(args.itemId)) throw new Error('未拥有');
+        }
       }
       c.outfit[args.slot] = args.itemId; return structuredClone(p);
+    }
+    case 'add_custom_item': {
+      const p = need();
+      const id = 'custom_test_' + (p.custom_items.length + 1);
+      p.custom_items.push({ id, name: args.name, slot: args.slot, art: args.art, created_at: '2026-09-05' });
+      p.inventory.push(id); return structuredClone(p);
+    }
+    case 'search_words': {
+      need(); const q = args.query.toLowerCase(); const hits = [];
+      for (const b of books) for (const u of b.units) for (const w of u.words) {
+        if (w.en.toLowerCase().includes(q) || w.zh.includes(args.query)) {
+          hits.push({ en: w.en, zh: w.zh, book: b.title });
+          if (hits.length >= 5) return hits;
+        }
+      }
+      return hits;
+    }
+    case 'search_grammar': {
+      need();
+      return grammarPoints.filter(g => g.title.includes(args.query) || g.explain.includes(args.query)).slice(0, 2);
     }
     case 'get_catalog': return { wardrobe: wardrobeItems, furniture: furnitureItems };
     case 'buy_item': {
@@ -240,6 +265,20 @@ await click(owned);
 const ch = cur.characters[0];
 check(Object.values(ch.outfit).some(v => v !== ''), '成功穿上一件装扮');
 await click($('#modal-wardrobe .close-btn'));
+
+// 5.5 小助手豆豆：描述生成自定义衣服并穿上
+await click($('#doudou-btn'));
+check(!$('#doudou-panel').hidden, '豆豆面板打开');
+$('#dd-input').value = '设计一件蓝色圆点卫衣';
+await click($('#dd-send'));
+await new Promise(r => setTimeout(r, 80));
+check(!!$('.dd-equip'), '豆豆生成自定义衣服并给出试穿按钮');
+check(cur.custom_items.length === 1 && cur.custom_items[0].slot === 'top', '自定义衣服存入档案（top 部位）');
+await click($('.dd-equip'));
+await new Promise(r => setTimeout(r, 80));
+check(ch.outfit.top === cur.custom_items[0].id, '自定义衣服穿上 OC');
+check($('#dd-msgs').textContent.includes('已穿上'), '豆豆回复已穿上');
+await click($('#doudou-close'));
 
 // 6. 房间布置
 await click($('#room-edit-btn'));

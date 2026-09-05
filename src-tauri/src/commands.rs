@@ -183,7 +183,7 @@ pub fn create_character_core<S: StateAccess>(state: &S, name: String) -> Result<
         let c = crate::models::Character {
             id: crate::models::uid(),
             name: name.clone(),
-            face: Face { show_blush: true, mouth: -1, ..Default::default() },
+            face: Face { show_blush: false, mouth: 5, ..Default::default() },
             outfit: Default::default(),
             room: vec![Placed { item_id: "bed_basic".into(), x: 1, y: 3 }], // 新手小床
             created_at: crate::models::today_str(),
@@ -240,12 +240,19 @@ pub fn equip_item_core<S: StateAccess>(
 ) -> Result<Profile, String> {
     with_profile(state, |p| {
         if !item_id.is_empty() {
-            let item = shop::wardrobe_item(&item_id).ok_or("商品不存在")?;
-            if item.slot != slot {
-                return Err("这件装扮不能穿在这个部位".into());
-            }
-            if !p.inventory.contains(&item_id) {
-                return Err("还没拥有这件装扮，先去商店购买".into());
+            if let Some(custom) = p.custom_items.iter().find(|c| c.id == item_id) {
+                // 小助手生成的自定义装扮：只校验部位
+                if custom.slot != slot {
+                    return Err("这件装扮不能穿在这个部位".into());
+                }
+            } else {
+                let item = shop::wardrobe_item(&item_id).ok_or("商品不存在")?;
+                if item.slot != slot {
+                    return Err("这件装扮不能穿在这个部位".into());
+                }
+                if !p.inventory.contains(&item_id) {
+                    return Err("还没拥有这件装扮，先去商店购买".into());
+                }
             }
         }
         let idx = p.characters.iter().position(|c| c.id == char_id).ok_or("找不到这个人物")?;
@@ -270,6 +277,47 @@ pub fn equip_item_core<S: StateAccess>(
 pub struct Catalog {
     pub wardrobe: &'static Vec<shop::WardrobeItem>,
     pub furniture: &'static Vec<shop::FurnitureItem>,
+}
+
+// ---------- 小助手自定义装扮 ----------
+#[tauri::command]
+pub fn search_words(query: String) -> Vec<content::WordHit> {
+    content::search_words(&query, 5)
+}
+
+#[tauri::command]
+pub fn search_grammar(query: String) -> Vec<content::GrammarPoint> {
+    content::search_grammar(&query, 2).into_iter().cloned().collect()
+}
+
+#[tauri::command]
+pub fn add_custom_item(
+    state: State<AppState>,
+    name: String,
+    slot: String,
+    art: String,
+) -> Result<Profile, String> {
+    with_profile(&state, |p| {
+        if !matches!(
+            slot.as_str(),
+            "hat" | "glasses" | "top" | "bottom" | "shoes" | "held" | "back" | "earring"
+        ) {
+            return Err("未知部位".into());
+        }
+        if !art.contains('<') {
+            return Err("衣服图案不合法".into());
+        }
+        let id = format!("custom_{}", crate::models::uid());
+        p.custom_items.push(crate::models::CustomItem {
+            id: id.clone(),
+            name: name.chars().take(20).collect(),
+            slot,
+            art,
+            created_at: crate::models::today_str(),
+        });
+        p.inventory.push(id);
+        Ok(p.clone())
+    })
 }
 
 #[tauri::command]

@@ -2,8 +2,18 @@
 // 层级：背饰 → 后发 → 素体 → 鞋 → 下装 → 上衣 → 手持 → 眼 → 嘴 → 腮红 → 前发 → 耳饰 → 眼镜 → 帽子
 import { WARDROBE_ART } from './wardrobe.js';
 
+// 自定义装扮注册表（小助手豆豆按描述生成，运行时注入）
+const CUSTOM_ART = new Map();
+export function registerCustomArt(items = []) {
+  CUSTOM_ART.clear();
+  for (const it of items) CUSTOM_ART.set(it.id, it.art);
+}
+export function getArt(id) {
+  return WARDROBE_ART[id] ?? CUSTOM_ART.get(id) ?? '';
+}
+
 export const VB_W = 200;
-export const VB_H = 230;
+export const VB_H = 300;
 
 // ---------- 调色板（捏脸免费项） ----------
 export const SKIN_TONES = [
@@ -33,27 +43,39 @@ export const EYE_COLORS = [
   { name: '紫水晶', E: '#8458b8' },
 ];
 
-// ---------- 素体（严格按参考图：椭圆躯干+肚脐、水平手臂三指手、无脚细长腿） ----------
-// 锚点：头顶 y≈42，眼 y≈96，躯干椭圆 cx100 cy168 rx30 ry38，
-//       左手 (30,150)，右手 (170,150)，腿根 y≈200，腿尾 y≈229
+// ---------- 素体（严格按参考图 1:1：光头大圆头、双弧眉、粉椭圆眼、点嘴、
+//             细脖、收窄躯干、斜下垂手臂、无脚细长腿） ----------
+// 锚点：头顶 y≈42，眼 y≈97，耳 (53,92)/(147,92)，颈 y132-150，
+//       躯干 y146-214（肩宽30），左手 (46,190)，右手 (154,190)，
+//       腿根 y≈210，腿尾 y≈292
 const BASE_BODY = `
-<path d="M78 146 L34 147 Q29 150 34 154 L78 157 Q83 151 78 146 Z" fill="SKIN" stroke="LINE" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M122 146 L166 147 Q171 150 166 154 L122 157 Q117 151 122 146 Z" fill="SKIN" stroke="LINE" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M31 145 L24 142 M30 150 L22 150 M31 155 L24 158" stroke="LINE" stroke-width="2" stroke-linecap="round"/>
-<path d="M169 145 L176 142 M170 150 L178 150 M169 155 L176 158" stroke="LINE" stroke-width="2" stroke-linecap="round"/>
-<path d="M88 196 Q83 212 85 226 Q85 229.5 89 229.5 Q93 229.5 93 226 Q93.5 212 97 199 Z" fill="SKIN" stroke="LINE" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M112 196 Q117 212 115 226 Q115 229.5 111 229.5 Q107 229.5 107 226 Q106.5 212 103 199 Z" fill="SKIN" stroke="LINE" stroke-width="2.5" stroke-linejoin="round"/>
-<ellipse cx="100" cy="168" rx="30" ry="38" fill="SKIN" stroke="LINE" stroke-width="3"/>
-<ellipse cx="100" cy="176" rx="21" ry="25" fill="LINE" opacity="0.04"/>
-<circle cx="100" cy="192" r="1.6" fill="LINE" opacity="0.8"/>
+<path d="M87 150 Q80 152 74 158 L48 182 Q42 188 46 193 Q50 197 56 192 L84 166 Q90 160 89 153 Z" fill="SKIN" stroke="LINE" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M113 150 Q120 152 126 158 L152 182 Q158 188 154 193 Q150 197 144 192 L116 166 Q110 160 111 153 Z" fill="SKIN" stroke="LINE" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M45 185 L39 181 M44 190 L37 190 M46 194 L40 197" stroke="LINE" stroke-width="2" stroke-linecap="round"/>
+<path d="M155 185 L161 181 M156 190 L163 190 M154 194 L160 197" stroke="LINE" stroke-width="2" stroke-linecap="round"/>
+<path d="M52 178 L60 170 Q66 164 70 168 L62 178 Q57 183 52 178 Z" fill="#d8a8b8" opacity="0.28"/>
+<path d="M86 208 Q82 240 83 284 Q83 292 90 292 Q97 292 97 284 Q97 240 98 212 Z" fill="SKIN" stroke="LINE" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M114 208 Q118 240 117 284 Q117 292 110 292 Q103 292 103 284 Q103 240 102 212 Z" fill="SKIN" stroke="LINE" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M87 214 Q84 244 85 282 Q85 289 90 290 L91 216 Z" fill="#d8a8b8" opacity="0.3"/>
+<path d="M94 128 L94 150 L106 150 L106 128 Z" fill="SKIN" stroke="LINE" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M94 132 Q100 138 106 132 L106 128 L94 128 Z" fill="LINE" opacity="0.18"/>
+<path d="M91 146 Q84 150 84 160 L84 190 Q84 206 92 212 Q100 217 108 212 Q116 206 116 190 L116 160 Q116 150 109 146 Q100 152 91 146 Z" fill="SKIN" stroke="LINE" stroke-width="3" stroke-linejoin="round"/>
+<path d="M88 168 Q86 190 90 206 L94 210 Q90 190 91 168 Z" fill="#d8a8b8" opacity="0.22"/>
+<circle cx="100" cy="194" r="1.4" fill="LINE" opacity="0.5"/>
 <ellipse cx="53" cy="92" rx="6.5" ry="8.5" fill="SKIN" stroke="LINE" stroke-width="2.5"/>
 <ellipse cx="147" cy="92" rx="6.5" ry="8.5" fill="SKIN" stroke="LINE" stroke-width="2.5"/>
 <circle cx="100" cy="90" r="48" fill="SKIN" stroke="LINE" stroke-width="3"/>
-<path d="M70 83 Q78 78 86 81 M114 81 Q122 78 130 83" fill="none" stroke="#6b4a5f" stroke-width="2.6" stroke-linecap="round"/>
-<circle cx="100" cy="106" r="1.3" fill="LINE" opacity="0.7"/>
+<path d="M68 76 Q78 70 88 74 M112 74 Q122 70 132 76" fill="none" stroke="#7a4a58" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M70 83 Q78 78 86 81 M114 81 Q122 78 130 83" fill="none" stroke="#7a4a58" stroke-width="2.2" stroke-linecap="round"/>
 `;
 
 const EYES = [
+  {
+    name: '粉桃椭圆眼',
+    left: `
+<ellipse cx="80" cy="97" rx="9.5" ry="12.5" fill="#e9b9cd" stroke="#96506b" stroke-width="2.6"/>
+<ellipse cx="80" cy="100" rx="6" ry="8" fill="#d99ab4" opacity="0.55"/>`,
+  },
   {
     name: '圆溜溜',
     left: `
@@ -94,6 +116,7 @@ const MOUTHS = [
   { name: '猫嘴 ω', path: `<path d="M92 119 Q96 125 100 120 Q104 125 108 119" fill="none" stroke="#d4686e" stroke-width="3" stroke-linecap="round"/>` },
   { name: '抿嘴', path: `<path d="M95 121 L105 121" fill="none" stroke="#d4686e" stroke-width="3.5" stroke-linecap="round"/>` },
   { name: '小圆嘴', path: `<ellipse cx="100" cy="121" rx="3.6" ry="4.6" fill="#c4525c"/>` },
+  { name: '点点嘴', path: `<circle cx="100" cy="118" r="1.8" fill="#7a4a58"/>` },
 ];
 
 const BLUSH = `
@@ -209,20 +232,20 @@ export function buildCharacter(cfg = {}) {
   const mouth = cfg.mouth >= 0 ? MOUTHS[cfg.mouth] : null;
 
   const parts = [];
-  if (o.back && WARDROBE_ART[o.back]) parts.push(WARDROBE_ART[o.back]);
+  if (o.back && getArt(o.back)) parts.push(getArt(o.back));
   if (hair) parts.push(hair.back, HAIR_SHINE);
   parts.push(BASE_BODY);
-  if (o.shoes && WARDROBE_ART[o.shoes]) parts.push(WARDROBE_ART[o.shoes]);
-  if (o.bottom && WARDROBE_ART[o.bottom]) parts.push(WARDROBE_ART[o.bottom]);
-  if (o.top && WARDROBE_ART[o.top]) parts.push(WARDROBE_ART[o.top]);
-  if (o.held && WARDROBE_ART[o.held]) parts.push(WARDROBE_ART[o.held]);
+  if (o.shoes && getArt(o.shoes)) parts.push(getArt(o.shoes));
+  if (o.bottom && getArt(o.bottom)) parts.push(getArt(o.bottom));
+  if (o.top && getArt(o.top)) parts.push(getArt(o.top));
+  if (o.held && getArt(o.held)) parts.push(getArt(o.held));
   if (eye) parts.push(fillTokens(eye.left, colors), mirror(fillTokens(eye.left, colors)));
   if (mouth) parts.push(mouth.path);
   if (cfg.showBlush) parts.push(BLUSH);
   if (hair) parts.push(hair.front);
-  if (o.earring && WARDROBE_ART[o.earring]) parts.push(WARDROBE_ART[o.earring]);
-  if (o.glasses && WARDROBE_ART[o.glasses]) parts.push(WARDROBE_ART[o.glasses]);
-  if (o.hat && WARDROBE_ART[o.hat]) parts.push(WARDROBE_ART[o.hat]);
+  if (o.earring && getArt(o.earring)) parts.push(getArt(o.earring));
+  if (o.glasses && getArt(o.glasses)) parts.push(getArt(o.glasses));
+  if (o.hat && getArt(o.hat)) parts.push(getArt(o.hat));
 
   return fillTokens(parts.join('\n'), colors);
 }

@@ -1,5 +1,5 @@
 // 内容层：13 册人教版词库（内嵌编译）+ 语法知识库 + 单词形态变换规则
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::sync::OnceLock;
 
@@ -32,7 +32,7 @@ struct GrammarFile {
     points: Vec<GrammarPoint>,
 }
 
-#[derive(Deserialize, Clone)]
+#[derive(Deserialize, Serialize, Clone)]
 pub struct GrammarPoint {
     pub id: String,
     pub title: String,
@@ -87,6 +87,59 @@ pub fn find_unit(book_id: &str, unit_id: &str) -> Option<(&'static Book, &'stati
 
 pub fn grammar_point(id: &str) -> Option<&'static GrammarPoint> {
     grammar_points().iter().find(|p| p.id == id)
+}
+
+// ---------- 小助手豆豆：全库词/语法检索 ----------
+#[derive(Serialize, Clone)]
+pub struct WordHit {
+    pub en: String,
+    pub zh: String,
+    pub book: String,
+}
+
+/// 按英文子串（或中文释义）全库检索单词
+pub fn search_words(q: &str, limit: usize) -> Vec<WordHit> {
+    let q = q.trim().to_lowercase();
+    if q.is_empty() {
+        return vec![];
+    }
+    let en_query = q.chars().next().map_or(false, |c| c.is_ascii_alphabetic());
+    let mut out = Vec::new();
+    for b in books() {
+        for u in &b.units {
+            for w in &u.words {
+                let hit = if en_query {
+                    w.en.to_lowercase().contains(&q)
+                } else {
+                    w.zh.contains(&q)
+                };
+                if hit {
+                    out.push(WordHit {
+                        en: w.en.clone(),
+                        zh: w.zh.clone(),
+                        book: b.title.clone(),
+                    });
+                    if out.len() >= limit {
+                        return out;
+                    }
+                }
+            }
+        }
+    }
+    out
+}
+
+/// 按关键词检索语法点
+pub fn search_grammar(q: &str, limit: usize) -> Vec<&'static GrammarPoint> {
+    let q = q.trim();
+    if q.is_empty() {
+        return vec![];
+    }
+    grammar_points()
+        .iter()
+        .filter(|p| p.title.contains(q) || p.explain.contains(q))
+        .take(limit)
+        .collect()
 }
 
 /// 每册配套的语法点（手工映射，贴合人教社各册教学重点）

@@ -9,6 +9,33 @@
 </head>
 <body>
 
+<!-- ============ 小助手豆豆（左上角入口） ============ -->
+<button id="doudou-btn" title="和豆豆聊天">
+  <svg viewBox="0 0 64 64" width="44" height="44" aria-hidden="true">
+    <ellipse cx="32" cy="36" rx="26" ry="24" fill="#2b2b33"/>
+    <ellipse cx="22" cy="24" rx="9" ry="5" fill="#ffffff" opacity="0.14"/>
+    <ellipse cx="24" cy="34" rx="4" ry="6.5" fill="#fffdfa"/>
+    <ellipse cx="40" cy="34" rx="4" ry="6.5" fill="#fffdfa"/>
+  </svg>
+</button>
+<div id="doudou-panel" hidden>
+  <div class="dd-head">
+    <svg viewBox="0 0 64 64" width="34" height="34" aria-hidden="true"><ellipse cx="32" cy="36" rx="26" ry="24" fill="#2b2b33"/><ellipse cx="24" cy="34" rx="4" ry="6.5" fill="#fffdfa"/><ellipse cx="40" cy="34" rx="4" ry="6.5" fill="#fffdfa"/></svg>
+    <div class="dd-title"><b>豆豆</b><i>你的专属小助手 · 在线</i></div>
+    <button class="close-btn" id="doudou-close">×</button>
+  </div>
+  <div id="dd-msgs"></div>
+  <div class="dd-quick">
+    <button data-q="apple 什么意思？">📖 查词</button>
+    <button data-q="画一只猫">🎨 画画</button>
+    <button data-q="设计一件粉色条纹卫衣">👗 设计衣服</button>
+  </div>
+  <div class="dd-input">
+    <input id="dd-input" placeholder="和豆豆聊天 / 问问题 / 设计衣服…" />
+    <button id="dd-send" class="action-btn">发送</button>
+  </div>
+</div>
+
 <!-- ============ 注册 / 登录屏 ============ -->
 <div id="screen-register" class="screen" hidden>
   <div class="register-box">

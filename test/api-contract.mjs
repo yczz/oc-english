@@ -17,8 +17,8 @@ const called = [...apiJs.matchAll(/call\('([\w_]+)'/g)].map(m => m[1]);
 let failed = 0;
 const check = (cond, msg) => { if (!cond) { failed++; console.error('❌ ' + msg); } else console.log('✅ ' + msg); };
 
-check(registered.length === 19, `lib.rs 注册了 19 个指令（实际 ${registered.length}）`);
-check(called.length === 19, `api.js 调用了 19 个指令（实际 ${called.length}）`);
+check(registered.length === 22, `lib.rs 注册了 22 个指令（实际 ${registered.length}）`);
+check(called.length === 22, `api.js 调用了 22 个指令（实际 ${called.length}）`);
 
 const regSet = new Set(registered);
 const missing = called.filter(c => !regSet.has(c));

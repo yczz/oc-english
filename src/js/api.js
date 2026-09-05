@@ -18,6 +18,9 @@ export const api = {
   switchCharacter: charId => call('switch_character', { charId }),
   updateFace: (charId, face) => call('update_face', { charId, face }),
   equipItem: (charId, slot, itemId) => call('equip_item', { charId, slot, itemId }),
+  addCustomItem: (name, slot, art) => call('add_custom_item', { name, slot, art }),
+  searchWords: query => call('search_words', { query }),
+  searchGrammar: query => call('search_grammar', { query }),
 
   getCatalog: () => call('get_catalog'),
   buyItem: itemId => call('buy_item', { itemId }),

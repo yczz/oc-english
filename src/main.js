@@ -2,12 +2,13 @@
 import { api, toast } from './js/api.js';
 import {
   renderCharacterSVG, profileCharToCfg, getPartOptions,
-  SKIN_TONES, HAIR_COLORS, EYE_COLORS, characterDataURL,
+  SKIN_TONES, HAIR_COLORS, EYE_COLORS, characterDataURL, registerCustomArt,
 } from './js/character.js';
 import { wardrobeThumb } from './js/wardrobe.js';
 import { furnitureThumb } from './js/furniture.js';
 import { Room } from './js/room.js';
 import { speak } from './js/tts.js';
+import { initDoudou } from './js/doudou.js';
 
 const $ = s => document.querySelector(s);
 const openModal = id => $(`#${id}`).showModal();
@@ -21,6 +22,9 @@ let editing = false;
 let faceDraft = null;        // 捏脸草稿（后端 Face 结构）
 let shopTab = 'wardrobe';
 
+// 小助手自定义装扮注入渲染器（每次 profile 变化后同步）
+const syncArt = () => registerCustomArt(profile?.custom_items ?? []);
+
 const activeChar = () =>
   profile?.characters.find(c => c.id === profile.active_character_id) ?? profile?.characters[0] ?? null;
 
@@ -33,6 +37,16 @@ async function init() {
   bindFace();
   bindShop();
   bindStudy();
+  initDoudou({
+    getProfile: () => profile,
+    onChange: p => {
+      profile = p;
+      syncArt();
+      renderMain();
+      if ($('#modal-wardrobe')?.open) renderWardrobe();
+    },
+    equip: (slot, itemId) => equip(slot, itemId),
+  });
   catalog = await api.getCatalog();
   const names = await api.listProfiles();
   renderRegister(names);
@@ -91,6 +105,7 @@ async function enterMain() {
 
 function renderMain() {
   if (!profile) return;
+  syncArt();
   $('#profile-chip').textContent = '👤 ' + profile.name;
   updatePointsChips();
   renderCharBar();
@@ -110,7 +125,7 @@ function renderCharBar() {
     const div = document.createElement('div');
     div.className = 'char-avatar' + (c.id === profile.active_character_id ? ' active' : '');
     div.title = c.name;
-    div.innerHTML = renderCharacterSVG(profileCharToCfg(c), 0.36) + `<span class="nm">${c.name}</span>`;
+    div.innerHTML = renderCharacterSVG(profileCharToCfg(c), 0.24) + `<span class="nm">${c.name}</span>`;
     div.addEventListener('click', async () => {
       profile = await api.switchCharacter(c.id);
       renderMain();
@@ -127,6 +142,7 @@ function renderCharBar() {
 
 async function renderRoom() {
   const ch = activeChar();
+  syncArt();
   $('#room-title').textContent = ch ? `🛏️ ${ch.name} 的小家` : '🛏️ 小家';
   if (!ch) return;
   await room.setRoom(ch.room);
@@ -260,7 +276,7 @@ function cfgFromDraft() {
 }
 
 function renderFacePreview() {
-  $('#face-preview').innerHTML = renderCharacterSVG(cfgFromDraft(), 1.35);
+  $('#face-preview').innerHTML = renderCharacterSVG(cfgFromDraft(), 1.0);
 }
 
 function renderFaceOptions() {
@@ -349,7 +365,8 @@ const SLOT_NAMES = {
 
 function renderWardrobe() {
   const ch = activeChar();
-  $('#wardrobe-preview').innerHTML = renderCharacterSVG(profileCharToCfg(ch), 1.35);
+  syncArt();
+  $('#wardrobe-preview').innerHTML = renderCharacterSVG(profileCharToCfg(ch), 1.0);
   const box = $('#wardrobe-slots');
   box.innerHTML = '';
   for (const [slot, label] of Object.entries(SLOT_NAMES)) {
@@ -375,6 +392,15 @@ function renderWardrobe() {
         if (!owned) return toast('还没购买，去商店看看');
         equip(slot, item.id);
       });
+      items.appendChild(div);
+    }
+
+    // 小助手生成的自定义装扮
+    for (const item of (profile.custom_items ?? []).filter(w => w.slot === slot)) {
+      const div = document.createElement('div');
+      div.className = 'wear-item' + (ch.outfit[slot] === item.id ? ' sel' : '');
+      div.innerHTML = wardrobeThumb(item.id, item.art) + `<span class="nm">${item.name} ✨</span>`;
+      div.addEventListener('click', () => equip(slot, item.id));
       items.appendChild(div);
     }
     row.appendChild(items);

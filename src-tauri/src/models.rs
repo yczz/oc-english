@@ -56,6 +56,18 @@ pub struct Placed {
     pub y: u32,
 }
 
+// ---------- 自定义装扮（小助手按描述生成） ----------
+#[derive(Serialize, Deserialize, Clone)]
+pub struct CustomItem {
+    pub id: String,
+    pub name: String,
+    /// 部位：hat/glasses/top/bottom/shoes/held/back/earring
+    pub slot: String,
+    /// SVG 片段（200×300 画布坐标系）
+    pub art: String,
+    pub created_at: String,
+}
+
 #[derive(Serialize, Deserialize, Clone)]
 pub struct Character {
     pub id: String,
@@ -94,6 +106,9 @@ pub struct Profile {
     /// 已购买（或新手礼包赠送）的物品：装扮 + 家具
     #[serde(default)]
     pub inventory: Vec<String>,
+    /// 小助手生成的自定义装扮
+    #[serde(default)]
+    pub custom_items: Vec<CustomItem>,
     #[serde(default)]
     pub progress: HashMap<String, UnitProgress>,
     pub created_at: String,
@@ -114,6 +129,7 @@ impl Profile {
                 "shoes_starter".into(),
             ],
             progress: HashMap::new(),
+            custom_items: Vec::new(),
             created_at: today_str(),
         }
     }

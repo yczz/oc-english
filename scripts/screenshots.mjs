@@ -54,7 +54,7 @@ const mockInvoke = async (cmd, args = {}) => {
     case 'list_profiles': return [...profiles.keys()].sort();
     case 'register_profile': {
       if (profiles.has(args.name)) throw new Error('已被注册');
-      const p = { name: args.name, points: 200, characters: [], active_character_id: null, inventory: [...DEMO_INVENTORY], progress: {}, created_at: '2026-09-02' };
+      const p = { name: args.name, points: 200, characters: [], active_character_id: null, inventory: [...DEMO_INVENTORY], custom_items: [], progress: {}, created_at: '2026-09-02' };
       profiles.set(args.name, p); cur = p; return structuredClone(p);
     }
     case 'login_profile': { const p = profiles.get(args.name); if (!p) throw new Error('不存在'); cur = p; return structuredClone(p); }
@@ -71,12 +71,24 @@ const mockInvoke = async (cmd, args = {}) => {
     case 'equip_item': {
       const p = need(); const c = p.characters.find(c => c.id === args.charId); if (!c) throw new Error('找不到');
       if (args.itemId) {
-        const item = wardrobeItems.find(w => w.id === args.itemId); if (!item) throw new Error('商品不存在');
-        if (item.slot !== args.slot) throw new Error('部位不符');
-        if (!p.inventory.includes(args.itemId)) throw new Error('未拥有');
+        const custom = p.custom_items.find(x => x.id === args.itemId);
+        if (custom) { if (custom.slot !== args.slot) throw new Error('部位不符'); }
+        else {
+          const item = wardrobeItems.find(w => w.id === args.itemId); if (!item) throw new Error('商品不存在');
+          if (item.slot !== args.slot) throw new Error('部位不符');
+          if (!p.inventory.includes(args.itemId)) throw new Error('未拥有');
+        }
       }
       c.outfit[args.slot] = args.itemId; return structuredClone(p);
     }
+    case 'add_custom_item': {
+      const p = need();
+      const id = 'custom_demo_' + (p.custom_items.length + 1);
+      p.custom_items.push({ id, name: args.name, slot: args.slot, art: args.art, created_at: '2026-09-05' });
+      p.inventory.push(id); return structuredClone(p);
+    }
+    case 'search_words': return [];
+    case 'search_grammar': return [];
     case 'get_catalog': return { wardrobe: wardrobeItems, furniture: furnitureItems };
     case 'buy_item': {
       const p = need();
@@ -267,6 +279,19 @@ for (let i = 0; i < 15; i++) {
 }
 await click('#exam-submit', 600);
 await shot('09-exam-score.png');
+
+// 11. 小助手豆豆：描述生成衣服
+await page.click('#modal-exam .close-btn');
+await tick(300);
+await page.click('#study-back-btn');
+await tick(400);
+await page.click('#doudou-btn');
+await tick(200);
+await page.type('#dd-input', '设计一件粉色爱心卫衣');
+await page.click('#dd-send');
+await page.waitForSelector('.dd-equip', { timeout: 5000 });
+await tick(300);
+await shot('10-doudou.png');
 
 await browser.close();
 server.close();
